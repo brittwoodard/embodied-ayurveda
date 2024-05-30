@@ -29,6 +29,11 @@ upcoming-event-section:
     image_path: 
     image_focus: 
   heading: Upcoming retreat
+  event-title: Ayurvedic Clinical Training & Business Strategy Retreat
+  event-description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  button: 
+    text: Learn more
+    url: 
 seo:
   title: This should appear in the browser tab
   description:
@@ -85,11 +90,9 @@ seo:
   <!-- Colored Box/Column -->
   <div></div>
 
-  <!-- Upcoming Retreat Info. -->
-  {% for item in site.events %}
   <div class="col-span-4">
-    <h3>{{item.title}}</h3>
-    <p>{{item.description_html}}</p>
+    <h3>{{page.upcoming-event-section.event-title}}</h3>
+    <p>{{page.upcoming-event-section.event-description_html}}</p>
+    <a href="{{page.upcoming-event-section.button.url}}" class="link">{{page.upcoming-event-section.button.text}}</a>
   </div>
-  {% endfor %}
 </section>
