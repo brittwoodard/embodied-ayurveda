@@ -85,5 +85,11 @@ seo:
   <!-- Colored Box/Column -->
   <div></div>
 
-  
+  <!-- Upcoming Retreat Info. -->
+  {% for item in site.events %}
+  <div class="col-span-4">
+    <h3>{{item.title}}</h3>
+    <p>{{item.description_html}}</p>
+  </div>
+  {% endfor %}
 </section>

@@ -498,6 +498,9 @@ p {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -529,14 +532,14 @@ p {
 .h-screen {
   height: 100vh;
 }
-.min-h-90 {
-  min-height: 90vh;
+.min-h-50 {
+  min-height: 50vh;
 }
 .min-h-60 {
   min-height: 60vh;
 }
-.min-h-50 {
-  min-height: 50vh;
+.min-h-90 {
+  min-height: 90vh;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -544,11 +547,11 @@ p {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -567,10 +570,6 @@ p {
 }
 .border {
   border-width: 1px;
-}
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .p-2 {
   padding: 0.5rem;
