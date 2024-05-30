@@ -535,6 +535,9 @@ p {
 .min-h-60 {
   min-height: 60vh;
 }
+.min-h-50 {
+  min-height: 50vh;
+}
 .cursor-pointer {
   cursor: pointer;
 }

@@ -24,6 +24,11 @@ features-section:
   image: 
     image_path: 
     image_focus: 
+upcoming-event-section: 
+  image: 
+    image_path: 
+    image_focus: 
+  heading: Upcoming retreat
 seo:
   title: This should appear in the browser tab
   description:
@@ -67,4 +72,18 @@ seo:
 
   <!-- Image -->
   <div class="bg-image-style min-h-60" style="background-image: url('{{page.features-section.image.image_path}}'); background-position: {{page.features-section.image.image_focus}};"></div>
+</section>
+
+<!-- Upcoming Event Section -->
+<section class="grid grid-cols-4">
+
+  <!-- Image -->
+  <div class="col-span-3 bg-image-style min-h-50" style="background-image: url('{{page.upcoming-event-section.image.image_path}}'); background-position: {{page.upcoming-event-section.image.image_focus}};">
+    <h2>{{page.upcoming-event-section.heading}}</h2>
+  </div>
+
+  <!-- Colored Box/Column -->
+  <div></div>
+
+  
 </section>
