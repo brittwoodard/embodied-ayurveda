@@ -495,6 +495,9 @@ p {
 .z-20 {
   z-index: 20;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -504,12 +507,6 @@ p {
 }
 .mb-8 {
   margin-bottom: 2rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -523,17 +520,32 @@ p {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
 .h-screen {
   height: 100vh;
 }
-.w-\[65vw\] {
-  width: 65vw;
+.min-h-90 {
+  min-height: 90vh;
+}
+.min-h-60 {
+  min-height: 60vh;
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -546,6 +558,9 @@ p {
 }
 .justify-items-center {
   justify-items: center;
+}
+.gap-10 {
+  gap: 2.5rem;
 }
 .border {
   border-width: 1px;
@@ -582,9 +597,6 @@ p {
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
   .md\:w-\[40\%\] {
     width: 40%;
   }

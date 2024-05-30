@@ -1,5 +1,29 @@
 ---
 layout: default
+header: 
+  image: 
+    image_path: 
+    image_focus: 
+  heading: Embodied Ayurveda
+  description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+about-section: 
+  description_html: We believe in the intricate interplay between our physical bodies, mental states, and the environment around us. Our philosophy is rooted in the principles of Ayurvedic medicine and Yogic traditions, which teach us that balance and harmony within our bodies lead to overall well-being.
+  button: 
+    text: Learn more
+    url: /about.html
+features-section: 
+  heading: Benefits of features heading
+  description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  features: 
+   - heading: Meet in-person & clinical hour requirements
+     description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   - heading: Create a business plan
+     description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   - heading: Refine your clinical skills
+     description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  image: 
+    image_path: 
+    image_focus: 
 seo:
   title: This should appear in the browser tab
   description:
@@ -8,4 +32,39 @@ seo:
   hide-from-google: false
 ---
 
-<p class="bg-yellow-400"> This is some text on the homepage </p>
+<!-- Header -->
+<section class="grid grid-cols-2">
+  
+  <!-- Image/Left Column -->
+  <div class="bg-image-style min-h-90" style="background-image: url('{{page.header.image.image_path}}'); background-position: {{page.header.image.image_focus}};"></div>
+
+  <!-- Text/Right Column -->
+  <div>
+    <h1>{{page.header.heading}}</h1>
+    <p>{{page.header.description_html}}</p>
+    <hr>
+  </div>
+</section>
+
+<!-- About Section -->
+<section>
+  <p>{{page.about-section.description_html}}</p>
+  <a href="{{page.about-section.button.url}}" class="link">{{page.about-section.button.text}}</a>
+</section>
+
+<!-- Features Section -->
+<section class="grid grid-cols-4">
+  <div class="col-span-3">
+    <h2>Benefits of features heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    {% for item in page.features-section.features %}
+    <div class="grid grid-cols-3 gap-10">
+      <h3>{{item.heading}}</h3>
+      <p>{{item.description_html}}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Image -->
+  <div class="bg-image-style min-h-60" style="background-image: url('{{page.features-section.image.image_path}}'); background-position: {{page.features-section.image.image_focus}};"></div>
+</section>
