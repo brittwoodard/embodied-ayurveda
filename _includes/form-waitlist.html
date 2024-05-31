@@ -1,0 +1,39 @@
+<section>
+  <div>
+    <h2>{{ site.data.form-settings.waitlist.heading }}</h2>
+    <div>{{ site.data.form-settings.waitlist.description_html }}</div>
+  </div>
+
+  <!-- Form -->
+  <form 
+    name="{{ site.data.form-settings.waitlist.name }}" 
+    method="post" 
+    data-netlify="{{ site.data.form-settings.waitlist.netlify }}" 
+    action="{{ site.data.form-settings.waitlist.redirect-page }}" 
+    onSubmit="submit">
+    <div class="grid sm:grid-cols-4 gap-8 mb-4">
+        
+      <!-- First Name -->
+      <div>
+        <input type="text" id="first-name" name="first-name" placeholder=" First Name">
+        <label for="first-name" class="form-text">First Name</label>
+      </div>
+
+      <!-- Last Name -->
+      <div>
+        <input type="text" id="last-name" name="last-name" placeholder=" Last Name">
+        <label for="last-name" class="form-text">Last Name</label>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <input type="email" id="email" name="email" placeholder=" Email Name">
+        <label for="email" class="form-text">Email</label>
+      </div>
+
+      <!-- Button -->
+      <div>
+        <button type="submit">{{ site.data.form-settings.waitlist.button-text }}</button>
+      </div>
+  </form>
+</section>
