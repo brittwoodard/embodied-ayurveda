@@ -1,0 +1,52 @@
+---
+layout: default
+title: About Embodied Ayurveda
+header: 
+  heading: About Embodied Ayurveda
+  description_html: >-
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  about-topics: 
+   - heading: Our Philosophy
+     description_html: >-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   - heading: Our Program
+     description_html: >-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   - heading: Our Approach
+     description_html: >-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  image: 
+    image_path: /images/temporary/1.jpg
+    image_focus: 
+---
+
+<!-- Header -->
+<section class="grid grid-cols-4">
+    <div class="col-span-3 p-10p">
+        <div>
+            <h1 class="serif-l">{{ page.header.heading }}</h1>
+            <div>{{ page.header.description_html }}</div>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <ul class="list-none ml-0">
+            {% for item in page.header.about-topics %}
+            <li x-data="{ open: false }" class="border-b border-dark my-8">
+                <button @click="open = ! open" class="flex justify-between w-full">
+                    <h3 class="text-left mb-8 mr-8">{{item.heading}}</h3>
+
+                    <span x-show="!open">→</span>
+                    <span x-show="open">&nbsp;&nbsp;↓</span>
+                </button>
+                <div x-show="open" @click.outside="open = false" class="pb-8">
+                    <p class="mb-8 mr-8 italic">{{item.description_html}}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+
+</section>

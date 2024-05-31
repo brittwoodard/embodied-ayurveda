@@ -58,4 +58,21 @@
         @apply border-b border-dark inline-block hover:text-main hover:border-main hover:duration-500
     }
 
+    /* Dropdown Menu */
+    .dropdown-menu {
+        @apply border border-dark
+    }
+
+    .dropdown-item {
+        @apply list-none border-b border-dark my-2 p-2
+    }
+
+    .dropdown-item.last-item {
+        border-bottom: none;
+    }
+
+    .last-paragraph {
+        @apply mb-0
+    }
+
 }
