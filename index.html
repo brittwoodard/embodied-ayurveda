@@ -28,11 +28,11 @@ features-section:
      description_html: >- 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   image: 
-    image_path: 
+    image_path: /images/temporary/1.jpg
     image_focus: 
 upcoming-event-section: 
   image: 
-    image_path: 
+    image_path: /images/temporary/1.jpg
     image_focus: 
   heading: Upcoming retreat
   event-title: Ayurvedic Clinical Training & Business Strategy Retreat
@@ -69,24 +69,31 @@ seo:
 <!-- About Section -->
 <section class="p-5p bg-main border-y border-dark">
   <div class="w-[80%]">{{ page.about-section.description_html }}</div>
-  <a href="{{ page.about-section.button.url }}" class="mb-4 border-b border-dark hover:text-feature hover:border-feature hover:duration-500">{{ page.about-section.button.text }}</a>
+  <a href="{{ page.about-section.button.url }}" class="button">{{ page.about-section.button.text }}</a>
 </section>
 
 <!-- Features Section -->
-<section class="grid grid-cols-4">
-  <div class="col-span-3">
-    <h2>Benefits of features heading</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section class="relative p-5p">
+  <div class="grid grid-cols-4">
+    <div class="col-span-3 mb-12">
+      <h2 class="serif-m">{{ page.features-section.heading }}</h2>
+      <div>{{ page.features-section.description_html }}</div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="grid grid-cols-3 gap-10 w-[85%]">
     {% for item in page.features-section.features %}
-    <div class="grid grid-cols-3 gap-10">
-      <h3>{{ item.heading }}</h3>
+    <div class="bg-light border border-dark p-10p z-20">
+      <h3 class="serif-s">{{ item.heading }}</h3>
       <div>{{ item.description_html }}</div>
     </div>
     {% endfor %}
   </div>
 
   <!-- Image -->
-  <div class="bg-image-style min-h-60" style="background-image: url('{{ page.features-section.image.image_path }}'); background-position: {{ page.features-section.image.image_focus }};"></div>
+  <div class="absolute top-0 right-0 w-1/4 h-full bg-image-style z-10" style="background-image: url('{{ page.features-section.image.image_path }}'); background-position: {{ page.features-section.image.image_focus }};"></div>
+
 </section>
 
 <!-- Upcoming Event Section -->

@@ -450,15 +450,30 @@ body {
   font-size: 2rem;
   letter-spacing: 0.025em;
 }
-.text-overlay-header {
-  display: block;
+.serif-m {
   font-family: the-seasons, serif;
-  font-size: 8rem;
-  font-weight: 700;
+  font-size: 1.5rem;
   letter-spacing: 0.025em;
+}
+.serif-s {
+  margin-bottom: 0.5rem;
+  font-family: the-seasons, serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.025em;
+}
+.button {
+  margin-bottom: 1rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(64 66 50 / var(--tw-border-opacity));
+}
+.button:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 166 127 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(246 241 240 / var(--tw-text-opacity));
-  opacity: 0.5;
+  color: rgb(161 166 127 / var(--tw-text-opacity));
+  transition-duration: 500ms;
 }
 /* Images */
 .bg-image-style {
@@ -469,11 +484,26 @@ body {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .bottom-0 {
   bottom: 0px;
 }
 .left-0 {
   left: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
+.z-10 {
+  z-index: 10;
 }
 .z-20 {
   z-index: 20;
@@ -491,11 +521,8 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.-mr-\[1\%\] {
-  margin-right: -1%;
-}
-.-mt-\[1\.7\%\] {
-  margin-top: -1.7%;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -512,9 +539,6 @@ body {
 .mt-4 {
   margin-top: 1rem;
 }
-.-mt-\[4\.7\%\] {
-  margin-top: -4.7%;
-}
 .block {
   display: block;
 }
@@ -527,14 +551,14 @@ body {
 .hidden {
   display: none;
 }
+.h-full {
+  height: 100%;
+}
 .h-screen {
   height: 100vh;
 }
 .min-h-50 {
   min-height: 50vh;
-}
-.min-h-60 {
-  min-height: 60vh;
 }
 .min-h-90 {
   min-height: 90vh;
@@ -542,8 +566,14 @@ body {
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
+.w-1\/4 {
+  width: 25%;
+}
 .w-\[80\%\] {
   width: 80%;
+}
+.w-\[85\%\] {
+  width: 85%;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -582,9 +612,6 @@ body {
   border-top-width: 1px;
   border-bottom-width: 1px;
 }
-.border-b {
-  border-bottom-width: 1px;
-}
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(64 66 50 / var(--tw-border-opacity));
@@ -620,29 +647,12 @@ body {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.capitalize {
-  text-transform: capitalize;
-}
 
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
-
-.hover\:border-feature:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(161 166 127 / var(--tw-border-opacity));
-}
-
-.hover\:text-feature:hover {
-  --tw-text-opacity: 1;
-  color: rgb(161 166 127 / var(--tw-text-opacity));
-}
-
-.hover\:duration-500:hover {
-  transition-duration: 500ms;
-}
 
 @media (min-width: 640px) {
   .sm\:grid-cols-4 {

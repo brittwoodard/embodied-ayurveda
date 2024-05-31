@@ -28,8 +28,20 @@
         @apply font-serif text-[2rem] tracking-wide
     }
 
+    .serif-m {
+        @apply font-serif text-[1.5rem] tracking-wide
+    }
+
+    .serif-s {
+        @apply font-serif capitalize text-[1.2rem] tracking-wide mb-2
+    }
+
     .text-overlay-header {
         @apply font-serif block text-[8rem] text-light opacity-50 font-bold tracking-wide
+    }
+
+    .button {
+        @apply mb-4 border-b border-dark hover:text-feature hover:border-feature hover:duration-500
     }
 
     /* Images */
