@@ -20,6 +20,20 @@ features:
    - heading: Build the Foundations For Your Ayurvedic Clinical Practice
      description_html: >- 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+curriculum: 
+  heading: Heading about the curriculum
+  description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+  topics: 
+    heading: Inside the curriculum
+    topic: 
+     - Art of Questioning
+     - Pulse Diagnosis & Taking Vital Signs Practical Workshop
+     - Practical Tongue Assessment
+     - Setting the Foundations for Your Clinical Practice
+     - Your Customer Experience
+     - Crafting Your Brand Strategy
+     - And More...
 ---
 
 <!-- Header -->
@@ -27,11 +41,11 @@ features:
 
     <!-- Text -->
     <div class="col-span-2">
-        <h1 class="serif-lg">{{ site.data.event-settings.upcoming-retreat.title }}</h1>
-        <p>{{ site.data.event-settings.upcoming-retreat.subtitle }}</p>
-        <span>{{ site.data.event-settings.upcoming-retreat.dates }}</span>
-        <hr>
-        <p>{{ page.header.description_html }}</p>
+      <h1 class="serif-lg">{{ site.data.event-settings.upcoming-retreat.title }}</h1>
+      <p>{{ site.data.event-settings.upcoming-retreat.subtitle }}</p>
+      <span>{{ site.data.event-settings.upcoming-retreat.dates }}</span>
+      <hr>
+      <p>{{ page.header.description_html }}</p>
     </div>
 
     <!-- Image -->
@@ -41,14 +55,39 @@ features:
 <!-- Features -->
 <section>
   <h2>{{ page.features.heading }}</h2>
+
+  <!-- Features -->
   <div class="grid grid-cols-3 gap-12">
     {% for item in page.features.features %}
-
     <div>
       <h3>{{ item.heading }}</h3>
       <div>{{ item.description_html }}</div>
     </div>
     {% endfor %}
+  </div>
+</section>
 
+<!-- Curriculum -->
+<section class="grid grid-cols-2">
+
+  <!-- Curriculum Overview -->
+  <div>
+    <h2>{{ page.curriculum.heading }}</h2>
+    <div>{{ page.curriculum.description_html }}</div>
+  </div>
+
+  <!-- Inside the curriculum -->
+  <div>
+    <h3>{{ page.curriculum.topics.heading }}</h3>
+    {% for item in page.curriculum.topics.topic %}
+    
+    <!-- Dot -->
+    <div class="grid grid-cols-12">
+      <div class="col-span-2">&#183;</div>
+      <div class="col-span-10">
+        <p>{{ item }}</p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </section>
