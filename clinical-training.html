@@ -8,6 +8,18 @@ header:
   image: 
     image_path: /images/temporary/1.jpg
     image_focus: 
+features: 
+  heading: Why Choose Embodied Ayurveda?
+  features: 
+   - heading: Meet In-Person & Clinical Hour Requirements
+     description_html: >- 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+   - heading: Build the Foundations For Your Ayurvedic Clinical Practice
+     description_html: >- 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+   - heading: Build the Foundations For Your Ayurvedic Clinical Practice
+     description_html: >- 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 ---
 
 <!-- Header -->
@@ -24,4 +36,19 @@ header:
 
     <!-- Image -->
     <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+</section>
+
+<!-- Features -->
+<section>
+  <h2>{{ page.features.heading }}</h2>
+  <div class="grid grid-cols-3 gap-12">
+    {% for item in page.features.features %}
+
+    <div>
+      <h3>{{ item.heading }}</h3>
+      <div>{{ item.description_html }}</div>
+    </div>
+    {% endfor %}
+
+  </div>
 </section>
