@@ -680,6 +680,9 @@ p {
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
+.min-h-\[45vh\] {
+  min-height: 45vh;
+}
 .w-1\/4 {
   width: 25%;
 }
