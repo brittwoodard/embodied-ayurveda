@@ -62,7 +62,7 @@ seo:
   <!-- Text/Right Column -->
   <div class="p-10p flex items-center justify-center">
     <div>
-      <h1 class="serif-l">{{ page.header.heading }}</h1>
+      <h1 class="serif-lg">{{ page.header.heading }}</h1>
       <div class="w-[80%]">{{ page.header.description_html }}</div>
       <hr class="mt-12 border-dark w-[80%]">
     </div>
@@ -79,7 +79,7 @@ seo:
 <section class="relative p-5p">
   <div class="grid grid-cols-4">
     <div class="col-span-3 mb-12">
-      <h2 class="serif-m">{{ page.features-section.heading }}</h2>
+      <h2 class="serif-md">{{ page.features-section.heading }}</h2>
       <div>{{ page.features-section.description_html }}</div>
     </div>
   </div>
@@ -88,7 +88,7 @@ seo:
   <div class="grid grid-cols-3 gap-10 w-[85%]">
     {% for item in page.features-section.features %}
     <div class="bg-light border border-dark p-10p z-20">
-      <h3 class="serif-s">{{ item.heading }}</h3>
+      <h3 class="serif-sm">{{ item.heading }}</h3>
       <div>{{ item.description_html }}</div>
     </div>
     {% endfor %}
@@ -111,7 +111,7 @@ seo:
   <div class="bg-main border border-dark"></div>
 
   <div class="col-span-4 p-5p">
-    <h3 class="serif-m">{{ page.upcoming-event-section.event-title }}</h3>
+    <h3 class="serif-md">{{ page.upcoming-event-section.event-title }}</h3>
     <div class="w-[50%]">{{ page.upcoming-event-section.event-description_html }}</div>
     <a href="{{ page.upcoming-event-section.button.url }}" class="button mt-4">{{ page.upcoming-event-section.button.text }}</a>
   </div>

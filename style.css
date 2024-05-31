@@ -20,6 +20,10 @@
         @apply font-sans font-light text-dark bg-light tracking-wide antialiased
     }
 
+    p {
+        @apply mb-4
+    }
+
   }
 
 
@@ -28,15 +32,15 @@
 @layer components {
 
     /* Typography */
-    .serif-l {
+    .serif-lg {
         @apply font-serif text-[2rem] tracking-wide
     }
 
-    .serif-m {
+    .serif-md {
         @apply font-serif text-[1.5rem] tracking-wide mb-2
     }
 
-    .serif-s {
+    .serif-sm {
         @apply font-serif capitalize text-[1.2rem] tracking-wide mb-2
     }
 

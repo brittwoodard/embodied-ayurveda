@@ -344,6 +344,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+p {
+  margin-bottom: 1rem;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -451,18 +454,18 @@ body {
   --tw-contain-style:  ;
 }
 /* Typography */
-.serif-l {
+.serif-lg {
   font-family: the-seasons, serif;
   font-size: 2rem;
   letter-spacing: 0.025em;
 }
-.serif-m {
+.serif-md {
   margin-bottom: 0.5rem;
   font-family: the-seasons, serif;
   font-size: 1.5rem;
   letter-spacing: 0.025em;
 }
-.serif-s {
+.serif-sm {
   margin-bottom: 0.5rem;
   font-family: the-seasons, serif;
   font-size: 1.2rem;
@@ -523,9 +526,6 @@ body {
   transition-duration: 500ms;
 }
 /* Dropdown Menu */
-.static {
-  position: static;
-}
 .fixed {
   position: fixed;
 }
@@ -550,21 +550,6 @@ body {
 .top-0 {
   top: 0px;
 }
-.left-\[50\%\] {
-  left: 50%;
-}
-.left-\[70\%\] {
-  left: 70%;
-}
-.left-\[90\%\] {
-  left: 90%;
-}
-.right-\[90\%\] {
-  right: 90%;
-}
-.left-\[10\%\] {
-  left: 10%;
-}
 .z-10 {
   z-index: 10;
 }
@@ -583,14 +568,15 @@ body {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .m-2 {
   margin: 0.5rem;
 }
-.m-10p {
-  margin: 10%;
-}
-.m-5p {
-  margin: 5%;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -600,21 +586,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.mx-10p {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 .my-10p {
   margin-top: 10%;
   margin-bottom: 10%;
 }
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.-ml-\[20\%\] {
+  margin-left: -20%;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.-mr-\[20\%\] {
+  margin-right: -20%;
+}
+.-mt-\[3\.5\%\] {
+  margin-top: -3.5%;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -628,6 +611,9 @@ body {
 .ml-0 {
   margin-left: 0px;
 }
+.ml-10p {
+  margin-left: 10%;
+}
 .ml-4 {
   margin-left: 1rem;
 }
@@ -637,8 +623,14 @@ body {
 .ml-8 {
   margin-left: 2rem;
 }
+.mr-10p {
+  margin-right: 10%;
+}
 .mr-8 {
   margin-right: 2rem;
+}
+.mt-10p {
+  margin-top: 10%;
 }
 .mt-12 {
   margin-top: 3rem;
@@ -646,47 +638,11 @@ body {
 .mt-4 {
   margin-top: 1rem;
 }
-.mr-10p {
-  margin-right: 10%;
-}
-.-ml-10p {
-  margin-left: -10%;
-}
-.-ml-5p {
-  margin-left: -5%;
-}
-.-ml-\[20p\] {
-  margin-left: -20p;
-}
-.-ml-\[20\%\] {
-  margin-left: -20%;
-}
-.-mr-\[20\%\] {
-  margin-right: -20%;
-}
-.ml-10p {
-  margin-left: 10%;
-}
-.mt-5p {
-  margin-top: 5%;
-}
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-10p {
-  margin-top: 10%;
-}
-.-mt-\[10\%\] {
-  margin-top: -10%;
-}
-.-mt-\[4\.5\%\] {
-  margin-top: -4.5%;
-}
 .block {
   display: block;
-}
-.inline {
-  display: inline;
 }
 .flex {
   display: flex;
@@ -697,9 +653,6 @@ body {
 .hidden {
   display: none;
 }
-.aspect-landscape {
-  aspect-ratio: 2 / 1 ;
-}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -708,9 +661,6 @@ body {
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[80\%\] {
-  height: 80%;
 }
 .min-h-50 {
   min-height: 50vh;
@@ -721,20 +671,17 @@ body {
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
-.min-h-\[80\%\] {
-  min-height: 80%;
-}
-.min-h-40 {
-  min-height: 10rem;
-}
-.min-h-\[45vh\] {
-  min-height: 45vh;
-}
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
+.min-h-100 {
+  min-height: 100vh;
+}
 .w-1\/4 {
   width: 25%;
+}
+.w-\[20\%\] {
+  width: 20%;
 }
 .w-\[50\%\] {
   width: 50%;
@@ -747,21 +694,6 @@ body {
 }
 .w-full {
   width: 100%;
-}
-.w-\[20\%\] {
-  width: 20%;
-}
-.w-\[70vw\] {
-  width: 70vw;
-}
-.w-\[50vw\] {
-  width: 50vw;
-}
-.w-\[60vw\] {
-  width: 60vw;
-}
-.w-\[55vw\] {
-  width: 55vw;
 }
 .flex-grow {
   flex-grow: 1;
@@ -799,27 +731,14 @@ body {
 .gap-10 {
   gap: 2.5rem;
 }
-.gap-4 {
-  gap: 1rem;
-}
-.gap-12 {
-  gap: 3rem;
-}
 .gap-16 {
   gap: 4rem;
 }
-.gap-8 {
-  gap: 2rem;
+.gap-4 {
+  gap: 1rem;
 }
 .border {
   border-width: 1px;
-}
-.border-\[0\.5px\] {
-  border-width: 0.5px;
-}
-.border-x {
-  border-left-width: 1px;
-  border-right-width: 1px;
 }
 .border-y {
   border-top-width: 1px;
@@ -860,15 +779,11 @@ body {
   padding-left: 10%;
   padding-right: 10%;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.pb-10p {
+  padding-bottom: 10%;
 }
 .pb-8 {
   padding-bottom: 2rem;
-}
-.pb-10p {
-  padding-bottom: 10%;
 }
 .text-left {
   text-align: left;
@@ -889,15 +804,12 @@ body {
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
+.text-\[7rem\] {
+  font-size: 7rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.text-\[10rem\] {
-  font-size: 10rem;
-}
-.text-\[7rem\] {
-  font-size: 7rem;
 }
 .font-bold {
   font-weight: 700;
