@@ -608,6 +608,14 @@ body {
   margin-top: 10%;
   margin-bottom: 10%;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -676,6 +684,9 @@ body {
 }
 .block {
   display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
@@ -797,6 +808,9 @@ body {
 .gap-16 {
   gap: 4rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 .border {
   border-width: 1px;
 }
@@ -845,6 +859,10 @@ body {
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .pb-8 {
   padding-bottom: 2rem;

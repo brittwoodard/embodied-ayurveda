@@ -18,7 +18,9 @@ links:
     <div>
         <h1 class="text-2xl mb-8">{{page.heading}}</h1>
         <p>{{page.description_html}}</p>
-        <a href="{{page.links.link_1.url}}" class="link">{{page.links.link_1.title}}</a>
-        <a href="{{page.links.link_2.url}}" class="link">{{page.links.link_2.title}}</a>
+        <div class="mt-4">
+          <a href="{{page.links.link_1.url}}" class="button mx-2">{{page.links.link_1.title}}</a>
+          <a href="{{page.links.link_2.url}}" class="button mx-2">{{page.links.link_2.title}}</a>
+        </div>
     </div>
 </section>
