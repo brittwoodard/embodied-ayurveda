@@ -12,6 +12,10 @@
 
 @layer base {
 
+    html {
+        @apply scroll-smooth
+    }
+
     body {
         @apply font-sans font-light text-dark bg-light tracking-wide antialiased
     }

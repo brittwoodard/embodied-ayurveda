@@ -18,6 +18,23 @@ header:
   image: 
     image_path: /images/temporary/1.jpg
     image_focus: 
+why: 
+  heading: Why choose Embodied Ayurveda?
+  description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+team: 
+  heading: Embodied Ayurveda Teaching team
+  description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  teachers: 
+   - image_path: /images/temporary/1.jpg
+     name: Brittany Woodard
+     description_html: >- 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   - image_path: /images/temporary/1.jpg
+     name: Brittany Woodard
+     description_html: >- 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 ---
 
 <!-- Header -->
@@ -48,5 +65,35 @@ header:
 
     <!-- Image -->
     <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="text-center p-5p bg-main border-x border-dark">
+    <h2 class="serif-m">{{ page.why.heading }}</h2>
+    <div>{{ page.why.description_html }}</div>
+    <hr>
+</section>
+
+<!-- Teachers -->
+<section>
+    <div>
+        <h2 class="serif-md">{{ page.team.heading }}</h2>
+        <div>{{ page.team.description_html }}</div>
+    </div>
+
+    <!-- Teachers Grid -->
+    {% for item in page.team.teachers %}
+    <div class="grid grid-cols-2">
+
+        <!-- Image -->
+        <div class="bg-image-style aspect-square" style="background-image: url('{{ item.image_path }}');"></div>
+
+        <!-- Text -->
+        <div class="{% cycle 'order-last', 'order-first' %}">
+            <h3 class="serif-s">{{ item.name }}</h3>
+            <div>{{ item.description_html }}</div>
+        </div>
+    </div>
+    {% endfor %}
 
 </section>
