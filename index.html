@@ -50,25 +50,26 @@ seo:
 ---
 
 <!-- Header -->
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-2 min-h-[100vh]">
   
   <!-- Image/Left Column -->
-  <div class="bg-image-style min-h-90" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+  <div class="bg-image-style min-h-90" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};">
+  </div>
 
   <!-- Text/Right Column -->
   <div class="p-10p flex items-center justify-center">
     <div>
       <h1 class="serif-l">{{ page.header.heading }}</h1>
       <div class="w-[80%]">{{ page.header.description_html }}</div>
-      <hr>
+      <hr class="mt-12 border-dark w-[80%]">
     </div>
   </div>
 </section>
 
 <!-- About Section -->
-<section>
-  <div>{{ page.about-section.description_html }}</div>
-  <a href="{{ page.about-section.button.url }}" class="link">{{ page.about-section.button.text }}</a>
+<section class="p-5p bg-main border-y border-dark">
+  <div class="w-[80%]">{{ page.about-section.description_html }}</div>
+  <a href="{{ page.about-section.button.url }}" class="mb-4 border-b border-dark hover:text-feature hover:border-feature hover:duration-500">{{ page.about-section.button.text }}</a>
 </section>
 
 <!-- Features Section -->

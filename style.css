@@ -28,6 +28,10 @@
         @apply font-serif text-[2rem] tracking-wide
     }
 
+    .text-overlay-header {
+        @apply font-serif block text-[8rem] text-light opacity-50 font-bold tracking-wide
+    }
+
     /* Images */
     .bg-image-style {
         @apply bg-cover bg-no-repeat bg-center
