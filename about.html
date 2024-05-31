@@ -117,17 +117,20 @@ cta:
 
 <!-- Upcoming Event -->
 <section>
-    <h2>{{ page.upcoming-event.heading }}</h2>
-    <div class="grid grid-cols-2">
+    <h2 class="font-serif text-main text-[7rem] font-bold mt-10p">{{ page.upcoming-event.heading }}</h2>
+
+    <div class="grid grid-cols-2 gap-16 px-10p pb-10p -mt-[4.5%]">
         
         <!-- Image -->
-        <div class="bg-image-style aspect-landscape" style="background-image: url('{{ page.upcoming-event.image.image_path }}'); background-position: {{ page.upcoming-event.image.image_focus }};"></div>
+        <div class="bg-image-style min-h-[40vh]" style="background-image: url('{{ page.upcoming-event.image.image_path }}'); background-position: {{ page.upcoming-event.image.image_focus }};"></div>
 
         <!-- Event Info -->
-        <div>
-            <h3 class="serif-s">{{ page.upcoming-event.title }}</h3>
-            <div>{{ page.upcoming-event.description_html }}</div>
-            <a href="{{ page.upcoming-event.button.url }}">{{ page.upcoming-event.button.text }}</a>
+        <div class="flex items-center justify-center">
+            <div>
+                <h3 class="serif-s">{{ page.upcoming-event.title }}</h3>
+                <div>{{ page.upcoming-event.description_html }}</div>
+                <a href="{{ page.upcoming-event.button.url }}" class="button mt-8">{{ page.upcoming-event.button.text }}</a>
+            </div>
         </div>
     </div>
 </section>
