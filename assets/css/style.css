@@ -451,6 +451,7 @@ body {
   letter-spacing: 0.025em;
 }
 .serif-m {
+  margin-bottom: 0.5rem;
   font-family: the-seasons, serif;
   font-size: 1.5rem;
   letter-spacing: 0.025em;
@@ -462,8 +463,20 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.025em;
 }
+.text-overlay {
+  display: block;
+  font-family: the-seasons, serif;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.8;
+}
 .button {
   margin-bottom: 1rem;
+  display: inline-block;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(64 66 50 / var(--tw-border-opacity));
@@ -533,6 +546,9 @@ body {
 .ml-4 {
   margin-left: 1rem;
 }
+.ml-5p {
+  margin-left: 5%;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -568,6 +584,9 @@ body {
 }
 .w-1\/4 {
   width: 25%;
+}
+.w-\[50\%\] {
+  width: 50%;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -646,6 +665,9 @@ body {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.leading-\[0\.4em\] {
+  line-height: 0.4em;
 }
 
 

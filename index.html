@@ -100,17 +100,17 @@ seo:
 <section class="grid grid-cols-4">
 
   <!-- Image -->
-  <div class="col-span-3 bg-image-style min-h-50" style="background-image: url('{{ page.upcoming-event-section.image.image_path }}'); background-position: {{ page.upcoming-event-section.image.image_focus }};">
-    <h2>{{ page.upcoming-event-section.heading }}</h2>
+  <div class="relative col-span-3 bg-image-style min-h-50" style="background-image: url('{{ page.upcoming-event-section.image.image_path }}'); background-position: {{ page.upcoming-event-section.image.image_focus }};">
+    <h2 class="text-overlay ml-5p absolute bottom-0 leading-[0.4em]">{{ page.upcoming-event-section.heading }}</h2>
   </div>
 
   <!-- Colored Box/Column -->
-  <div></div>
+  <div class="bg-main border border-dark"></div>
 
-  <div class="col-span-4">
-    <h3>{{ page.upcoming-event-section.event-title }}</h3>
-    <div>{{ page.upcoming-event-section.event-description_html }}</div>
-    <a href="{{ page.upcoming-event-section.button.url }}" class="link">{{ page.upcoming-event-section.button.text }}</a>
+  <div class="col-span-4 p-5p">
+    <h3 class="serif-m">{{ page.upcoming-event-section.event-title }}</h3>
+    <div class="w-[50%]">{{ page.upcoming-event-section.event-description_html }}</div>
+    <a href="{{ page.upcoming-event-section.button.url }}" class="button mt-4">{{ page.upcoming-event-section.button.text }}</a>
   </div>
 </section>
 
