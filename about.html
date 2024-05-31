@@ -81,17 +81,19 @@ cta:
 </section>
 
 <!-- Why Choose Us Section -->
-<section class="text-center p-5p bg-main border-x border-dark">
-    <h2 class="serif-m">{{ page.why.heading }}</h2>
-    <div>{{ page.why.description_html }}</div>
-    <hr>
+<section class="text-center p-5p bg-main border-y border-dark">
+    <div>
+        <h2 class="serif-m">{{ page.why.heading }}</h2>
+        <div class="w-[80%] mx-auto">{{ page.why.description_html }}</div>
+        <hr class="mt-12 border-dark w-[20%] mx-auto">
+    </div>
 </section>
 
 <!-- Teachers -->
 <section>
-    <div>
-        <h2 class="serif-md">{{ page.team.heading }}</h2>
-        <div>{{ page.team.description_html }}</div>
+    <div class="p-5p">
+        <h2 class="serif-m">{{ page.team.heading }}</h2>
+        <div class="w-[80%]">{{ page.team.description_html }}</div>
     </div>
 
     <!-- Teachers Grid -->
@@ -102,9 +104,11 @@ cta:
         <div class="bg-image-style aspect-square" style="background-image: url('{{ item.image_path }}');"></div>
 
         <!-- Text -->
-        <div class="{% cycle 'order-last', 'order-first' %}">
-            <h3 class="serif-s">{{ item.name }}</h3>
-            <div>{{ item.description_html }}</div>
+        <div class="{% cycle 'order-last', 'order-first' %} flex items-center justify-center">
+            <div class="bg-light border border-dark p-10p my-10p {% cycle '-ml-[20%] mr-10p', '-mr-[20%] ml-10p' %} z-20">
+                <h3 class="serif-s">{{ item.name }}</h3>
+                <div>{{ item.description_html }}</div>
+            </div>
         </div>
     </div>
     {% endfor %}
