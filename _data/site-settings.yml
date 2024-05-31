@@ -21,10 +21,10 @@ social:
   youtube_username:
 brand:
   # Put colors in ''
-  main_color: 
-  feature_color: 
-  light_color: 
-  dark_color: 
+  main_color: '#E4D7D3'
+  feature_color: '#A1A67F'
+  light_color: '#F6F1F0'
+  dark_color: '404232'
   primary_logo_path: 
   secondary_logo_path:
   submark_logo_path:

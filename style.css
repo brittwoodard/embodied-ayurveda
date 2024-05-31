@@ -1,3 +1,7 @@
+/* Font Families */
+/* font-family: le-havre-rounded, sans-serif; (300, 400, 700) */
+/* font-family: the-seasons, sans-serif; (300, 400, 700) */
+
 /* ----------- Import Tailwind -----*/
 @tailwind base;
 @tailwind components;
@@ -8,29 +12,8 @@
 
 @layer base {
 
-    h1, h2, h3, h4  {
-        @apply font-sans mb-[0.5em];
-    }
-
-    h1 {
-        @apply text-3xl leading-tight;
-    }
-    h2 {
-        @apply text-2xl leading-tight;
-    }
-    h3 {
-        @apply text-xl leading-tight;
-    }
-
-    h3 {
-        @apply text-lg leading-tight;
-    }
-    h4 {
-        @apply text-lg leading-tight;
-    }
-
-    p {
-        @apply mb-[0.5em] leading-normal;
+    body {
+        @apply font-sans font-light text-dark bg-light
     }
 
   }
@@ -40,12 +23,14 @@
 
 @layer components {
 
-    .tag {
-        @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
+    /* Typography */
+    .serif-l {
+        @apply font-serif text-[2rem] tracking-wide
     }
 
-    .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+    /* Images */
+    .bg-image-style {
+        @apply bg-cover bg-no-repeat bg-center
     }
 
 }

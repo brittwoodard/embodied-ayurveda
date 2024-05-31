@@ -1,5 +1,9 @@
+/* Font Families */
+/* font-family: le-havre-rounded, sans-serif; (300, 400, 700) */
+/* font-family: the-seasons, sans-serif; (300, 400, 700) */
+
 /* ----------- Import Tailwind -----*/
-/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -32,7 +36,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Montserrat, sans-serif; /* 4 */
+  font-family: le-havre-rounded, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -326,33 +330,13 @@ video {
 [hidden] {
   display: none;
 }
-h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
-  font-family: Montserrat, sans-serif;
-}
-h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  line-height: 1.25;
-}
-h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  line-height: 1.25;
-}
-h3 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-p {
-  margin-bottom: 0.5em;
-  line-height: 1.5;
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 241 240 / var(--tw-bg-opacity));
+  font-family: le-havre-rounded, sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(64 66 50 / var(--tw-text-opacity));
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -460,28 +444,17 @@ p {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.tag {
-  display: inline-block;
-  padding: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
+/* Typography */
+.serif-l {
+  font-family: the-seasons, serif;
+  font-size: 2rem;
   letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(87 83 78 / var(--tw-text-opacity));
 }
-.button {
-  display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+/* Images */
+.bg-image-style {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .fixed {
   position: fixed;
@@ -544,6 +517,12 @@ p {
 .min-h-90 {
   min-height: 90vh;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
+.w-80 {
+  width: 20rem;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -555,6 +534,9 @@ p {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.content-center {
+  align-content: center;
 }
 .items-center {
   align-items: center;
@@ -576,6 +558,17 @@ p {
 }
 .border {
   border-width: 1px;
+}
+.border-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(64 66 50 / var(--tw-border-opacity));
+}
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 241 240 / var(--tw-bg-opacity));
+}
+.p-10p {
+  padding: 10%;
 }
 .p-2 {
   padding: 0.5rem;

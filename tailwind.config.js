@@ -8,8 +8,8 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Italiana', 'serif'],
+        sans: ['le-havre-rounded', 'sans-serif'],
+        serif: ['the-seasons', 'serif'],
       },
       extend: {
         spacing: {
@@ -30,6 +30,13 @@ module.exports = {
           '60': '60vh',
           '50': '50vh',
         },
+        colors: {
+          'dark': '#404232',
+          'light': '#F6F1F0',
+          'main': '#E4D7D3',
+          'feature': '#A1A67F',
+          'transparent': 'transparent',
+        }
       },
     },
     plugins: [

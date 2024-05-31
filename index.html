@@ -2,7 +2,7 @@
 layout: default
 header: 
   image: 
-    image_path: 
+    image_path: /images/temporary/1.jpg
     image_focus: 
   heading: Embodied Ayurveda
   description_html: >-
@@ -56,10 +56,12 @@ seo:
   <div class="bg-image-style min-h-90" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 
   <!-- Text/Right Column -->
-  <div>
-    <h1>{{ page.header.heading }}</h1>
-    <div>{{ page.header.description_html }}</div>
-    <hr>
+  <div class="p-10p flex items-center justify-center">
+    <div>
+      <h1 class="serif-l">{{ page.header.heading }}</h1>
+      <div class="w-[80%]">{{ page.header.description_html }}</div>
+      <hr>
+    </div>
   </div>
 </section>
 
