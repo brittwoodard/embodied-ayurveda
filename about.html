@@ -35,6 +35,19 @@ team:
      name: Brittany Woodard
      description_html: >- 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+upcoming-event: 
+  heading: Upcoming Retreat
+  image: 
+    image_path: /images/temporary/1.jpg
+    image_focus: 
+  title: Ayurvedic Clinical Training & Business Strategy Retreat
+  description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  button: 
+    text: Learn more
+    url: /clinical-training.html
+cta: 
+  background_color: feature
 ---
 
 <!-- Header -->
@@ -97,3 +110,23 @@ team:
     {% endfor %}
 
 </section>
+
+<!-- Upcoming Event -->
+<section>
+    <h2>{{ page.upcoming-event.heading }}</h2>
+    <div class="grid grid-cols-2">
+        
+        <!-- Image -->
+        <div class="bg-image-style aspect-landscape" style="background-image: url('{{ page.upcoming-event.image.image_path }}'); background-position: {{ page.upcoming-event.image.image_focus }};"></div>
+
+        <!-- Event Info -->
+        <div>
+            <h3 class="serif-s">{{ page.upcoming-event.title }}</h3>
+            <div>{{ page.upcoming-event.description_html }}</div>
+            <a href="{{ page.upcoming-event.button.url }}">{{ page.upcoming-event.button.text }}</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{% include cta-waitlist.html %}

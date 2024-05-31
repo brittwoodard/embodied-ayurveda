@@ -42,6 +42,8 @@ upcoming-event-section:
   button: 
     text: Learn more
     url: 
+cta: 
+  background_color: feature
 seo:
   title: This should appear in the browser tab
   description:
@@ -116,12 +118,4 @@ seo:
 </section>
 
 <!-- Waitlist -->
-<section class="p-5p bg-feature text-center text-black">
-  <div class="mb-8">
-    <h2 class="serif-m">{{ site.data.form-settings.waitlist.heading }}</h2>
-    <div>{{ site.data.form-settings.waitlist.description_html }}</div>
-  </div>
-  <div class="text-center">
-    {% include form-waitlist.html %}
-  </div>
-</section>
+{% include cta-waitlist.html %}

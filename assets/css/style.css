@@ -621,6 +621,9 @@ body {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-landscape {
+  aspect-ratio: 2 / 1 ;
+}
 .h-full {
   height: 100%;
 }
