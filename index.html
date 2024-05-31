@@ -101,7 +101,7 @@ seo:
 
   <!-- Image -->
   <div class="relative col-span-3 bg-image-style min-h-50" style="background-image: url('{{ page.upcoming-event-section.image.image_path }}'); background-position: {{ page.upcoming-event-section.image.image_focus }};">
-    <h2 class="text-overlay ml-5p absolute bottom-0 leading-[0.4em]">{{ page.upcoming-event-section.heading }}</h2>
+    <h2 class="text-overlay ml-5p absolute bottom-0">{{ page.upcoming-event-section.heading }}</h2>
   </div>
 
   <!-- Colored Box/Column -->
@@ -115,4 +115,12 @@ seo:
 </section>
 
 <!-- Waitlist -->
-{% include form-waitlist.html %}
+<section class="p-5p bg-feature text-center text-black">
+  <div class="mb-8">
+    <h2 class="serif-m">{{ site.data.form-settings.waitlist.heading }}</h2>
+    <div>{{ site.data.form-settings.waitlist.description_html }}</div>
+  </div>
+  <div class="text-center">
+    {% include form-waitlist.html %}
+  </div>
+</section>
