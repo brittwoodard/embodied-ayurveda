@@ -53,20 +53,20 @@ cta:
 <!-- Header -->
 <section class="grid grid-cols-4">
     <div class="col-span-3 p-10p">
-        <div>
+        <div class="mb-8">
             <h1 class="serif-l">{{ page.header.heading }}</h1>
             <div>{{ page.header.description_html }}</div>
         </div>
 
         <!-- Dropdown Menu -->
-        <ul class="list-none ml-0">
+        <ul class="list-none ml-0 border border-dark">
             {% for item in page.header.about-topics %}
-            <li x-data="{ open: false }" class="border-b border-dark my-8">
-                <button @click="open = ! open" class="flex justify-between w-full">
-                    <h3 class="text-left mb-8 mr-8">{{item.heading}}</h3>
+            <li x-data="{ open: false }" class="border-b border-dark p-4 last:border-0">
+                <button @click="open = ! open" class="flex items-center justify-between w-full">
+                    <h3 class="text-left mr-8">{{item.heading}}</h3>
 
-                    <span x-show="!open">→</span>
-                    <span x-show="open">&nbsp;&nbsp;↓</span>
+                    <span x-show="!open" class="text-[1.5rem] font-serif">→</span>
+                    <span x-show="open" class="text-[1.5rem] font-serif ml-8">↓</span>
                 </button>
                 <div x-show="open" @click.outside="open = false" class="pb-8">
                     <p class="mb-8 mr-8 italic">{{item.description_html}}</p>
