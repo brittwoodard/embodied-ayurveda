@@ -508,6 +508,9 @@ p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -516,12 +519,6 @@ p {
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.mb-12 {
-  margin-bottom: 3rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .block {
   display: block;
@@ -562,9 +559,6 @@ p {
 .items-center {
   align-items: center;
 }
-.justify-end {
-  justify-content: flex-end;
-}
 .justify-center {
   justify-content: center;
 }
@@ -603,9 +597,6 @@ p {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.uppercase {
-  text-transform: uppercase;
-}
 
 
 /* ----------- Default Styles to apply to the whole project  --------- */
@@ -614,15 +605,6 @@ p {
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @media (min-width: 640px) {
-  .sm\:mb-0 {
-    margin-bottom: 0px;
-  }
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
