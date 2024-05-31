@@ -54,6 +54,19 @@ banner:
   image: 
     image_path: /images/temporary/1.jpg
     image_focus: 
+teachers: 
+ - image: 
+     image_path: /images/temporary/1.jpg
+     image_focus: 
+   name: Brittany Woodard
+   description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+ - image: 
+     image_path: /images/temporary/1.jpg
+     image_focus: 
+   name: Brittany Woodard
+   description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 ---
 
 <!-- Header -->
@@ -130,4 +143,14 @@ banner:
 </section>
 
 <!-- Banner -->
-<section class="bg-image-style min-h-60" style="background-image: url('{{  page.banner.image.image_path }}'); background-position: {{ page.banner.image.image_focus }};"
+<section class="bg-image-style min-h-60" style="background-image: url('{{  page.banner.image.image_path }}'); background-position: {{ page.banner.image.image_focus }};"></section>
+
+<!-- Teachers -->
+<section class="p-5p"> 
+  <h2>Meet Your Facilitators</h2>
+  {% for item in page.teachers %}
+  <div class="bg-image-style aspect-square" style="background-image: url('{{ item.image.image_path }}'); background-position: {{ item.image.image_focus }};"></div>
+  <h3>{{ item.name }}</h3>
+  <div>{{ item.description_html }}</div>
+  {% endfor %}
+</section>
