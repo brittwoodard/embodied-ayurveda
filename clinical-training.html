@@ -114,26 +114,28 @@ teachers:
   </div>
 
   <!-- Inside the curriculum -->
-  <div>
-    <h3 class="serif-md ml-[7%]">{{ page.curriculum.topics.heading }}</h3>
+  <div class="grid grid-cols-12">
+    <h3 class="col-span-12 serif-md ml-[7%]">{{ page.curriculum.topics.heading }}</h3>
+
+    <!-- Line -->
+    <div></div>
+    <div class="border-l border-dark min-h-[20vh]"></div>
+    <div class="col-span-10"></div>
     {% for item in page.curriculum.topics.topic %}
     
     <!-- Dot -->
-    <div class="grid grid-cols-12">
-
-      <!-- First Row -->
-      <div class="col-span-2 text-center"><i class="fa-solid fa-circle"></i></div>
-      <div class="col-span-10">
-        <p class="ml-[7%]">{{ item }}</p>
-      </div>
-
-      {% if forloop.last == false %}
-        <!-- Second Row -->
-        <div></div>
-        <div class="border-l border-dark min-h-[20vh]"></div>
-        <div class="col-span-10"></div>
-      {% endif %}
+    <!-- First Row -->
+    <div class="col-span-2 text-center"><i class="fa-solid fa-circle"></i></div>
+    <div class="col-span-10">
+      <p class="ml-[7%]">{{ item }}</p>
     </div>
+
+    {% if forloop.last == false %}
+    <!-- Second Row -->
+    <div></div>
+    <div class="border-l border-dark min-h-[20vh]"></div>
+    <div class="col-span-10"></div>
+    {% endif %}
     {% endfor %}
   </div>
 
