@@ -350,6 +350,9 @@ p {
 p:last-child {
   margin-bottom: 0px;
 }
+li:last-child {
+  margin-bottom: 0px;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -568,6 +571,9 @@ p:last-child {
 .col-span-10 {
   grid-column: span 10 / span 10;
 }
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -577,11 +583,11 @@ p:last-child {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-span-12 {
-  grid-column: span 12 / span 12;
-}
 .col-start-2 {
   grid-column-start: 2;
+}
+.m-10p {
+  margin: 10%;
 }
 .m-2 {
   margin: 0.5rem;
@@ -645,6 +651,12 @@ p:last-child {
 .ml-8 {
   margin-left: 2rem;
 }
+.ml-\[7\%\] {
+  margin-left: 7%;
+}
+.ml-\[8\%\] {
+  margin-left: 8%;
+}
 .mr-10p {
   margin-right: 10%;
 }
@@ -665,9 +677,6 @@ p:last-child {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-\[7\%\] {
-  margin-left: 7%;
 }
 .block {
   display: block;
@@ -705,17 +714,14 @@ p:last-child {
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
+.min-h-\[15vh\] {
+  min-height: 15vh;
+}
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
 .min-h-\[45vh\] {
   min-height: 45vh;
-}
-.min-h-\[10vh\] {
-  min-height: 10vh;
-}
-.min-h-\[20vh\] {
-  min-height: 20vh;
 }
 .w-1\/4 {
   width: 25%;
@@ -786,6 +792,11 @@ p:last-child {
 .gap-8 {
   gap: 2rem;
 }
+.space-x-48 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(12rem * var(--tw-space-x-reverse));
+  margin-left: calc(12rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .border {
   border-width: 1px;
 }
@@ -840,6 +851,9 @@ p:last-child {
 }
 .pb-8 {
   padding-bottom: 2rem;
+}
+.pl-\[20\%\] {
+  padding-left: 20%;
 }
 .pr-10p {
   padding-right: 10%;

@@ -28,6 +28,10 @@
         @apply mb-0;
     }
 
+    li:last-child {
+        @apply mb-0
+    }
+
   }
 
 

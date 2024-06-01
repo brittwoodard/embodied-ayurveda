@@ -115,11 +115,11 @@ teachers:
 
   <!-- Inside the curriculum -->
   <div class="grid grid-cols-12">
-    <h3 class="col-span-12 serif-md ml-[7%]">{{ page.curriculum.topics.heading }}</h3>
+    <h3 class="col-span-12 serif-md ml-[8%]">{{ page.curriculum.topics.heading }}</h3>
 
     <!-- Line -->
     <div></div>
-    <div class="border-l border-dark min-h-[20vh]"></div>
+    <div class="border-l border-dark min-h-[15vh]"></div>
     <div class="col-span-10"></div>
     {% for item in page.curriculum.topics.topic %}
     
@@ -133,7 +133,7 @@ teachers:
     {% if forloop.last == false %}
     <!-- Second Row -->
     <div></div>
-    <div class="border-l border-dark min-h-[20vh]"></div>
+    <div class="border-l border-dark min-h-[15vh]"></div>
     <div class="col-span-10"></div>
     {% endif %}
     {% endfor %}
@@ -148,13 +148,18 @@ teachers:
   <div class="bg-image-style min-h-[45vh]" style="background-image: url('{{ page.schedule.image.image_path }}'); background-position: {{ page.schedule.image.image_focus }};"></div>
 
   <!-- Schedule -->
-  <div>
-    <h2>{{ page.schedule.heading }}</h2>
-    <ul>
-      {% for item in page.schedule.schedule %}
-      <li>{{ item.time }} {{ item.activity }}</li>
-      {% endfor %}
-    </ul>
+  <div class="flex items-center m-10p pl-[20%] border-l border-dark">
+    <div>
+      <h2>{{ page.schedule.heading }}</h2>
+      <ul>
+        {% for item in page.schedule.schedule %}
+        <li class="flex justify-between space-x-48 mb-8 border-b border-dark">
+          <span>{{ item.time }}</span>
+          <span>{{ item.activity }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
