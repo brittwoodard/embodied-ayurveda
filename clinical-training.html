@@ -92,7 +92,7 @@ teachers:
   <h2 class="font-serif text-main text-[5rem] font-bold -ml-4">{{ page.features.heading }}</h2>
 
   <!-- Features -->
-  <div class="grid grid-cols-4 pr-10p -mt-[3%]">
+  <div class="grid grid-cols-4 pr-10p -mt-[2%]">
     <div class="col-start-2 col-span-3 grid grid-cols-3 gap-8">
       {% for item in page.features.features %}
       <div class="p-10p bg-light border border-dark">
@@ -105,17 +105,17 @@ teachers:
 </section>
 
 <!-- Curriculum -->
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-2 gap-12 p-5p bg-feature">
 
   <!-- Curriculum Overview -->
   <div>
-    <h2>{{ page.curriculum.heading }}</h2>
-    <div>{{ page.curriculum.description_html }}</div>
+    <h2 class="serif-md">{{ page.curriculum.heading }}</h2>
+    <div class="w-[80%]">{{ page.curriculum.description_html }}</div>
   </div>
 
   <!-- Inside the curriculum -->
   <div>
-    <h3>{{ page.curriculum.topics.heading }}</h3>
+    <h3 class="serif-md">{{ page.curriculum.topics.heading }}</h3>
     {% for item in page.curriculum.topics.topic %}
     
     <!-- Dot -->

@@ -777,6 +777,12 @@ p:last-child {
 .gap-8 {
   gap: 2rem;
 }
+.gap-\[10p\] {
+  gap: 10p;
+}
+.gap-12 {
+  gap: 3rem;
+}
 .border {
   border-width: 1px;
 }
@@ -861,6 +867,9 @@ p:last-child {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[10rem\] {
+  font-size: 10rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -872,6 +881,12 @@ p:last-child {
 }
 .italic {
   font-style: italic;
+}
+.leading-none {
+  line-height: 1;
+}
+.leading-\[0\] {
+  line-height: 0;
 }
 .text-black {
   --tw-text-opacity: 1;
