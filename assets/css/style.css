@@ -612,6 +612,9 @@ p:last-child {
 .-mr-\[20\%\] {
   margin-right: -20%;
 }
+.-mt-\[2\%\] {
+  margin-top: -2%;
+}
 .-mt-\[3\.5\%\] {
   margin-top: -3.5%;
 }
@@ -660,14 +663,8 @@ p:last-child {
 .mt-8 {
   margin-top: 2rem;
 }
-.-mt-\[4\%\] {
-  margin-top: -4%;
-}
-.-mt-\[2\%\] {
-  margin-top: -2%;
-}
-.-mt-\[3\%\] {
-  margin-top: -3%;
+.ml-\[7\%\] {
+  margin-left: 7%;
 }
 .block {
   display: block;
@@ -710,6 +707,12 @@ p:last-child {
 }
 .min-h-\[45vh\] {
   min-height: 45vh;
+}
+.min-h-\[10vh\] {
+  min-height: 10vh;
+}
+.min-h-\[20vh\] {
+  min-height: 20vh;
 }
 .w-1\/4 {
   width: 25%;
@@ -768,6 +771,9 @@ p:last-child {
 .gap-10 {
   gap: 2.5rem;
 }
+.gap-12 {
+  gap: 3rem;
+}
 .gap-16 {
   gap: 4rem;
 }
@@ -776,12 +782,6 @@ p:last-child {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-\[10p\] {
-  gap: 10p;
-}
-.gap-12 {
-  gap: 3rem;
 }
 .border {
   border-width: 1px;
@@ -792,6 +792,9 @@ p:last-child {
 }
 .border-b {
   border-bottom-width: 1px;
+}
+.border-l {
+  border-left-width: 1px;
 }
 .border-dark {
   --tw-border-opacity: 1;
@@ -867,9 +870,6 @@ p:last-child {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[10rem\] {
-  font-size: 10rem;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -881,12 +881,6 @@ p:last-child {
 }
 .italic {
   font-style: italic;
-}
-.leading-none {
-  line-height: 1;
-}
-.leading-\[0\] {
-  line-height: 0;
 }
 .text-black {
   --tw-text-opacity: 1;
