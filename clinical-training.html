@@ -104,42 +104,43 @@ teachers:
   </div>
 </section>
 
-<!-- Curriculum -->
-<section class="grid grid-cols-2 gap-12 p-5p bg-feature">
 
+<!-- Curriculum -->
+<section class="grid grid-cols-2 gap-12 p-5p bg-feature relative">
   <!-- Curriculum Overview -->
-  <div>
+  <div class="sticky top-0 h-[60vh] flex flex-col content-start">
     <h2 class="serif-md">{{ page.curriculum.heading }}</h2>
     <div class="w-[80%]">{{ page.curriculum.description_html }}</div>
   </div>
 
   <!-- Inside the curriculum -->
-  <div class="grid grid-cols-12">
-    <h3 class="col-span-12 serif-md ml-[8%]">{{ page.curriculum.topics.heading }}</h3>
+  <div class="">
+    <h3 class="serif-md ml-[8%]">{{ page.curriculum.topics.heading }}</h3>
+    <div class="grid grid-cols-12 overflow-y-auto h-[60vh]">
+      <!-- Line -->
+      <div></div>
+      <div class="border-l border-dark min-h-[15vh]"></div>
+      <div class="col-span-10"></div>
+      {% for item in page.curriculum.topics.topic %}
+      
+      <!-- Dot -->
+      <!-- First Row -->
+      <div class="col-span-2 text-center"><i class="fa-solid fa-circle"></i></div>
+      <div class="col-span-10">
+        <p class="ml-[7%]">{{ item }}</p>
+      </div>
 
-    <!-- Line -->
-    <div></div>
-    <div class="border-l border-dark min-h-[15vh]"></div>
-    <div class="col-span-10"></div>
-    {% for item in page.curriculum.topics.topic %}
-    
-    <!-- Dot -->
-    <!-- First Row -->
-    <div class="col-span-2 text-center"><i class="fa-solid fa-circle"></i></div>
-    <div class="col-span-10">
-      <p class="ml-[7%]">{{ item }}</p>
+      {% if forloop.last == false %}
+      <!-- Second Row -->
+      <div></div>
+      <div class="border-l border-dark min-h-[15vh]"></div>
+      <div class="col-span-10"></div>
+      {% endif %}
+      {% endfor %}
     </div>
-
-    {% if forloop.last == false %}
-    <!-- Second Row -->
-    <div></div>
-    <div class="border-l border-dark min-h-[15vh]"></div>
-    <div class="col-span-10"></div>
-    {% endif %}
-    {% endfor %}
   </div>
-
 </section>
+
 
 <!-- Schedule -->
 <section class="p-5p grid grid-cols-2">

@@ -1,0 +1,36 @@
+<!-- Curriculum -->
+<section class="grid grid-cols-2 gap-12 p-5p bg-feature relative">
+
+    <!-- Curriculum Overview -->
+    <div class="sticky flex-col flex justify-center top-0 min-h-[100vh]">
+        <h2 class="serif-md">{{ page.curriculum.heading }}</h2>
+        <div class="w-[80%]">{{ page.curriculum.description_html }}</div>
+    </div>
+
+    <!-- Inside the curriculum -->
+    <div class="grid grid-cols-12 sticky top-0 min-h-[100vh] overflow-y-auto">
+        <h3 class="col-span-12 serif-md ml-[8%]">{{ page.curriculum.topics.heading }}</h3>
+
+        <!-- Line -->
+        <div></div>
+        <div class="border-l border-dark min-h-[15vh]"></div>
+        <div class="col-span-10"></div>
+        {% for item in page.curriculum.topics.topic %}
+
+        <!-- Dot -->
+        <!-- First Row -->
+        <div class="col-span-2 text-center"><i class="fa-solid fa-circle"></i></div>
+        <div class="col-span-10">
+            <p class="ml-[7%]">{{ item }}</p>
+        </div>
+
+        {% if forloop.last == false %}
+        <!-- Second Row -->
+        <div></div>
+        <div class="border-l border-dark min-h-[15vh]"></div>
+        <div class="col-span-10"></div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+</section>
