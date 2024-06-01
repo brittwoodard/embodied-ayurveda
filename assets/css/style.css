@@ -876,6 +876,9 @@ li:last-child {
 .pr-10p {
   padding-right: 10%;
 }
+.pb-5p {
+  padding-bottom: 5%;
+}
 .text-left {
   text-align: left;
 }
