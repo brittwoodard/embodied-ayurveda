@@ -347,6 +347,9 @@ body {
 p {
   margin-bottom: 1rem;
 }
+p:last-child {
+  margin-bottom: 0px;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -562,6 +565,9 @@ p {
 .order-last {
   order: 9999;
 }
+.col-span-10 {
+  grid-column: span 10 / span 10;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -571,8 +577,8 @@ p {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-span-10 {
-  grid-column: span 10 / span 10;
+.col-start-2 {
+  grid-column-start: 2;
 }
 .m-2 {
   margin: 0.5rem;
@@ -592,6 +598,13 @@ p {
 .my-10p {
   margin-top: 10%;
   margin-bottom: 10%;
+}
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.-ml-4 {
+  margin-left: -1rem;
 }
 .-ml-\[20\%\] {
   margin-left: -20%;
@@ -638,11 +651,23 @@ p {
 .mt-12 {
   margin-top: 3rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.-mt-\[4\%\] {
+  margin-top: -4%;
+}
+.-mt-\[2\%\] {
+  margin-top: -2%;
+}
+.-mt-\[3\%\] {
+  margin-top: -3%;
 }
 .block {
   display: block;
@@ -671,6 +696,9 @@ p {
 .min-h-50 {
   min-height: 50vh;
 }
+.min-h-60 {
+  min-height: 60vh;
+}
 .min-h-90 {
   min-height: 90vh;
 }
@@ -682,9 +710,6 @@ p {
 }
 .min-h-\[45vh\] {
   min-height: 45vh;
-}
-.min-h-60 {
-  min-height: 60vh;
 }
 .w-1\/4 {
   width: 25%;
@@ -713,6 +738,9 @@ p {
 .list-none {
   list-style-type: none;
 }
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -721,9 +749,6 @@ p {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -749,8 +774,8 @@ p {
 .gap-4 {
   gap: 1rem;
 }
-.gap-12 {
-  gap: 3rem;
+.gap-8 {
+  gap: 2rem;
 }
 .border {
   border-width: 1px;
@@ -794,11 +819,18 @@ p {
   padding-left: 10%;
   padding-right: 10%;
 }
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .pb-10p {
   padding-bottom: 10%;
 }
 .pb-8 {
   padding-bottom: 2rem;
+}
+.pr-10p {
+  padding-right: 10%;
 }
 .text-left {
   text-align: left;
@@ -819,6 +851,9 @@ p {
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
+.text-\[5rem\] {
+  font-size: 5rem;
+}
 .text-\[7rem\] {
   font-size: 7rem;
 }
@@ -828,6 +863,12 @@ p {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-normal {
+  font-weight: 400;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .italic {
   font-style: italic;
