@@ -59,12 +59,14 @@ teachers:
      image_path: /images/temporary/1.jpg
      image_focus: 
    name: Brittany Woodard
+   id: brittany
    description_html: >- 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
  - image: 
      image_path: /images/temporary/1.jpg
      image_focus: 
    name: Brittany Woodard
+   id: resmi
    description_html: >- 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 ---
@@ -152,7 +154,7 @@ teachers:
   <!-- Schedule -->
   <div class="flex items-center m-10p pl-[20%] border-l border-dark">
     <div>
-      <h2>{{ page.schedule.heading }}</h2>
+      <h2 class="serif-md mb-4">{{ page.schedule.heading }}</h2>
       <ul>
         {% for item in page.schedule.schedule %}
         <li class="flex justify-between space-x-48 mb-8 border-b border-dark">
@@ -170,10 +172,17 @@ teachers:
 
 <!-- Teachers -->
 <section class="p-5p"> 
-  <h2>Meet Your Facilitators</h2>
-  {% for item in page.teachers %}
-  <div class="bg-image-style aspect-square" style="background-image: url('{{ item.image.image_path }}'); background-position: {{ item.image.image_focus }};"></div>
-  <h3>{{ item.name }}</h3>
-  <div>{{ item.description_html }}</div>
-  {% endfor %}
+  <h2 class="font-serif text-white text-[5rem] font-bold -ml-4">Meet Your Facilitators</h2>
+
+  <div class="flex justify-center gap-16">
+    {% for item in page.teachers %}
+    <!-- Teacher -->
+    <div class="max-w-[30vw] -mt-[2.5%]">
+      <div class="bg-image-style aspect-square mb-8" style="background-image: url('{{ item.image.image_path }}'); background-position: {{ item.image.image_focus }};"></div>
+      <h3 class="serif-sm">{{ item.name }}</h3>
+      <div>{{ item.description_html }}</div>
+      <a href="/about.html#{{ item.id }}" class="button mt-4">Learn More</a>
+    </div>
+    {% endfor %}
+  </div>
 </section>
