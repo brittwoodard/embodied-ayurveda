@@ -69,6 +69,13 @@ teachers:
    id: resmi
    description_html: >- 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+location: 
+  image: 
+    image_path: /images/temporary/1.jpg
+    image_focus: 
+  heading: Ubud, Bali
+  description_html: >- 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 ---
 
 <!-- Header -->
@@ -88,6 +95,7 @@ teachers:
     <!-- Image -->
     <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 </section>
+
 
 <!-- Features -->
 <section class="py-5p border-y border-dark">
@@ -144,7 +152,6 @@ teachers:
 </section>
 
 
-
 <!-- Schedule -->
 <section class="p-5p grid grid-cols-2">
 
@@ -167,8 +174,10 @@ teachers:
   </div>
 </section>
 
+
 <!-- Banner -->
 <section class="bg-image-style min-h-60" style="background-image: url('{{  page.banner.image.image_path }}'); background-position: {{ page.banner.image.image_focus }};"></section>
+
 
 <!-- Teachers -->
 <section class="p-5p"> 
@@ -184,5 +193,21 @@ teachers:
       <a href="/about.html#{{ item.id }}" class="button mt-4">Learn More</a>
     </div>
     {% endfor %}
+  </div>
+</section>
+
+<!-- Location & Food -->
+<section class="py-5p">
+  <div class="grid grid-cols-2">
+
+    <!-- Image -->
+    <div class="bg-image-style aspect-square" style="background-image: url('{{ page.location.image.image_path }}'); background-position: {{ page.location.image.image_focus }};"></div>
+
+    <!-- Text -->
+    <div class="flex items-center justify-center">
+      <div class="bg-light border border-dark p-10p my-10p {% cycle '-ml-[20%] mr-10p', '-mr-[20%] ml-10p' %} z-20">
+        <h3 class="serif-sm">{{ page.location.heading }}</h3>
+        <div>{{ page.location.description_html }}</div>
+      </div>
   </div>
 </section>
