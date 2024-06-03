@@ -615,6 +615,18 @@ li:last-child {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mx-10p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .-ml-4 {
   margin-left: -1rem;
 }
@@ -683,6 +695,12 @@ li:last-child {
 }
 .mb-5p {
   margin-bottom: 5%;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mr-5p {
+  margin-right: 5%;
 }
 .block {
   display: block;
@@ -761,6 +779,9 @@ li:last-child {
 }
 .list-none {
   list-style-type: none;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));

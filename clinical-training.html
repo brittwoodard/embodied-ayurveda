@@ -255,18 +255,18 @@ cta:
 
 <!-- Investment -->
 <section class="py-5p border-y border-dark">
-  <div class="grid grid-cols-2 gap-12">
+  <div class="grid grid-cols-2">
 
     <!-- Image -->
     <div class="bg-image-style" style="background-image: url('{{ page.investment.image.image_path }}'); background-position: {{ page.investment.image.image_focus }};"></div>
 
     <!-- Text -->
-    <div>
+    <div class="mx-10p">
 
       <!-- Included -->
-      <div>
-        <h2>{{ page.investment.includes.heading }}</h2>
-        <ul>
+      <div class="mb-8 border-b border-dark">
+        <h2 class="serif-md">{{ page.investment.includes.heading }}</h2>
+        <ul class="list-disc ml-4 mb-8">
           {% for item in page.investment.includes.list-items %}
           <li>{{ item.item }}</li>
           {% endfor %}
@@ -274,22 +274,22 @@ cta:
       </div>
 
       <!-- Not Included -->
-      <div>
-        <h2>{{ page.investment.excludes.heading }}</h2>
-        <ul>
+      <div class="mb-8 border-b border-dark">
+        <h2 class="serif-md">{{ page.investment.excludes.heading }}</h2>
+        <ul class="list-disc ml-4">
           {% for item in page.investment.excludes.list-items %}
           <li>{{ item.item }}</li>
           {% endfor %}
         </ul>
-        <a href="{{ page.investment.excludes.button.url }}">{{ page.investment.excludes.button.text }}</a>
+        <a href="{{ page.investment.excludes.button.url }}" class="mt-4 mb-8 button">{{ page.investment.excludes.button.text }}</a>
       </div>
 
       <!-- Investment -->
-      <div>
-        <h2>{{ page.investment.investment.heading }}</h2>
+      <div class="border-b border-dark">
+        <h2 class="serif-md">{{ page.investment.investment.heading }}</h2>
         <p>{{ page.investment.investment.pay-in-full.text }}: {{ page.investment.investment.pay-in-full.price }}</p>
         <p>{{ page.investment.investment.payment-plan.text }}: {{ page.investment.investment.payment-plan.price }}</p>
-        <a href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
+        <a href="{{ page.cta.button.url }}"  class="mt-4 mb-8 button">{{ page.cta.button.text }}</a>
       </div>
 
     </div>
