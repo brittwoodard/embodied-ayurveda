@@ -76,6 +76,45 @@ location:
   heading: Ubud, Bali
   description_html: >- 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+investment: 
+  image: 
+    image_path: /images/temporary/1.jpg
+    image_focus: 
+  includes: 
+    heading: What's Included
+    list-items: 
+    - item: Daily Yoga & Meditation Sessions
+    - item: Specialized Workshops
+    - item: Training Manual
+    - item: Email Template Kit
+    - item: 40 In-Person Hours
+    - item: 25 Clinical Hours
+    - item: Certificate of Completion
+    - item: Official transcripts sent to Yoga Veda Institute
+    - item: 25% Discount at Embodied Creative
+  excludes: 
+    heading: What's Not Included
+    list-items: 
+     - item: Food
+     - item: Accommodation
+     - item: Airport transfer
+     - item: Visa On Arrival
+     - item: Airfare
+    button: 
+      text: See a list of estimated expenses
+      url: 
+  investment: 
+    heading: Investment
+    pay-in-full: 
+      text: Pay In Full via Bank Transfer
+      price: $1290 USD
+    payment-plan: 
+      text: Payment Plan
+      price: $265 X 6 Months
+cta: 
+  button: 
+    text: Join the cta-waitlist
+    url: 
 ---
 
 <!-- Header -->
@@ -196,18 +235,63 @@ location:
   </div>
 </section>
 
-<!-- Location & Food -->
-<section class="py-5p">
+<!-- Location -->
+<section class="py-5p mb-5p">
   <div class="grid grid-cols-2">
+
+    <!-- Text -->
+    <div class="flex items-center justify-center">
+      <div class="bg-light border border-dark p-10p my-10p -mr-[20%] ml-10p % z-20">
+        <h3 class="serif-sm">{{ page.location.heading }}</h3>
+        <div>{{ page.location.description_html }}</div>
+      </div>
+    </div>
 
     <!-- Image -->
     <div class="bg-image-style aspect-square" style="background-image: url('{{ page.location.image.image_path }}'); background-position: {{ page.location.image.image_focus }};"></div>
 
+  </div>
+</section>
+
+<!-- Investment -->
+<section class="py-5p border-y border-dark">
+  <div class="grid grid-cols-2 gap-12">
+
+    <!-- Image -->
+    <div class="bg-image-style" style="background-image: url('{{ page.investment.image.image_path }}'); background-position: {{ page.investment.image.image_focus }};"></div>
+
     <!-- Text -->
-    <div class="flex items-center justify-center">
-      <div class="bg-light border border-dark p-10p my-10p {% cycle '-ml-[20%] mr-10p', '-mr-[20%] ml-10p' %} z-20">
-        <h3 class="serif-sm">{{ page.location.heading }}</h3>
-        <div>{{ page.location.description_html }}</div>
+    <div>
+
+      <!-- Included -->
+      <div>
+        <h2>{{ page.investment.includes.heading }}</h2>
+        <ul>
+          {% for item in page.investment.includes.list-items %}
+          <li>{{ item.item }}</li>
+          {% endfor %}
+        </ul>
       </div>
+
+      <!-- Not Included -->
+      <div>
+        <h2>{{ page.investment.excludes.heading }}</h2>
+        <ul>
+          {% for item in page.investment.excludes.list-items %}
+          <li>{{ item.item }}</li>
+          {% endfor %}
+        </ul>
+        <a href="{{ page.investment.excludes.button.url }}">{{ page.investment.excludes.button.text }}</a>
+      </div>
+
+      <!-- Investment -->
+      <div>
+        <h2>{{ page.investment.investment.heading }}</h2>
+        <p>{{ page.investment.investment.pay-in-full.text }}: {{ page.investment.investment.pay-in-full.price }}</p>
+        <p>{{ page.investment.investment.payment-plan.text }}: {{ page.investment.investment.payment-plan.price }}</p>
+        <a href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
+      </div>
+
+    </div>
   </div>
 </section>
