@@ -115,6 +115,16 @@ cta:
   button: 
     text: Join the cta-waitlist
     url: 
+  background_color: feature
+faq: 
+  heading: Frequently Asked Questions
+  faq: 
+   - question: This is a question
+     answer_html: >- 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+   - question: This is a question
+     answer_html: >- 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 ---
 
 <!-- Header -->
@@ -235,6 +245,7 @@ cta:
   </div>
 </section>
 
+
 <!-- Location -->
 <section class="py-5p mb-5p">
   <div class="grid grid-cols-2">
@@ -252,6 +263,7 @@ cta:
 
   </div>
 </section>
+
 
 <!-- Investment -->
 <section class="py-5p border-y border-dark">
@@ -295,3 +307,29 @@ cta:
     </div>
   </div>
 </section>
+
+
+<!-- FAQ -->
+<section class="p-5p">
+  <h2 class="font-serif text-main text-[5rem] font-bold -ml-[6.1%] -z-10">{{ page.faq.heading }}</h2>
+  <div class="w-2/3 -mt-12 bg-light">
+    <ul class="list-none ml-0 border border-dark z-20">
+      {% for item in page.faq.faq %}
+      <li x-data="{ open: false }" class="border-b border-dark p-4 last:border-0">
+          <button @click="open = ! open" class="flex items-center justify-between w-full">
+              <h3 class="text-left mr-8">{{item.question}}</h3>
+
+              <span x-show="!open" class="text-[1.5rem] font-serif">→</span>
+              <span x-show="open" class="text-[1.5rem] font-serif ml-8">↓</span>
+          </button>
+          <div x-show="open" @click.outside="open = false" class="pb-8">
+              <p class="mb-8 mr-8 italic">{{item.answer_html}}</p>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+{% include cta-waitlist.html %}
