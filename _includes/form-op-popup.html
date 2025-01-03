@@ -8,6 +8,7 @@
 <!-- Popup Form -->
 <div class="popup-form hidden">
     <div class="form-content">
+
         <!-- Close Button -->
         <span class="close-popup-btn close-btn hover:text-feature hover:duration-500">&times;</span>
 
@@ -15,24 +16,42 @@
         <h2 class="font-serif leading-[1.2em] text-[1.2rem] text-center mb-4">
             Download our free guide with a <strong>detailed itinerary</strong> to see if the <strong>Ayurvedic Internship in Bali</strong> is right for you.
         </h2>
+
         <form method="POST" action="https://forms.ontraport.com/v2.4/form_processor.php?" class="form-container">
+
             <!-- Visible Form Fields -->
             <div class="grid lg:grid-cols-2 gap-2">
+
+                <!-- First Name -->
                 <div>
-                    <input type="text" name="firstname" class="input-field text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60" placeholder="First Name" required />
+                    <input name="firstname" type="text" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60" placeholder="First Name" required />
                 </div>
+
+                <!-- Last Name -->
                 <div>
-                    <input type="text" name="lastname" class="input-field text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60" placeholder="Last Name" required />
+                    <input name="lastname" type="text" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60" placeholder="Last Name" required />
                 </div>
             </div>
-            <div>
-                <input type="email" name="email" class="input-field text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60" placeholder="Email" required />
+
+            <!-- Email -->
+            <div class="mt-2">
+                <input name="email" type="email" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60" placeholder="Email" required />
             </div>
-            <div>
-                <textarea name="f2097" class="input-field text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60 leading-tight" placeholder="What's calling you to join a hands-on, in-person mentorship for your Ayurvedic studies?" required></textarea>
+
+            <!-- Why -->
+            <div class="mt-2">
+                <textarea name="f2097" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60 leading-tight" placeholder="What's calling you to join a hands-on, in-person mentorship for your Ayurvedic studies?" required></textarea>
             </div>
+
+            <!-- Hidden Fields -->
+            <input name="afft_" type="hidden" value="" />
+            <input name="aff_" type="hidden" value="" />
+            <input name="uid" type="hidden" value="p2c265658f1" />
+            <!-- Other hidden fields here -->
+
             <!-- reCAPTCHA -->
-            <div class="g-recaptcha" data-sitekey="6LeJGa0qAAAAAEiEr47fYw3X2Alv0twzG-rUSWdn"></div>
+            <div class="g-recaptcha mt-2" data-sitekey="6LeJGa0qAAAAAEiEr47fYw3X2Alv0twzG-rUSWdn"></div>
+            
             <!-- Submit Button -->
             <div class="mt-2">
                 <button type="submit" class="submit-btn border border-dark bg-feature rounded-none cursor-pointer w-full p-2 text-dark hover:duration-500 hover:shadow-lg">Submit</button>
