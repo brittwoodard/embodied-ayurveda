@@ -1,43 +1,45 @@
-<form method="POST" action="" id=""
-    class="lg:w-[80%] mx-auto">
+<form method="POST" action="https://forms.ontraport.com/v2.4/form_processor.php?" class="lg:w-[80%] mx-auto">
 
-
-    <!-- Names -->
+    <!-- Visible form fields -->
     <div class="grid lg:grid-cols-2 gap-1 mb-1">
-
-        <!-- First Name -->
-        <div class="">
+        <div>
             <input type="text" name="firstname"
                 class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60"
                 placeholder="First Name" required />
         </div>
-
-        <!-- Last Name -->
-        <div class="">
+        <div>
             <input type="text" name="lastname"
                 class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60"
                 placeholder="Last Name" required />
         </div>
     </div>
-
-    <!-- Email -->
     <div class="mb-1">
         <input type="email" name="email"
             class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60"
             placeholder="Email" required />
     </div>
-
-    <!-- Why -->
     <div class="mb-1">
-        <textarea name=""
+        <textarea name="f2097"
             class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60 leading-tight"
             placeholder="What's calling you to join a hands-on, in-person mentorship for your Ayurvedic studies?"
             required></textarea>
     </div>
 
-    <!-- Submit Button -->
-    <div class="">
-        <button id=""
+    <!-- Hidden fields -->
+    <input name="uid" type="hidden" value="p2c265658f1" />
+    <input name="uniquep2c265658f1" type="hidden" value="0" />
+    <input name="mopsbbk" type="hidden" value="833C4F86C571836B1FCF52C6:CF67AE64CFD7F99F2D2E74B9" />
+    <input name="mopbelg" type="hidden" value="0175373:A9569880F20B5F9AB95307C8:940984725B09376D29E16C62" />
+
+    <!-- reCAPTCHA script -->
+    <div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-element-captcha">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <div class="g-recaptcha" data-callback="OPCapcha_filled" data-expired-callback="OPCapcha_expired" data-sitekey="6LeJGa0qAAAAAEiEr47fYw3X2Alv0twzG-rUSWdn"></div>
+    </div>
+
+    <!-- Submit button -->
+    <div>
+        <button
             class="border border-dark bg-feature rounded-none cursor-pointer w-full p-2 hover:duration-500 hover:shadow-lg"
             type="submit">Submit</button>
     </div>

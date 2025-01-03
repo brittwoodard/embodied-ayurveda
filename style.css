@@ -32,7 +32,7 @@
         @apply mb-0
     }
 
-  }
+}
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
@@ -76,6 +76,44 @@
 
     .button-form {
         @apply border-b border-dark inline-block hover:text-main hover:border-main hover:duration-500
+    }
+
+    /* General Styles */
+    .hidden {
+        display: none;
+    }
+
+    .open-popup-btn {
+        /* Style your "Get the Guide" button as needed */
+    }
+
+    .popup-form {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .form-content {
+        @apply bg-light p-5p rounded-none relative w-[90%] max-w-[600px]
+    }
+
+    .close-btn {
+        @apply absolute top-2 right-8 text-[2rem] cursor-pointer
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
     }
 
     /* Dropdown Menu */
