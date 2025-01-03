@@ -101,7 +101,7 @@
     }
 
     .form-content {
-        @apply bg-light p-5p rounded-none relative w-[90%] max-w-[600px]
+        @apply bg-lighter p-5p rounded-none relative w-[90%] max-w-[600px] border-2 border-feature
     }
 
     .close-btn {
