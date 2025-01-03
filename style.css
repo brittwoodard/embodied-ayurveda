@@ -1,3 +1,7 @@
+/* Font Families */
+/* font-family: le-havre-rounded, sans-serif; (300, 400, 700) */
+/* font-family: the-seasons, sans-serif; (300, 400, 700) */
+
 /* ----------- Import Tailwind -----*/
 @tailwind base;
 @tailwind components;
@@ -13,15 +17,52 @@
     }
 
     body {
-        @apply font-sans font-light text-dark bg-light antialiased
+        @apply font-sans font-light text-dark bg-light tracking-wide antialiased
     }
 
-}
+    p {
+        @apply mb-4 text-[1.2rem] tracking-wider leading-6
+    }
+
+    p:last-child {
+        @apply mb-0;
+    }
+
+    li:last-child {
+        @apply mb-0
+    }
+
+  }
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
+
+    /* Typography */
+    .serif-lg {
+        @apply font-serif text-[2rem] tracking-wide
+    }
+
+    .serif-md {
+        @apply font-serif text-[1.5rem] tracking-wide mb-2
+    }
+
+    .serif-sm {
+        @apply font-serif capitalize text-[1.2rem] tracking-wide mb-2
+    }
+
+    .text-overlay {
+        @apply font-serif block text-[5rem] text-white opacity-80 font-bold tracking-wide capitalize
+    }
+
+    .button {
+        @apply border-b-[0.5px] border-dark inline-block hover:text-feature hover:border-feature hover:duration-500
+    }
+
+    .button-box {
+        @apply border border-dark bg-feature rounded-none cursor-pointer w-full tracking-wider p-2 hover:duration-500 hover:shadow-lg
+    }
 
     /* Images */
     .bg-image-style {
@@ -31,6 +72,27 @@
     /* Forms */
     .focus-main {
         @apply focus:outline-none focus:ring-2 focus:ring-main
+    }
+
+    .button-form {
+        @apply border-b border-dark inline-block hover:text-main hover:border-main hover:duration-500
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        @apply border border-dark
+    }
+
+    .dropdown-item {
+        @apply list-none border-b border-dark my-2 p-2
+    }
+
+    .dropdown-item.last-item {
+        border-bottom: none;
+    }
+
+    .last-paragraph {
+        @apply mb-0
     }
 
 }
