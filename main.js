@@ -3,24 +3,32 @@ AOS.init ({
 });
 
 // Popup Form
-// Get elements
-const openPopupBtn = document.getElementById('openPopupBtn');
-const closePopupBtn = document.getElementById('closePopupBtn');
-const popupForm = document.getElementById('popupForm');
+// Select all open-popup buttons
+const openPopupBtns = document.querySelectorAll('.open-popup-btn');
+// Select all popup forms
+const popupForms = document.querySelectorAll('.popup-form');
+// Select all close buttons
+const closePopupBtns = document.querySelectorAll('.close-popup-btn');
 
-// Function to open the popup
-openPopupBtn.addEventListener('click', () => {
-    popupForm.classList.remove('hidden');
+// Attach event listeners to all buttons
+openPopupBtns.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        popupForms[index].classList.remove('hidden'); // Open the corresponding popup
+    });
 });
 
-// Function to close the popup
-closePopupBtn.addEventListener('click', () => {
-    popupForm.classList.add('hidden');
+// Attach event listeners to all close buttons
+closePopupBtns.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        popupForms[index].classList.add('hidden'); // Close the corresponding popup
+    });
 });
 
-// Close the popup when clicking outside the form content
+// Close popup when clicking outside the form content
 window.addEventListener('click', (event) => {
-    if (event.target === popupForm) {
-        popupForm.classList.add('hidden');
-    }
+    popupForms.forEach((popupForm) => {
+        if (event.target === popupForm) {
+            popupForm.classList.add('hidden'); // Close the popup
+        }
+    });
 });
