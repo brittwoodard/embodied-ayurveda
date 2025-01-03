@@ -1,0 +1,29 @@
+---
+layout: blank
+title: Your Guide is on Its Way!
+links: 
+  link_1: 
+    title: Home
+    url: /index.html
+  link_2: 
+    title: Contact
+    url: /contact.html
+---
+
+<section class="flex justify-center justify-items-center text-center items-center h-screen">
+
+    <div>
+        <h1 class="font-serif text-2xl mb-4">Your Guide is on Its Way!</h1>
+        <p>Thank you for your interest in the Ayurvedic Internship in Bali.</p>
+        <p class="uppercase mt-8">What's Next?</p>
+        <ol>
+          <li>Check your inbox – Your Ayurvedic Internship in Bali Guide should arrive shortly. It may take a few minutes to show up, so hang tight!</li>
+          <li>If you don’t see it, try searching for {{site.data.site-settings.general.email}} in your email’s search tool. Sometimes it hides in promotions or spam folders.</li>
+        </ol>
+
+        <div class="mt-4">
+          <a href="{{page.links.link_1.url}}" class="button mr-2">{{page.links.link_1.title}}</a>
+          <a href="mailto:{{site.data.site-settings.general.email}}?subject=Let's%20Connect" class="button ml-2">Contact</a>
+        </div>
+    </div>
+</section>
