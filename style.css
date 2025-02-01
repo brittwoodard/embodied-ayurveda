@@ -7,6 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --feature: #A1A67F;
+    --dark: #231F1D;
+    --main: #E4D7D3;
+}
+
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
@@ -73,6 +79,55 @@
     .focus-main {
         @apply focus:outline-none focus:ring-2 focus:ring-main
     }
+
+    /* Forms */
+.focus-main {
+    @apply focus:outline-none focus:ring-2 focus:ring-main;
+}
+
+/* Custom Radio Button Styling */
+input[type="radio"] {
+    appearance: none;
+    background: transparent;
+    margin: 0;
+    color: currentColor;
+    width: 0.75em; /* Reduced size */
+    height: 0.75em; /* Reduced size */
+    border: 1.5px solid var(--feature, currentColor);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: border-color 250ms ease-in-out;
+}
+
+/* Inner dot when selected */
+input[type="radio"]::before {
+    content: "";
+    width: 0.25em; /* Smaller inner circle */
+    height: 0.25em; /* Smaller inner circle */
+    border-radius: 50%;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+/* When radio is selected */
+input[type="radio"]:checked {
+    border-color: var(--feature, currentColor);
+}
+
+input[type="radio"]:checked::before {
+    background-color: var(--feature, currentColor);
+    transform: scale(1);
+}
+
+/* Remove focus outline */
+input[type="radio"]:focus {
+    outline: none;
+}
+
 
     .button-form {
         @apply border-b border-dark inline-block hover:text-main hover:border-main hover:duration-500

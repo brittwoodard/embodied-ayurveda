@@ -511,6 +511,56 @@ li:last-child {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(228 215 211 / var(--tw-ring-opacity));
 }
+/* Forms */
+.focus-main:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(228 215 211 / var(--tw-ring-opacity));
+}
+/* Custom Radio Button Styling */
+input[type="radio"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: transparent;
+    margin: 0;
+    color: currentColor;
+    width: 0.75em; /* Reduced size */
+    height: 0.75em; /* Reduced size */
+    border: 1.5px solid var(--feature, currentColor);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: border-color 250ms ease-in-out;
+}
+/* Inner dot when selected */
+input[type="radio"]::before {
+    content: "";
+    width: 0.25em; /* Smaller inner circle */
+    height: 0.25em; /* Smaller inner circle */
+    border-radius: 50%;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+/* When radio is selected */
+input[type="radio"]:checked {
+    border-color: var(--feature, currentColor);
+}
+input[type="radio"]:checked::before {
+    background-color: var(--feature, currentColor);
+    transform: scale(1);
+}
+/* Remove focus outline */
+input[type="radio"]:focus {
+    outline: none;
+}
 .button-form {
   display: inline-block;
   border-bottom-width: 1px;
@@ -623,6 +673,9 @@ li:last-child {
 .mb-12 {
   margin-bottom: 3rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -634,6 +687,9 @@ li:last-child {
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -647,6 +703,9 @@ li:last-child {
 .mt-8 {
   margin-top: 2rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -658,6 +717,9 @@ li:last-child {
 }
 .aspect-\[3\/4\] {
   aspect-ratio: 3/4;
+}
+.h-32 {
+  height: 8rem;
 }
 .h-\[45vh\] {
   height: 45vh;
@@ -732,9 +794,17 @@ li:last-child {
 .border-t {
   border-top-width: 1px;
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(35 31 29 / var(--tw-border-opacity));
+}
+.border-feature {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 166 127 / var(--tw-border-opacity));
 }
 .bg-feature {
   --tw-bg-opacity: 1;
@@ -758,6 +828,10 @@ li:last-child {
 }
 .p-5p {
   padding: 5%;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -850,6 +924,12 @@ li:last-child {
   color: rgb(35 31 29 / var(--tw-text-opacity));
 }
 
+:root {
+    --feature: #A1A67F;
+    --dark: #231F1D;
+    --main: #E4D7D3;
+}
+
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
@@ -890,6 +970,10 @@ li:last-child {
 
 .hover\:duration-500:hover {
   transition-duration: 500ms;
+}
+
+.focus\:border-2:focus {
+  border-width: 2px;
 }
 
 .focus\:border-b-2:focus {
