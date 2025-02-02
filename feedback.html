@@ -10,7 +10,7 @@ seo:
     <p>We’d love to hear your thoughts! Your feedback is essential in helping us refine and elevate our hands-on Ayurvedic training. It only takes a few minutes, and your insights will make a real difference. Thank you for being part of this journey with us!
     </p>
 
-    <form name="feedback" method="POST" netlify netlify-honeypot="bot-field" action="/thank-you-feedback.html">
+    <form name="feedback" method="POST" netlify netlify-honeypot="bot-field" action="/thank-you-feedback.html" onSubmit="submit">
 
         <input type="hidden" name="form-name" value="feedback">
         <p class="hidden">
@@ -141,5 +141,12 @@ seo:
             </label>
         </div>
 
+        
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="border border-dark bg-feature rounded-none cursor-pointer py-2 px-8 hover:duration-500 hover:shadow-lg mt-8">Submit</button>
+        </div>
+
     </form>
+
 </section>
