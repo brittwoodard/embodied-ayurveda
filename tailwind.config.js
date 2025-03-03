@@ -8,8 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['le-havre-rounded', 'sans-serif'],
-      serif: ['the-seasons', 'serif'],
+      sans: ['ubuntu', 'sans-serif'],
+      serif: ['AestheticWonder-ExtraBold', 'serif'],
     },
     extend: {
       spacing: {
@@ -31,11 +31,12 @@ module.exports = {
         '50': '50vh',
       },
       colors: {
-        'dark': '#231F1D',
-        'light': '#D0C6C0',
-        'lighter': '#e7e2df',
-        'main': '#E4D7D3',
-        'feature': '#A1A67F',
+        'dark': '#3B3C2E',
+        'light': '#E1D8C3',
+        'lighter': '#F6F1E3',
+        'main': '#7F754E',
+        'feature': '#AD8449',
+        'accent': '#603921',
         'transparent': 'transparent',
       }
     },

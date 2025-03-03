@@ -7,6 +7,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'AestheticWonder-ExtraBold';
+    src: url('/font/AestheticWonder-ExtraBold.woff2') format('woff2'),
+        url('/font/AestheticWonder-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --feature: #A1A67F;
     --dark: #231F1D;
@@ -23,7 +31,7 @@
     }
 
     body {
-        @apply font-sans font-light text-[1.2rem] text-dark bg-light tracking-wide antialiased
+        @apply font-sans font-light text-[1.2rem] text-dark bg-lighter tracking-wide antialiased
     }
 
     p {
