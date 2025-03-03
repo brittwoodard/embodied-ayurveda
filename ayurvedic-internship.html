@@ -1,6 +1,10 @@
 ---
 layout: blank
 title: Ayurvedic Internship in Bali
+features: 
+ - Refine your clinical skills
+ - Gain hands-on experience
+ - Build confidence as a practitioner
 seo:
   title: Ayurvedic Internship in Bali
   description: Learn more about our 7-day immersive Ayurvedic training in beautiful Ubud, Bali
@@ -42,28 +46,25 @@ seo:
 </section>
 
 <!-- Description -->
-<section class="py-[6rem] lg:py-16 px-5p border-t md:border-t-0 border-b border-dark">
-  <div class="lg:w-[70%]">
-    <p class="text-[1.5rem] leading-7 mb-0">Our Ayurvedic Internship is a <strong>8-day (10-night) immersion</strong> designed to take you <strong>beyond theory</strong> and into <strong>real-world Ayurvedic practice</strong>.<p>
+<section class="">
+  <div class="py-[6rem] lg:py-16 px-5p border-t border-dark md:border-0 lg:w-[70%]">
+    <h2 class="text-[1.5rem] leading-7 mb-0">Our Ayurvedic Internship is a <strong>8-day (10-night) immersion</strong> designed to take you <strong>beyond theory</strong> and into <strong>real-world Ayurvedic practice</strong>.</h2>
   </div>
-</section>
 
-<!-- Features -->
-<section class="py-[6rem] md:py-16 px-5p">
-  <div class="grid md:grid-cols-3 gap-8">
-
-    <div class="uppercase tracking-widest">
-      <h2 class="text-center md:text-left hover:font-serif hover:lowercase hover:duration-500">Refine your clinical skills</h2>
+  <!-- Features -->
+  <div class="py-[6rem] lg:py-16 px-5p bg-main uppercase text-center">
+    {% for item in page.features %}
+    <div class="grid grid-cols-2">
+      <div class="col-span-2">
+        <p class="py-4">{{ item }}</p>
+      </div>
+      <div class="col-span-2 grid grid-cols-2">
+        <div class="border-r-2 border-dark h-20"></div>
+        <div></div>
+      </div>
     </div>
-
-    <div class="uppercase tracking-widest">
-      <h2 class="text-center hover:font-serif hover:lowercase hover:duration-500">Gain hands-on experience</h2>
-    </div>
-
-    <div class="uppercase tracking-widest">
-      <h2 class="text-center md:text-right hover:font-serif hover:lowercase hover:duration-500">Build confidence as a practitioner</h2>
-    </div>
-
+    {% endfor %}
+    
   </div>
 
 </section>

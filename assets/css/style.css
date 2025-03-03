@@ -652,6 +652,9 @@ input[type="radio"]:focus {
 .order-first {
   order: -9999;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -733,6 +736,9 @@ input[type="radio"]:focus {
 .h-screen {
   height: 100vh;
 }
+.h-20 {
+  height: 5rem;
+}
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
@@ -750,6 +756,9 @@ input[type="radio"]:focus {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -794,6 +803,12 @@ input[type="radio"]:focus {
 .border-t {
   border-top-width: 1px;
 }
+.border-r {
+  border-right-width: 1px;
+}
+.border-r-2 {
+  border-right-width: 2px;
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -806,12 +821,20 @@ input[type="radio"]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(173 132 73 / var(--tw-border-opacity));
 }
+.border-lighter {
+  --tw-border-opacity: 1;
+  border-color: rgb(246 241 227 / var(--tw-border-opacity));
+}
 .bg-feature {
   --tw-bg-opacity: 1;
   background-color: rgb(173 132 73 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 117 78 / var(--tw-bg-opacity));
 }
 .bg-\[top\] {
   background-position: top;
@@ -856,6 +879,10 @@ input[type="radio"]:focus {
 .py-\[6rem\] {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .pl-10p {
   padding-left: 10%;
@@ -1046,6 +1073,9 @@ input[type="radio"]:focus {
   }
   .md\:gap-12 {
     gap: 3rem;
+  }
+  .md\:border-0 {
+    border-width: 0px;
   }
   .md\:border-t-0 {
     border-top-width: 0px;
