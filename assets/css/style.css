@@ -877,6 +877,10 @@ input[type="radio"]:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(127 117 78 / var(--tw-bg-opacity));
 }
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 60 46 / var(--tw-bg-opacity));
+}
 .bg-\[top\] {
   background-position: top;
 }
@@ -946,6 +950,9 @@ input[type="radio"]:focus {
 }
 .pr-10p {
   padding-right: 10%;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -1025,6 +1032,10 @@ input[type="radio"]:focus {
 .text-accent {
   --tw-text-opacity: 1;
   color: rgb(96 57 33 / var(--tw-text-opacity));
+}
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(225 216 195 / var(--tw-text-opacity));
 }
 
 @font-face {
