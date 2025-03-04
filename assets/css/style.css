@@ -812,6 +812,9 @@ input[type="radio"]:focus {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
+.min-h-\[55vh\] {
+  min-height: 55vh;
+}
 .w-\[75vw\] {
   width: 75vw;
 }
@@ -915,6 +918,9 @@ input[type="radio"]:focus {
 }
 .bg-\[top\] {
   background-position: top;
+}
+.bg-\[left\] {
+  background-position: left;
 }
 .object-cover {
   -o-object-fit: cover;
