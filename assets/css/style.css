@@ -658,6 +658,9 @@ input[type="radio"]:focus {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.-m-1 {
+  margin: -0.25rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -733,6 +736,9 @@ input[type="radio"]:focus {
 .h-32 {
   height: 8rem;
 }
+.h-\[100px\] {
+  height: 100px;
+}
 .h-\[45vh\] {
   height: 45vh;
 }
@@ -744,6 +750,18 @@ input[type="radio"]:focus {
 }
 .h-screen {
   height: 100vh;
+}
+.h-64 {
+  height: 16rem;
+}
+.h-56 {
+  height: 14rem;
+}
+.h-48 {
+  height: 12rem;
+}
+.h-36 {
+  height: 9rem;
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
@@ -765,6 +783,9 @@ input[type="radio"]:focus {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -798,6 +819,9 @@ input[type="radio"]:focus {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
 }
 .rounded-none {
   border-radius: 0px;
@@ -837,6 +861,10 @@ input[type="radio"]:focus {
 .bg-feature {
   --tw-bg-opacity: 1;
   background-color: rgb(173 132 73 / var(--tw-bg-opacity));
+}
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 216 195 / var(--tw-bg-opacity));
 }
 .bg-main {
   --tw-bg-opacity: 1;
@@ -1079,6 +1107,9 @@ input[type="radio"]:focus {
   }
   .md\:h-\[100vh\] {
     height: 100vh;
+  }
+  .md\:h-\[70vh\] {
+    height: 70vh;
   }
   .md\:w-\[80\%\] {
     width: 80%;

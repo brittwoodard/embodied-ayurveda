@@ -13,7 +13,7 @@ seo:
   hide-from-google: false
 ---
 
-<!-- Desktop -->
+<!-- Header -->
 <section class="md:grid md:grid-cols-2 relative">
 
   <!-- Left Column -->
@@ -35,7 +35,7 @@ seo:
   <div class="md:p-10p flex justify-center items-center mt-32 lg:mt-0 mb-12 md:mb-0">
     <div class="md:w-[80%] mx-auto p-5p md:p-0">
       <h1 class="font-serif leading-[1em] text-[3rem] text-center uppercase">Ayurvedic Internship</h1>
-      <h2 class="text-center leading-[1.2em] mt-2 mb-4 text-[1rem] font-[300] uppercase">Hands-on Clinical Training<br>{{site.data.site-settings.retreats.ayurvedic-internship.upcoming-date}}</h2>
+      <h2 class="text-center leading-[1.2em] mt-2 mb-8 text-[1rem] font-[300] uppercase">Hands-on Clinical Training<br>{{ site.data.site-settings.retreats.ayurvedic-internship.upcoming-date }}</h2>
 
       <!-- OP Popup Button -->
       {% include button-op-center.html %}
@@ -51,27 +51,35 @@ seo:
     <h2 class="text-[1.2rem] leading-7 mb-0">Our Ayurvedic Internship is a <strong>8-day (10-night) immersion</strong> designed to take you <strong>beyond theory</strong> and into <strong>real-world Ayurvedic practice</strong>.</h2>
   </div>
 
+  
+
   <!-- Features -->
   <div class="py-24 px-8 lg:px-20 bg-main uppercase text-center">
-    {% for item in page.features %}
-    <div class="grid grid-cols-2">
-      <div class="col-span-2">
-        <p class="py-4">{{ item }}</p>
-      </div>
-      <div class="col-span-2 grid grid-cols-2">
-        <div class="border-r-2 border-dark h-32"></div>
-        <div></div>
-      </div>
-    </div>
-    {% endfor %}
     
-  </div>
+    <div class="h-48 overflow-y-auto">
+    {% for item in page.features %}
+      <div class="grid grid-cols-2">
+        <div class="col-span-2">
+          <p class="py-4">{{ item }}</p>
+        </div>
+        <div class="col-span-2 grid grid-cols-2">
+          <div class="border-r-2 border-dark h-36"></div>
+          <div></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
 
+    <div class="flex justify-center -m-1">
+      <img class="h-32" src="/images/illustrations/Logomark.svg">
+    </div>
+  </div>
 </section>
 
 
 <section class="bg-dark text-light py-24 px-8 lg:px-20">
-  <h2 class="leading-[1em] mb-4 font-serif text-[1.5rem] uppercase">Learn More About Our Ayurvedic Internship in Bali</h2>
+  <h2 class="leading-[1em] mb-2 font-serif text-[1.5rem] uppercase">Learn More About Our Ayurvedic Internship in Bali</h2>
+  <p class="mb-8">Download our free guide with a detailed itinerary to see if this experience is right for you.</p>
   
   <!-- OP Popup Button -->
   {% include button-op-left.html %}
@@ -106,7 +114,7 @@ seo:
   <div class="grid grid-cols-2 gap-20">
 
     <!-- Left Column / Image -->
-    <div class="bg-image-style aspect-square relative" style="background-image: url('/images/embodied-ayurveda-1.jpg');">
+    <div class="bg-image-style aspect-square relative" style="background-image: url('/images/embodied-ayurveda-3.jpeg');">
     
       <h2 class="absolute -top-[2.5rem] left-0 uppercase font-serif text-accent text-[3.3rem]">Your facilitator</h2>
     </div>
@@ -115,15 +123,40 @@ seo:
     <div class="flex items-center">
       <div>
         <h3 class="uppercase tracking-wider mb-4 leading-tight">Brittany Woodard - AP, E-RYT 500</h3>
-        <p>Dr. Resmi V. Rajagopal is a dedicated Ayurveda Physician and founder of the versatile wellness app Ayurshe, and born and nurtured in the Ayurvedic-rich environment of Kerala, India. Her journey in Ayurvedic medicine commenced in 2007, marked by her graduation from Pankajakasthuri Ayurveda Medical College in Thiruvananthapuram, followed by a master’s degree from the prestigious ITRA Jamnagar. Her academic path was enhanced by additional training in yoga therapy, beauty care, and pulse diagnosis.</p>
-        <p>Throughout her career, Dr. Rajagopal has developed a keen expertise in patient care, diagnostic skills, and hands-on surgical experiences, infused with the practical wisdom and spiritual insights imparted by her GURUs. Her approach to health and wellness extends beyond traditional learning, embodying a holistic perspective.</p>
-        <p>Dr. Rajagopal's passion for education led her to the role of assistant professor at the SDM College of Ayurveda in Udupi, India, where she played a pivotal role in mentoring the next generation of Ayurveda students. This experience significantly enriched her skills in both theoretical and practical aspects of Ayurvedic medicine.</p>
+        <p>Brittany has spent nearly a decade living out of a backpack, making the world her home. Her love for travel eventually led her to yoga, shifting her journeys toward deep study and teaching throughout Southeast Asia, Europe, and Australia. Along the way, she worked at yoga retreat centers and studied with some of the best teachers on the planet.</p>
+        <p>Her path eventually led to Ayurveda, the missing piece that brought everything together. Now, as the Dean of Education at Yoga Veda Institute of Ayurvedic Medicine, Brittany has the privilege of working alongside leading Ayurvedic teachers.</p>
+        <p>Driven by her passion for travel and experiential learning, she founded Embodied Ayurveda, curating immersive Ayurvedic training retreats in inspiring locations. Through these hands-on experiences, Embodied Ayurveda bridges theory with practice, creating opportunities for students to step beyond textbooks and truly embody Ayurveda in their daily lives.</p>
       </div>
     </div>
 
 </section>
 
+<!-- Dates & Details Section -->
+<section class="grid grid-cols-3 gap-20 bg-main py-24 px-8 lg:px-20 text-light">
 
-<footer class="border-t border-dark py-2 bg-feature">
+  <!-- Left Column / Video -->
+  <div class="relative h-[50vh] md:h-[70vh] z-10 overflow-hidden bg-[top]" data-aos="fade-up" data-aos-offset="0"
+    data-aos-duration="2000">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-[75vw] lg:w-full h-full object-cover">
+      <source src="/images/embodied-ayurveda-retreats-92.mp4" type="video/mp4">
+      <p>Sorry, your browser doesn't support embedded videos.</p>
+    </video>
+  </div>
+
+  <!-- Right Column / Text -->
+  <div class="col-span-2 flex items-center">
+    <div class="">
+      <h2 class="font-serif uppercase text-2xl">Dates & Application Process</h2>
+      <p class="uppercase">{{ site.data.site-settings.retreats.ayurvedic-internship.upcoming-date }}</p>
+      <p>This program is intentionally kept small, with enrollment capped at just 14 participants.</p>
+      <p class="mb-8">If you’re interested in joining us, start by reading through the Ayurvedic Internship in Bali Guide, then schedule a call with your facilitator to ensure this experience is the right fit for you. If accepted into the program, you’ll receive an invoice by email to secure your spot.</p>
+
+      {% include button-op-left.html %}
+    </div>
+  </div>
+
+</section>
+
+<footer class="border-t border-dark py-2 bg-light">
   <p class="text-center text-[0.9rem]">Designed & Deveoloped by <a href="https://embodiedcreativeagency.com/" target="_blank">Embodied Creative</a>.</p>
 </footer>
