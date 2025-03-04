@@ -1023,6 +1023,10 @@ input[type="radio"]:focus {
   --tw-text-opacity: 1;
   color: rgb(96 57 33 / var(--tw-text-opacity));
 }
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(59 60 46 / var(--tw-text-opacity));
+}
 .text-light {
   --tw-text-opacity: 1;
   color: rgb(225 216 195 / var(--tw-text-opacity));
@@ -1030,10 +1034,6 @@ input[type="radio"]:focus {
 .text-lighter {
   --tw-text-opacity: 1;
   color: rgb(246 241 227 / var(--tw-text-opacity));
-}
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(59 60 46 / var(--tw-text-opacity));
 }
 
 @font-face {
