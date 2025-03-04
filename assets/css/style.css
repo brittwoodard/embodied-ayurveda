@@ -543,44 +543,48 @@ li:last-child {
 }
 /* Custom Radio Button Styling */
 input[type="radio"] {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: transparent;
-    margin: 0;
-    color: currentColor;
-    width: 0.75em; /* Reduced size */
-    height: 0.75em; /* Reduced size */
-    border: 1.5px solid var(--feature, currentColor);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: border-color 250ms ease-in-out;
-}
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background: transparent;
+        margin: 0;
+        color: currentColor;
+        width: 0.75em;
+        /* Reduced size */
+        height: 0.75em;
+        /* Reduced size */
+        border: 1.5px solid var(--feature, currentColor);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: border-color 250ms ease-in-out;
+    }
 /* Inner dot when selected */
 input[type="radio"]::before {
-    content: "";
-    width: 0.25em; /* Smaller inner circle */
-    height: 0.25em; /* Smaller inner circle */
-    border-radius: 50%;
-    background-color: transparent;
-    transform: scale(0);
-    transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
-}
+        content: "";
+        width: 0.25em;
+        /* Smaller inner circle */
+        height: 0.25em;
+        /* Smaller inner circle */
+        border-radius: 50%;
+        background-color: transparent;
+        transform: scale(0);
+        transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+    }
 /* When radio is selected */
 input[type="radio"]:checked {
-    border-color: var(--feature, currentColor);
-}
+        border-color: var(--feature, currentColor);
+    }
 input[type="radio"]:checked::before {
-    background-color: var(--feature, currentColor);
-    transform: scale(1);
-}
+        background-color: var(--feature, currentColor);
+        transform: scale(1);
+    }
 /* Remove focus outline */
 input[type="radio"]:focus {
-    outline: none;
-}
+        outline: none;
+    }
 .button-form {
   display: inline-block;
   border-bottom-width: 1px;
@@ -599,7 +603,6 @@ input[type="radio"]:focus {
         display: none;
     }
 .open-popup-btn {
-        /* Style your "Get the Guide" button as needed */
     }
 .popup-form {
         position: fixed;
@@ -884,14 +887,6 @@ input[type="radio"]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(173 132 73 / var(--tw-border-opacity));
 }
-.border-lighter {
-  --tw-border-opacity: 1;
-  border-color: rgb(246 241 227 / var(--tw-border-opacity));
-}
-.border-red-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity));
-}
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(59 60 46 / var(--tw-bg-opacity));
@@ -1035,6 +1030,10 @@ input[type="radio"]:focus {
 .text-lighter {
   --tw-text-opacity: 1;
   color: rgb(246 241 227 / var(--tw-text-opacity));
+}
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(59 60 46 / var(--tw-text-opacity));
 }
 
 @font-face {

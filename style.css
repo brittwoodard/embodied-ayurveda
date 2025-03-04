@@ -109,48 +109,52 @@
         @apply focus:outline-none focus:ring-2 focus:ring-main
     }
 
-/* Custom Radio Button Styling */
-input[type="radio"] {
-    appearance: none;
-    background: transparent;
-    margin: 0;
-    color: currentColor;
-    width: 0.75em; /* Reduced size */
-    height: 0.75em; /* Reduced size */
-    border: 1.5px solid var(--feature, currentColor);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: border-color 250ms ease-in-out;
-}
+    /* Custom Radio Button Styling */
+    input[type="radio"] {
+        appearance: none;
+        background: transparent;
+        margin: 0;
+        color: currentColor;
+        width: 0.75em;
+        /* Reduced size */
+        height: 0.75em;
+        /* Reduced size */
+        border: 1.5px solid var(--feature, currentColor);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: border-color 250ms ease-in-out;
+    }
 
-/* Inner dot when selected */
-input[type="radio"]::before {
-    content: "";
-    width: 0.25em; /* Smaller inner circle */
-    height: 0.25em; /* Smaller inner circle */
-    border-radius: 50%;
-    background-color: transparent;
-    transform: scale(0);
-    transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
-}
+    /* Inner dot when selected */
+    input[type="radio"]::before {
+        content: "";
+        width: 0.25em;
+        /* Smaller inner circle */
+        height: 0.25em;
+        /* Smaller inner circle */
+        border-radius: 50%;
+        background-color: transparent;
+        transform: scale(0);
+        transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+    }
 
-/* When radio is selected */
-input[type="radio"]:checked {
-    border-color: var(--feature, currentColor);
-}
+    /* When radio is selected */
+    input[type="radio"]:checked {
+        border-color: var(--feature, currentColor);
+    }
 
-input[type="radio"]:checked::before {
-    background-color: var(--feature, currentColor);
-    transform: scale(1);
-}
+    input[type="radio"]:checked::before {
+        background-color: var(--feature, currentColor);
+        transform: scale(1);
+    }
 
-/* Remove focus outline */
-input[type="radio"]:focus {
-    outline: none;
-}
+    /* Remove focus outline */
+    input[type="radio"]:focus {
+        outline: none;
+    }
 
 
     .button-form {
@@ -163,7 +167,6 @@ input[type="radio"]:focus {
     }
 
     .open-popup-btn {
-        /* Style your "Get the Guide" button as needed */
     }
 
     .popup-form {
@@ -211,6 +214,6 @@ input[type="radio"]:focus {
     .last-paragraph {
         @apply mb-0
     }
-    
+
 
 }
