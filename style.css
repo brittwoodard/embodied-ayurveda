@@ -74,6 +74,14 @@
         @apply border-b-[0.5px] border-dark inline-block hover:text-feature hover:border-feature hover:duration-500
     }
 
+    .link {
+        @apply lowercase pb-2 border-b border-inherit
+    }
+
+    .link:hover {
+        @apply transition duration-500 text-accent border-accent
+    }
+
     .button-box {
         @apply border border-dark bg-feature rounded-none cursor-pointer w-full tracking-wider p-2 hover:duration-500 hover:shadow-lg
     }
@@ -81,6 +89,19 @@
     /* Images */
     .bg-image-style {
         @apply bg-cover bg-no-repeat bg-center
+    }
+
+    /* Video */
+    .bg-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
     }
 
     /* Forms */

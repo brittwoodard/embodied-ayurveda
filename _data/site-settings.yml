@@ -6,8 +6,11 @@ general:
   logo-text: 
 retreats: 
   ayurvedic-internship: 
+    title: Ayurvedic Internship in Bali
+    description: Hands on clinical training for students and practitioners of Ayurveda
     upcoming-date: October 17 - 27, 2025
     location: Ubud, Bali
+    featured-image: /images/embodied-ayurveda-4.jpeg
 seo:
   site_name: Embodied Ayurveda
   title: Embodied Ayurveda
