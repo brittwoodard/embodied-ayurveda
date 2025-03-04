@@ -809,6 +809,9 @@ input[type="radio"]:focus {
 .h-screen {
   height: 100vh;
 }
+.h-\[95vh\] {
+  height: 95vh;
+}
 .w-\[75vw\] {
   width: 75vw;
 }
