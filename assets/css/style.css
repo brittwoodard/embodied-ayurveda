@@ -503,9 +503,9 @@ li:last-child {
 }
 .link:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(96 57 33 / var(--tw-border-opacity));
+  border-color: rgb(127 117 78 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(96 57 33 / var(--tw-text-opacity));
+  color: rgb(127 117 78 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -665,6 +665,15 @@ input[type="radio"]:focus {
 }
 .top-28 {
   top: 7rem;
+}
+.-bottom-\[2\.1rem\] {
+  bottom: -2.1rem;
+}
+.bottom-\[2\.1rem\] {
+  bottom: 2.1rem;
+}
+.-bottom-\[1\.3rem\] {
+  bottom: -1.3rem;
 }
 .z-10 {
   z-index: 10;
@@ -1154,6 +1163,12 @@ input[type="radio"]:focus {
   .md\:top-\[25\%\] {
     top: 25%;
   }
+  .md\:-bottom-16 {
+    bottom: -4rem;
+  }
+  .md\:bottom-16 {
+    bottom: 4rem;
+  }
   .md\:order-first {
     order: -9999;
   }
@@ -1235,6 +1250,24 @@ input[type="radio"]:focus {
   }
   .lg\:top-\[20\%\] {
     top: 20%;
+  }
+  .lg\:-bottom-\[2\.5rem\] {
+    bottom: -2.5rem;
+  }
+  .lg\:bottom-\[2\.5rem\] {
+    bottom: 2.5rem;
+  }
+  .lg\:-bottom-\[1\.3rem\] {
+    bottom: -1.3rem;
+  }
+  .lg\:-bottom-\[2\.3rem\] {
+    bottom: -2.3rem;
+  }
+  .lg\:-bottom-\[0\.3rem\] {
+    bottom: -0.3rem;
+  }
+  .lg\:-bottom-\[1\.5rem\] {
+    bottom: -1.5rem;
   }
   .lg\:order-first {
     order: -9999;

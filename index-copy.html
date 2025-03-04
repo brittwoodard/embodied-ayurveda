@@ -16,7 +16,7 @@ seo:
       <source src="/images/videos/ayurvedic-internship-small.mp4" type="video/mp4">
       <p>Sorry, your browser doesn't support embedded videos</p> 
   </video>
-  <div class="lex flex-col items-center justify-center text-center">
+  <div class="lex flex-col items-center justify-center text-center" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
     <img src="/images/illustrations/Logomark kopie 5.svg" alt="Embodied Ayurveda - Ayurvedic trainings and retreats in inspiring locations" class="h-28 mx-auto my-auto mb-8">
     <h1 class="font-serif text-6xl text-lighter uppercase">Embodied<br>Ayurveda</h1>
   </div>
@@ -24,20 +24,23 @@ seo:
 
 <!-- About Section -->
 <section class="bg-lighter text-center py-24 px-8 lg:px-20">
-  <div class="lg:w-[80%] mx-auto">
+  <div class="lg:w-[80%] mx-auto" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
     <h2 class="font-serif uppercase text-3xl mb-4">Bridging the gap between knowledge and practice</h2>
     <p>Embodied Ayurveda makes ancient wisdom practical, offering immersive trainings and retreats that help you move beyond theory into embodied practice. Whether you’re deepening your expertise or discovering Ayurveda for the first time, our approach blends hands-on learning, real-world application, and community support—so you can integrate Ayurveda into daily life in a way that feels natural, impactful, and lasting.</p>
   </div>
 </section>
 
 <!-- Upcoming Events -->
-<section class="grid grid-cols-2 bg-main text-light">
+<section class="grid grid-cols-2 bg-dark text-light">
 
   <!-- Left Column -->
-  <div class="bg-image-style aspect-square my-24 mx-8 lg:mx-20" style="background-image: url('/images/embodied-ayurveda-4.jpeg');"></div>
+  <div class="relative bg-image-style aspect-square my-24 mx-8 lg:mx-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000" style="background-image: url('/images/embodied-ayurveda-4.jpeg');">
+    <h2 class="absolute -top-[2.1rem] md:-top-16 lg:-top-[2.5rem] right-0 uppercase font-serif text-lighter text-[2.5rem] md:text-[5.5rem] lg:text-[3.3rem]">Upcoming</h2>
+    <p class="absolute -bottom-[2.1rem] md:-bottom-16 lg:-bottom-[1.5rem] left-0 uppercase font-serif text-lighter text-[2.5rem] md:text-[5.5rem] lg:text-[3.3rem]">Training retreat</p>
+  </div>
 
   <!-- Right Column -->
-  <div class="my-24 pr: 20 lg:w-[60%]">
+  <div class="my-24 pr: 20 lg:w-[60%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
     <h3 class="font-serif uppercase text-2xl mb-2">{{ site.data.site-settings.retreats.ayurvedic-internship.title }}</h3>
     <p class="mb-12">{{ site.data.site-settings.retreats.ayurvedic-internship.description }}</p>
     <p class="uppercase">{{ site.data.site-settings.retreats.ayurvedic-internship.upcoming-date }}</p>
@@ -48,6 +51,6 @@ seo:
   </div>
 </section>
 
-<footer class="border-t border-dark py-2 bg-feature">
+<footer class="border-t border-dark py-2 bg-light">
   <p class="text-center text-[0.9rem]">Designed & Deveoloped by <a href="https://embodiedcreativeagency.com/" target="_blank">Embodied Creative</a>.</p>
 </footer>

@@ -79,7 +79,7 @@
     }
 
     .link:hover {
-        @apply transition duration-500 text-accent border-accent
+        @apply transition duration-500 text-main border-main
     }
 
     .button-box {
