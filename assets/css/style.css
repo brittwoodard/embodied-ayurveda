@@ -625,6 +625,9 @@ input[type="radio"]:focus {
 .inset-0 {
   inset: 0px;
 }
+.-top-\[2\.5rem\] {
+  top: -2.5rem;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -642,15 +645,6 @@ input[type="radio"]:focus {
 }
 .top-28 {
   top: 7rem;
-}
-.-top-\[10\%\] {
-  top: -10%;
-}
-.-top-\[9\%\] {
-  top: -9%;
-}
-.-top-\[2\.5rem\] {
-  top: -2.5rem;
 }
 .z-10 {
   z-index: 10;
@@ -676,19 +670,14 @@ input[type="radio"]:focus {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
 .mb-0 {
   margin-bottom: 0px;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.mb-10p {
+  margin-bottom: 10%;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -723,18 +712,6 @@ input[type="radio"]:focus {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-20 {
-  margin-top: 5rem;
-}
-.mb-40 {
-  margin-bottom: 10rem;
-}
-.mb-20 {
-  margin-bottom: 5rem;
-}
-.mb-10p {
-  margin-bottom: 10%;
-}
 .block {
   display: block;
 }
@@ -768,12 +745,6 @@ input[type="radio"]:focus {
 .h-screen {
   height: 100vh;
 }
-.h-20 {
-  height: 5rem;
-}
-.h-40 {
-  height: 10rem;
-}
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
@@ -795,14 +766,14 @@ input[type="radio"]:focus {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .flex-wrap {
   flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
@@ -816,14 +787,14 @@ input[type="radio"]:focus {
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-20 {
+  gap: 5rem;
+}
 .gap-4 {
   gap: 1rem;
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-20 {
-  gap: 5rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -841,14 +812,11 @@ input[type="radio"]:focus {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-t {
-  border-top-width: 1px;
-}
-.border-r {
-  border-right-width: 1px;
-}
 .border-r-2 {
   border-right-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-black {
   --tw-border-opacity: 1;
@@ -862,24 +830,20 @@ input[type="radio"]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(173 132 73 / var(--tw-border-opacity));
 }
-.border-lighter {
-  --tw-border-opacity: 1;
-  border-color: rgb(246 241 227 / var(--tw-border-opacity));
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 60 46 / var(--tw-bg-opacity));
 }
 .bg-feature {
   --tw-bg-opacity: 1;
   background-color: rgb(173 132 73 / var(--tw-bg-opacity));
 }
-.bg-transparent {
-  background-color: transparent;
-}
 .bg-main {
   --tw-bg-opacity: 1;
   background-color: rgb(127 117 78 / var(--tw-bg-opacity));
 }
-.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 60 46 / var(--tw-bg-opacity));
+.bg-transparent {
+  background-color: transparent;
 }
 .bg-\[top\] {
   background-position: top;
@@ -921,7 +885,7 @@ input[type="radio"]:focus {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-\[6rem\] {
+.py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -929,30 +893,15 @@ input[type="radio"]:focus {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-.py-24 {
+.py-\[6rem\] {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .pl-10p {
   padding-left: 10%;
 }
 .pr-10p {
   padding-right: 10%;
-}
-.text-left {
-  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -982,18 +931,15 @@ input[type="radio"]:focus {
 .text-\[2rem\] {
   font-size: 2rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[3\.3rem\] {
+  font-size: 3.3rem;
 }
 .text-\[3rem\] {
   font-size: 3rem;
 }
-.text-\[3\.3rem\] {
-  font-size: 3.3rem;
-}
-.font-light {
-  font-weight: 300;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .font-\[300\] {
   font-weight: 300;
@@ -1016,22 +962,19 @@ input[type="radio"]:focus {
 .leading-tight {
   line-height: 1.25;
 }
-.leading-\[0\.5em\] {
-  line-height: 0.5em;
-}
 .tracking-wider {
   letter-spacing: 0.05em;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
 }
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(59 60 46 / var(--tw-text-opacity));
-}
 .text-accent {
   --tw-text-opacity: 1;
   color: rgb(96 57 33 / var(--tw-text-opacity));
+}
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(59 60 46 / var(--tw-text-opacity));
 }
 .text-light {
   --tw-text-opacity: 1;
@@ -1140,9 +1083,6 @@ input[type="radio"]:focus {
   .md\:w-\[80\%\] {
     width: 80%;
   }
-  .md\:w-auto {
-    width: auto;
-  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1192,28 +1132,24 @@ input[type="radio"]:focus {
   .lg\:w-\[60\%\] {
     width: 60%;
   }
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
   .lg\:w-\[80\%\] {
     width: 80%;
   }
   .lg\:w-full {
     width: 100%;
   }
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  .lg\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
