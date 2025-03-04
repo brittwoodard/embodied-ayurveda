@@ -88,11 +88,6 @@
         @apply focus:outline-none focus:ring-2 focus:ring-main
     }
 
-    /* Forms */
-.focus-main {
-    @apply focus:outline-none focus:ring-2 focus:ring-main;
-}
-
 /* Custom Radio Button Styling */
 input[type="radio"] {
     appearance: none;
@@ -164,7 +159,7 @@ input[type="radio"]:focus {
     }
 
     .form-content {
-        @apply bg-lighter p-5p rounded-none relative w-[90%] max-w-[600px] border-2 border-feature
+        @apply bg-lighter p-5p rounded-none relative w-[90%] max-w-[600px] border-2 border-dark
     }
 
     .close-btn {
