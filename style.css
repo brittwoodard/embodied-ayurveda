@@ -35,7 +35,7 @@
     }
 
     p {
-        @apply mb-4 text-[1.2rem] tracking-wider leading-6
+        @apply mb-4 tracking-wider leading-6
     }
 
     p:last-child {
