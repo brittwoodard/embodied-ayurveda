@@ -31,7 +31,7 @@
     }
 
     body {
-        @apply font-sans font-light text-[1.2rem] text-dark bg-lighter tracking-wide antialiased
+        @apply font-sans font-light text-[1rem] text-dark bg-lighter tracking-wide antialiased
     }
 
     p {
