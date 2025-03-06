@@ -906,6 +906,18 @@ input[type="radio"]:focus {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-dark\/40 {
+  background-color: rgb(59 60 46 / 0.4);
+}
+.bg-dark\/50 {
+  background-color: rgb(59 60 46 / 0.5);
+}
+.bg-feature\/50 {
+  background-color: rgb(173 132 73 / 0.5);
+}
+.bg-accent\/50 {
+  background-color: rgb(96 57 33 / 0.5);
+}
 .bg-\[left\] {
   background-position: left;
 }

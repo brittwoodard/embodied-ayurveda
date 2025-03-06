@@ -1,0 +1,59 @@
+<!-- Popup Form -->
+<div class="popup-form hidden">
+    <div class="form-content">
+
+        <!-- Logo -->
+        <div class="flex justify-center mb-4">
+            <img class="h-20" src="/images/illustrations/Logomark.svg">
+        </div>
+
+        <!-- Close Button -->
+        <span class="close-popup-btn close-btn text-dark hover:text-main hover:duration-500">&times;</span>
+
+        <!-- Popup Content -->
+        <h2 class="leading-[1.2em] text-[1.2rem] text-center mb-6 uppercase text-dark">
+            Thinking about joining the Ayurvedic Internship in Bali? Join Brittany for a live Q&A to learn more, get your questions answered, and see if this training is the right fit for you.
+        </h2>
+
+        <form method="POST" action="https://forms.ontraport.com/v2.4/form_processor.php?" class="form-container">
+
+            <!-- Visible Form Fields -->
+            <div class="grid lg:grid-cols-2 gap-2">
+
+                <!-- First Name -->
+                <div>
+                    <input name="firstname" type="text" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-main placeholder:text-dark/60" placeholder="First Name" required />
+                </div>
+
+                <!-- Last Name -->
+                <div>
+                    <input name="lastname" type="text" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-main placeholder:text-dark/60" placeholder="Last Name" required />
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mt-2">
+                <input name="email" type="email" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-main placeholder:text-dark/60" placeholder="Email" required />
+            </div>
+
+            <!-- Questions -->
+            <div class="mt-2">
+                <textarea name="f2111" class="moonray-form-input text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-main placeholder:text-dark/60 leading-tight" placeholder="Type your questions here..." required></textarea>
+            </div>
+
+            <!-- Hidden Fields -->
+            <input name="afft_" type="hidden" value="" />
+            <input name="aff_" type="hidden" value="" />
+            <input name="uid" type="hidden" value="p2c265658f2" />
+            <!-- Other hidden fields can remain if necessary -->
+
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha mt-2" data-sitekey="6LeJGa0qAAAAAEiEr47fYw3X2Alv0twzG-rUSWdn"></div>
+            
+            <!-- Submit Button -->
+            <div class="mt-2">
+                <button type="submit" class="submit-btn border border-dark bg-main rounded-none cursor-pointer w-full p-2 text-lighter uppercase hover:duration-500 hover:shadow-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
