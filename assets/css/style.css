@@ -906,18 +906,6 @@ input[type="radio"]:focus {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-dark\/40 {
-  background-color: rgb(59 60 46 / 0.4);
-}
-.bg-dark\/50 {
-  background-color: rgb(59 60 46 / 0.5);
-}
-.bg-feature\/50 {
-  background-color: rgb(173 132 73 / 0.5);
-}
-.bg-accent\/50 {
-  background-color: rgb(96 57 33 / 0.5);
-}
 .bg-\[left\] {
   background-position: left;
 }
@@ -1067,23 +1055,28 @@ input[type="radio"]:focus {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+
 .placeholder\:text-dark\/60::-moz-placeholder {
   color: rgb(59 60 46 / 0.6);
 }
 
+
 .placeholder\:text-dark\/60::placeholder {
   color: rgb(59 60 46 / 0.6);
 }
+
 
 .hover\:text-light:hover {
   --tw-text-opacity: 1;
   color: rgb(225 216 195 / var(--tw-text-opacity));
 }
 
+
 .hover\:text-main:hover {
   --tw-text-opacity: 1;
   color: rgb(127 117 78 / var(--tw-text-opacity));
 }
+
 
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1091,32 +1084,39 @@ input[type="radio"]:focus {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+
 .hover\:duration-500:hover {
   transition-duration: 500ms;
 }
+
 
 .focus\:border-2:focus {
   border-width: 2px;
 }
 
+
 .focus\:border-b-2:focus {
   border-bottom-width: 2px;
 }
+
 
 .focus\:border-feature:focus {
   --tw-border-opacity: 1;
   border-color: rgb(173 132 73 / var(--tw-border-opacity));
 }
 
+
 .focus\:border-main:focus {
   --tw-border-opacity: 1;
   border-color: rgb(127 117 78 / var(--tw-border-opacity));
 }
 
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 
 @media (min-width: 768px) {
   .md\:-bottom-\[1\.2rem\] {
@@ -1193,6 +1193,7 @@ input[type="radio"]:focus {
     font-size: 5.5rem;
   }
 }
+
 
 @media (min-width: 1024px) {
   .lg\:-bottom-\[1\.5rem\] {
