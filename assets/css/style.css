@@ -468,12 +468,6 @@ li:last-child {
   font-size: 2rem;
   letter-spacing: 0.025em;
 }
-.serif-md {
-  margin-bottom: 0.5rem;
-  font-family: AestheticWonder-ExtraBold, serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.025em;
-}
 .serif-sm {
   margin-bottom: 0.5rem;
   font-family: AestheticWonder-ExtraBold, serif;
@@ -538,7 +532,7 @@ li:last-child {
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(127 117 78 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(59 60 46 / var(--tw-ring-opacity));
 }
 /* Custom Radio Button Styling */
 input[type="radio"] {
@@ -574,7 +568,7 @@ input[type="radio"]::before {
     }
 /* When radio is selected */
 input[type="radio"]:checked {
-        border-color: var(--feature, currentColor);
+        border-color: var(--main, currentColor);
     }
 input[type="radio"]:checked::before {
         background-color: var(--feature, currentColor);
@@ -888,10 +882,6 @@ input[type="radio"]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(59 60 46 / var(--tw-border-opacity));
 }
-.border-feature {
-  --tw-border-opacity: 1;
-  border-color: rgb(173 132 73 / var(--tw-border-opacity));
-}
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(59 60 46 / var(--tw-bg-opacity));
@@ -970,6 +960,10 @@ input[type="radio"]:focus {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -1053,9 +1047,9 @@ input[type="radio"]:focus {
 }
 
 :root {
-    --feature: #A1A67F;
-    --dark: #231F1D;
-    --main: #E4D7D3;
+    --feature: #AD8449;
+    --dark: #3B3C2E;
+    --main: #7F754E;
 }
 
 

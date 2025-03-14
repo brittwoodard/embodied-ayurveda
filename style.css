@@ -16,9 +16,9 @@
 }
 
 :root {
-    --feature: #A1A67F;
-    --dark: #231F1D;
-    --main: #E4D7D3;
+    --feature: #AD8449;
+    --dark: #3B3C2E;
+    --main: #7F754E;
 }
 
 
@@ -106,7 +106,7 @@
 
     /* Forms */
     .focus-main {
-        @apply focus:outline-none focus:ring-2 focus:ring-main
+        @apply focus:outline-none focus:ring-2 focus:ring-dark
     }
 
     /* Custom Radio Button Styling */
@@ -143,7 +143,7 @@
 
     /* When radio is selected */
     input[type="radio"]:checked {
-        border-color: var(--feature, currentColor);
+        border-color: var(--main, currentColor);
     }
 
     input[type="radio"]:checked::before {
