@@ -79,6 +79,25 @@ seo:
       <img class="h-32" src="/images/illustrations/Logomark.svg">
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollContainer = document.querySelector(".feature-scroll-container");
+  
+      scrollContainer.addEventListener("wheel", function (e) {
+        const isScrollingDown = e.deltaY > 0;
+        const isAtTop = scrollContainer.scrollTop === 0;
+        const isAtBottom = scrollContainer.scrollHeight - scrollContainer.scrollTop === scrollContainer.clientHeight;
+  
+        if ((isScrollingDown && !isAtBottom) || (!isScrollingDown && !isAtTop)) {
+          // Prevent page scroll
+          e.stopPropagation();
+          e.preventDefault();
+        }
+      }, { passive: false });
+    });
+  </script>
+  
 </section>
 
 

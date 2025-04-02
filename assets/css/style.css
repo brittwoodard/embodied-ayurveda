@@ -1217,6 +1217,9 @@ input[type="radio"]:focus {
   .lg\:h-\[60vh\] {
     height: 60vh;
   }
+  .lg\:h-96 {
+    height: 24rem;
+  }
   .lg\:w-\[60\%\] {
     width: 60%;
   }
