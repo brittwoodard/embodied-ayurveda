@@ -1,0 +1,25 @@
+---
+layout: blank
+title: Your Guide is on Its Way!
+links: 
+  link_1: 
+    title: Home
+    url: /index.html
+  link_2: 
+    title: Contact
+    url: /contact.html
+---
+
+<section class="flex justify-center justify-items-center text-center items-center h-screen">
+
+    <div class="lg:w-[70%]">
+        <h1 class="font-serif text-2xl mb-4 uppercase">You're on the waitlist!</h1>
+        <p class="uppercase">You'll be the first to receive the guide when it's ready.</p>
+        <p>Keep an eye on your inbox from an email from {{site.data.site-settings.general.email}} in the meantime.</p>
+
+        <div class="mt-4">
+          <a href="{{page.links.link_1.url}}" class="button mr-2">{{page.links.link_1.title}}</a>
+          <a href="mailto:{{site.data.site-settings.general.email}}?subject=Let's%20Connect" class="button ml-2">Contact</a>
+        </div>
+    </div>
+</section>
