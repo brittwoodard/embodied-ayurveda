@@ -1,6 +1,6 @@
 general:
   site-name: 
-  email: connect@embodiedayurvedaretreats.com
+  email: connect@embodiedayurveda.co
   logo_path: 
   logo-max-width: 
   logo-text: 
@@ -11,12 +11,18 @@ retreats:
     upcoming-date: March 14 - 24, 2026
     location: Ubud, Bali
     featured-image: /images/embodied-ayurveda-4.jpeg
+  yoga: 
+    title: Ayurvedic Applications of yoga
+    description: Where Ayurveda meets the mat
+    upcoming-date: October 2025
+    location: Koh Phangan, Thailand
+    featured-image: /images/embodied-ayurveda-4.jpeg
 seo:
   site_name: Embodied Ayurveda
   title: Embodied Ayurveda
   type: website
   description: Bridging the gap between theory and practice through hands-on trainings in inspiring locations.
-  keywords: Ayurvedic Internship, Ayurvedic Internship in Bali, Dr. Resmi
+  keywords: Ayurvedic Internship, Ayurvedic Internship in Bali, Dr. Resmi, Ayurveda yoga therapy, Ayurvedic application of yoga, Dr. Scott Roos
   social_image:
 social:
   instagram_username: 

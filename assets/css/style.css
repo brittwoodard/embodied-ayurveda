@@ -1037,6 +1037,9 @@ input[type="radio"]:focus {
   --tw-text-opacity: 1;
   color: rgb(246 241 227 / var(--tw-text-opacity));
 }
+.underline {
+  text-decoration-line: underline;
+}
 
 @font-face {
     font-family: 'AestheticWonder-ExtraBold';
