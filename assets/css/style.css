@@ -1186,6 +1186,9 @@ input[type="radio"]:focus {
   .md\:text-\[5\.5rem\] {
     font-size: 5.5rem;
   }
+  .md\:text-\[3rem\] {
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
