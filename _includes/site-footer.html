@@ -1,0 +1,23 @@
+<footer class="bg-light text-center">
+
+    <div class="py-5p">
+
+        <a href="/index.html" class="uppercase font-serif text-3xl hover:text-main transition duration-500">Embodied
+            Ayurveda</a>
+        <nav class="uppercase mt-4">
+            {% for item in site.data.navigation.footer %}
+            <a href="{{ item.url }}" class="block hover:text-main transition duration-500 mb-2 last:mb-0">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+        <div class="flex justify-center mt-8">
+            <img src="/images/illustrations/sacred-1.png" class="h-16">
+        </div>
+
+    </div>
+
+    <!-- Embodied Creative -->
+    <div class="pb-2">
+        <p class="text-center text-[0.9rem]">Designed & Deveoloped by <a href="https://embodiedcreativeagency.com/"
+                target="_blank">Embodied Creative</a>.</p>
+    </div>
+</footer>

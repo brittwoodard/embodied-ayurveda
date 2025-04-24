@@ -6,9 +6,7 @@ header:
   - title: Contact
     url: /contact
 footer:
-  - title: Home
-    url: /homepage
-  - title: About
-    url: /about  
-  - title: Contact
-    url: /contact
+  - title: Who we are
+    url: /about
+  - title: Connect
+    url: /contact  

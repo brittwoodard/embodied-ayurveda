@@ -1,6 +1,9 @@
 ---
-layout: blank
+layout: default
 title: Embodied Ayurveda
+upcoming-events:
+  background_color: dark
+  font_color: lighter
 seo:
   title: Embodied Ayurveda
   description: Bridging the gap between theory and practice through hands-on trainings in inspiring locations.
@@ -33,28 +36,4 @@ seo:
 </section>
 
 <!-- Upcoming Events -->
-<section class="bg-dark text-light relative">
-
-  <h2 class="text-[10.9vw] font-serif uppercase whitespace-nowrap m-0 absolute -top-[6%] -left-[1%] text-lighter">Upcoming Trainings</h2>
-  <div class="grid md:grid-cols-2 pt-24">
-
-    <!-- Left Column -->
-    <div class="relative bg-image-style min-h-[60vh] md:min-h-0 md:aspect-square mt-24 md:mt-32 md:mb-24 mx-8 lg:mx-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000" style="background-image: url('/images/embodied-ayurveda-4.jpeg');">
-    </div>
-
-    <!-- Right Column -->
-    <div class="my-16 md:mt-32 md:mb-24 px-8 md:px-0 lg:pr:20 lg:w-[60%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-      <h3 class="font-serif uppercase text-2xl mb-2">{{ site.data.site-settings.retreats.ayurvedic-internship.title }}</h3>
-      <p class="mb-12">{{ site.data.site-settings.retreats.ayurvedic-internship.description }}</p>
-      <p class="uppercase">{{ site.data.site-settings.retreats.ayurvedic-internship.upcoming-date }}</p>
-      <p>{{ site.data.site-settings.retreats.ayurvedic-internship.location }}</p>
-      <div class="mt-12">
-        <a class="link" href="/ayurvedic-internship.html">Learn more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="border-t border-dark py-2 bg-light">
-  <p class="text-center text-[0.9rem]">Designed & Deveoloped by <a href="https://embodiedcreativeagency.com/" target="_blank">Embodied Creative</a>.</p>
-</footer>
+{% include upcoming-events.html %}
