@@ -1,0 +1,24 @@
+---
+layout: blank
+title: Your Guide is on Its Way!
+links: 
+  link_1: 
+    title: Home
+    url: /index.html
+  link_2: 
+    title: Contact
+    url: /contact.html
+---
+
+<section class="flex justify-center justify-items-center text-center items-center h-screen">
+
+    <div>
+        <h1 class="font-serif text-2xl mb-4 uppercase">Thank you for your message.</h1>
+        <p class="uppercase">We'll be in touch shortly.</p>
+
+        <div class="mt-4">
+          <a href="{{page.links.link_1.url}}" class="button mr-2">{{page.links.link_1.title}}</a>
+          <a href="mailto:{{site.data.site-settings.general.email}}?subject=Let's%20Connect" class="button ml-2">Contact</a>
+        </div>
+    </div>
+</section>
