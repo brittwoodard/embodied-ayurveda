@@ -1,8 +1,10 @@
 header:
   - title: Home
-    url: /homepage
+    url: /index
   - title: About
     url: /about  
+  - title: Ayurvedic Internship
+    url: /ayurvedic-internship
   - title: Contact
     url: /contact
 footer:

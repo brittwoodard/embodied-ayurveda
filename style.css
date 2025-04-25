@@ -19,6 +19,9 @@
     --feature: #AD8449;
     --dark: #3B3C2E;
     --main: #7F754E;
+    --accent: #603921;
+    --light: #E1D8C3;
+    --lighter: #F6F1E3;
 }
 
 
@@ -215,5 +218,108 @@
         @apply mb-0
     }
 
+    /* Mobile Menu */
+    .mobile-button {
+        position: fixed;
+        top: 3.2vh;
+        right: 2vh;
+        z-index: 40;
+        padding: 0.5rem;
+    }
+
+    .mobile-button span {
+        width: 2rem;
+        border: 0.75px solid var(--accent);
+        background-color: var(--accent);
+        display: block;
+        border-radius: 22px;
+        transition: 2s;
+    }
+
+    .mobile-button.active span {
+        border-color: var(--dark);
+        background-color: var(--dark);
+    }
+
+    .mobile-top,
+    .mobile-bottom {
+        position: absolute;
+    }
+
+    .mobile-top {
+        top: -02px;
+    }
+
+    .mobile-bottom {
+        bottom: -02px;
+    }
+
+    .mobile-button.active .mobile-top {
+        border-color: var(--featured);
+        position: absolute;
+        top: 8px;
+        transform: rotateZ(45deg);
+    }
+
+    .mobile-button.active .mobile-middle {
+        /*   transform: rotateZ(270deg); */
+        border-color: var(--featured);
+        background-color: var(--featured);
+    }
+
+    .mobile-button.active .mobile-bottom {
+        border-color: var(--featured);
+        position: absolute;
+        bottom: 8px;
+        transform: rotateZ(-45deg);
+    }
+
+    /* Mobile Menu */
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--light);
+    padding: 5%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+  
+    /* fade out by default */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  
+    /* animate opacity */
+    transition: opacity 1s ease, visibility 1s ease;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  
+  /* when active, fade in */
+  .mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  /* links inside */
+  .mobile-menu a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .mobile-menu a:hover {
+    color: var(--main);
+  }
+  
 
 }
