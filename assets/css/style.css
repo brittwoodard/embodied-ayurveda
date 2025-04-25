@@ -595,8 +595,7 @@ input[type="radio"]:focus {
 .hidden {
         display: none;
     }
-.open-popup-btn {
-    }
+.open-popup-btn {}
 .popup-form {
         position: fixed;
         top: 0;
@@ -678,47 +677,47 @@ input[type="radio"]:focus {
     }
 /* Mobile Menu */
 .mobile-menu {
-    display: flex;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--light);
-    padding: 5%;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 20;
-  
-    /* fade out by default */
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  
-    /* animate opacity */
-    transition: opacity 1s ease, visibility 1s ease;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-  }
+        display: flex;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--light);
+        padding: 5%;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 20;
+
+        /* fade out by default */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        /* animate opacity */
+        transition: opacity 1s ease, visibility 1s ease;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+    }
 /* when active, fade in */
 .mobile-menu.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 /* links inside */
 .mobile-menu a {
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--dark);
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: var(--dark);
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
 .mobile-menu a:hover {
-    color: var(--main);
-  }
+        color: var(--main);
+    }
 /* Recatcha */
 .collapse {
   visibility: collapse;
@@ -768,6 +767,9 @@ input[type="radio"]:focus {
 .z-20 {
   z-index: 20;
 }
+.z-30 {
+  z-index: 30;
+}
 .order-last {
   order: 9999;
 }
@@ -799,10 +801,6 @@ input[type="radio"]:focus {
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 .my-auto {
   margin-top: auto;

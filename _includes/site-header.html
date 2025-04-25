@@ -4,7 +4,7 @@
     <span class="mobile-bottom"></span>
 </div>
 
-<nav class="mobile-menu">
+<nav class="mobile-menu z-30">
     {% for item in site.data.navigation.header %}
     <a href="{{ item.url }}" class="px-2 mx-2 {% if forloop.last %}text-feature{% endif %}">{{ item.title }}</a>
     {% endfor %}
