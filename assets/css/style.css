@@ -824,6 +824,9 @@ input[type="radio"]:focus {
 .-ml-\[0\.5\%\] {
   margin-left: -0.5%;
 }
+.mb-24 {
+  margin-bottom: 6rem;
+}
 .block {
   display: block;
 }
@@ -998,6 +1001,10 @@ input[type="radio"]:focus {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 57 33 / var(--tw-bg-opacity));
 }
 .bg-\[left\] {
   background-position: left;
