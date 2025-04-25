@@ -3,30 +3,34 @@ layout: default
 ---
 
 <!-- Hero Banner -->
-<section>
-    <h1>About Embodied Ayurveda</h1>
-    <p>Embodied Ayurveda was created to bring Ayurvedic education to life through travel, hands-on learning, and experiences that stay with you long after you return home. We offer immersive retreats and clinical trainings in inspiring destinations, where students and practitioners can deepen their understanding, build confidence, and reconnect with the heart of this ancient healing tradition.</p>
-    <p>This is more than just theory in a textbook. Our programs are designed for people who want to live Ayurveda, who are ready to step out of the online classroom and into real-world practice, guided by experienced teachers in beautiful places that spark curiosity and joy.</p>
-    <div class="flex justify-center">
-        <img src="/images/illustrations/Logomark.svg" class="h-20">
+<section class="bg-dark text-lighter">
+    <h1 class="font-serif uppercase whitespace-nowrap text-[8.1vw] -mt-[2.25rem] -ml-[0.5%]">About Embodied Ayurveda</h1>
+    <div class="py-10p w-[60%] mx-auto text-center">
+        <p>Embodied Ayurveda was created to bring Ayurvedic education to life through travel, hands-on learning, and experiences that stay with you long after you return home. We offer immersive retreats and clinical trainings in inspiring destinations, where students and practitioners can deepen their understanding, build confidence, and reconnect with the heart of this ancient healing tradition.</p>
+        <p>This is more than just theory in a textbook. Our programs are designed for people who want to live Ayurveda, who are ready to step out of the online classroom and into real-world practice, guided by experienced teachers in beautiful places that spark curiosity and joy.</p>
+        <div class="flex justify-center">
+            <img src="/images/illustrations/Logomark kopie 5.svg" class="h-16 mt-8">
+        </div>
     </div>
 </section>
 
 <!-- Our Values -->
 <section>
 
-    <div>
-        <h2>Our Ethos</h2>
-        <p>At Embodied Ayurveda, everything we do is rooted in experience. We don’t just talk about transformation—we create the space for it to unfold naturally, through connection, movement, learning, and beauty. These are the values that guide how we teach, how we travel, and how we show up for our community:</p>
+    <div class="pb-24 px-8 lg:px-20 bg-dark text-light" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <h2 class="font-serif uppercase text-2xl lg:text-3xl mb-2">Our Ethos</h2>
+        <p class="lg:w-[70%]">At Embodied Ayurveda, everything we do is rooted in experience. We don’t just talk about transformation—we create the space for it to unfold naturally, through connection, movement, learning, and beauty. These are the values that guide how we teach, how we travel, and how we show up for our community:</p>
     </div>
 
     <div class="grid grid-cols-2">
 
         <!-- 1st Row, Left Column -->
-        <div class="flex items-center justify-center aspect-square">
+        <div class="flex items-center justify-center aspect-square bg-light p-10p text-center">
             <div>
-                <img src="/images/illustrations/authentic-1.png" class="h-12">
-                <h3 class="uppercase">Authenticity</h3>
+                <div class="flex justify-center mb-4">
+                    <img src="/images/illustrations/authentic-1.png" class="h-12">
+                </div>
+                <h3 class="uppercase mb-2">Authenticity</h3>
                 <p>We hold a deep respect for the roots of Ayurveda. Everything we teach is grounded in tradition. We work with trusted teachers, focus on foundational principles, and share practices that are both powerful and practical. Because Ayurveda isn’t something to sell; it’s something to embody.</p>
             </div>
         </div>
@@ -70,3 +74,6 @@ layout: default
         </div>
     </div>
 </section>
+
+<!-- Upcoming Events -->
+{% include upcoming-events.html %}
