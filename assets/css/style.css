@@ -824,6 +824,9 @@ input[type="radio"]:focus {
 .aspect-\[3\/4\] {
   aspect-ratio: 3/4;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-16 {
   height: 4rem;
 }
@@ -859,6 +862,9 @@ input[type="radio"]:focus {
 }
 .h-\[60vh\] {
   height: 60vh;
+}
+.h-12 {
+  height: 3rem;
 }
 .min-h-\[55vh\] {
   min-height: 55vh;
