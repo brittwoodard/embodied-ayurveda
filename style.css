@@ -45,8 +45,12 @@
         @apply mb-0;
     }
 
-    li:last-child {
-        @apply mb-0
+    ul {
+        @apply list-disc ml-4
+    }
+
+    li {
+        @apply mb-2
     }
 
 }

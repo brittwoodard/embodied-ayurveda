@@ -353,8 +353,12 @@ p {
 p:last-child {
   margin-bottom: 0px;
 }
-li:last-child {
-  margin-bottom: 0px;
+ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+li {
+  margin-bottom: 0.5rem;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -1059,6 +1063,9 @@ input[type="radio"]:focus {
 .p-2 {
   padding: 0.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-5p {
   padding: 5%;
 }
@@ -1271,9 +1278,9 @@ input[type="radio"]:focus {
   margin-bottom: 0px;
 }
 
-.hover\:text-light:hover {
+.hover\:text-accent:hover {
   --tw-text-opacity: 1;
-  color: rgb(225 216 195 / var(--tw-text-opacity));
+  color: rgb(96 57 33 / var(--tw-text-opacity));
 }
 
 .hover\:text-main:hover {
