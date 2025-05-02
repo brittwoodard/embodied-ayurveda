@@ -130,10 +130,12 @@ seo:
 
 
 <!-- Teacher -->
-<section class="py-24 px-8 lg:px-20">
+<section class="py-24 px-8 lg:px-20 relative">
+  <h2 class="font-serif uppercase whitespace-nowrap m-0 text-[12.3vw] absolute -top-[0.5%] md:-top-[1.3%] lg:-top-[3.5%] -left-[1%]">
+    Your Facilitators</h2>
 
   <!-- Dr. Resmi -->
-  <div class="grid lg:grid-cols-2 lg:gap-20 mb-10p" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+  <div class="grid lg:grid-cols-2 lg:gap-20 mb-10p md:mt-12 lg:mt-28" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
 
     <!-- Left Column / Text -->
     <div class="flex items-center order-last lg:order-first mt-8 lg:mt-0">
@@ -146,9 +148,7 @@ seo:
     </div>
 
     <!-- Right Column / Image -->
-    <div class="bg-image-style min-h-[55vh] md:min-h-0 md:aspect-square relative" style="background-image: url('/images/embodied-ayurveda-1.jpg');">
-    
-      <h2 class="absolute -top-[2.1rem] md:-top-16 lg:-top-[2.5rem] right-0 uppercase font-serif text-accent text-[2.5rem] md:text-[5.5rem] lg:text-[3.3rem]">Your preceptor</h2>
+    <div class="bg-image-style min-h-[55vh] md:min-h-0 md:aspect-square" style="background-image: url('/images/embodied-ayurveda-1.jpg');">
     </div>
   </div>
 
@@ -157,10 +157,7 @@ seo:
   <div class="grid lg:grid-cols-2 lg:gap-20 mt-20 md:mt-24 lg:mt-0" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
 
     <!-- Left Column / Image -->
-    <div class="bg-image-style bg-[left] min-h-[55vh] md:min-h-0 md:aspect-square relative mb-8" style="background-image: url('/images/embodied-ayurveda-3.jpeg');">
-    
-      <h2 class="absolute -top-[2.1rem] md:-top-16 lg:-top-[2.5rem] left-0 uppercase font-serif text-accent text-[2.4rem] md:text-[5.5rem] lg:text-[3.3rem]">Your facilitator</h2>
-    </div>
+    <div class="bg-image-style bg-[left] min-h-[55vh] md:min-h-0 md:aspect-square relative mb-8" style="background-image: url('/images/embodied-ayurveda-3.jpeg');"></div>
 
     <!-- Right Column / Text -->
     <div class="flex items-center">
@@ -175,7 +172,7 @@ seo:
 </section>
 
 <!-- Testimonials -->
-<section class="py-24 px-8 lg:px-20 bg-lighter">
+<section class="mt-24 mb-48 mx-8 lg:mx-20 bg-lighter bg-no-repeat bg-contain bg-center" style="background-image: url('/images/illustrations/Logomark\ kopie\ 4.svg');">
   <div class="testimonial-container">
 
     {% for item in page.testimonials %}
