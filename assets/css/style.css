@@ -810,10 +810,6 @@ input[type="radio"]:focus {
   margin-top: auto;
   margin-bottom: auto;
 }
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
 .-ml-\[0\.5\%\] {
   margin-left: -0.5%;
 }
@@ -900,9 +896,6 @@ input[type="radio"]:focus {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.aspect-portrait {
-  aspect-ratio: 3 / 4;
 }
 .h-12 {
   height: 3rem;
