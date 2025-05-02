@@ -1,70 +1,55 @@
-<div id="cookieConsentBanner" class="p-4 bg-light fixed left-0 right-0 bottom-0 z-20">
-    
-    <div class="flex justify-center">
-        <div class="px-4 text-center leading-[1em]">
-            <span>We use cookies to improve your experience. By continuing, you agree to our <a href="/privacy-policy.html" class="button hover:text-accent">privacy policy</a>.</span>
-            <a id="acceptCookies" class="mx-4 button-cookies cursor-pointer button hover:text-accent">Accept</a>
-            <a id="declineCookies" class="button-cookies cursor-pointer button hover:text-accent">Decline</a>
-        </div>
-        <div class="text-right text-lg cursor-pointer fixed right-[12px] leading-5">
-            <span id="close-cookie-banner">X</span>
-        </div>
+<div id="cookieConsentBanner"
+     class="hidden p-4 bg-light fixed left-0 right-0 bottom-0 z-20">
+  <div class="flex justify-center">
+    <div class="px-4 text-center leading-[1em]">
+      <span>
+        We use cookies to improve your experience. By continuing, you agree to our
+        <a href="/privacy-policy.html" class="button hover:text-accent">privacy policy</a>.
+      </span>
+      <a id="acceptCookies"
+         class="mx-4 button-cookies cursor-pointer button hover:text-accent">
+        Accept
+      </a>
+      <a id="declineCookies"
+         class="button-cookies cursor-pointer button hover:text-accent">
+        Decline
+      </a>
     </div>
+    <div class="text-right text-lg cursor-pointer fixed right-[12px] leading-5">
+      <span id="close-cookie-banner">X</span>
+    </div>
+  </div>
 </div>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J9M57HVQQ6"></script>
-
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-J9M57HVQQ6');
-  </script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner     = document.getElementById('cookieConsentBanner');
+    const acceptBtn  = document.getElementById('acceptCookies');
+    const declineBtn = document.getElementById('declineCookies');
+    const closeBtn   = document.getElementById('close-cookie-banner');
 
-<!-- JS -->
-<script>
-// Function to handle accept
-function acceptCookies() {
-// Set a cookie to remember the choice
-document.cookie = "cookiesAccepted=true; path=/; max-age=31536000"; // max-age is set for 1 year
+    const hasAccepted = document.cookie.includes('cookiesAccepted=true');
+    const hasDeclined = document.cookie.includes('cookiesDeclined=true');
 
-// Hide the cookie banner
-document.getElementById('cookieConsentBanner').classList.add('hidden');
-}
+    // Show banner only if neither accepted nor declined
+    if (!hasAccepted && !hasDeclined) {
+      banner.classList.remove('hidden');
+    }
 
-// Function to handle decline
-function declineCookies() {
-// Hide the cookie banner
-document.getElementById('cookieConsentBanner').classList.add('hidden');
-}
+    acceptBtn.addEventListener('click', e => {
+      e.preventDefault();
+      document.cookie = 'cookiesAccepted=true; path=/; max-age=31536000';
+      banner.classList.add('hidden');
+    });
 
-// Event listeners for the Accept and Decline buttons
-document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
-document.getElementById('declineCookies').addEventListener('click', declineCookies);
+    declineBtn.addEventListener('click', e => {
+      e.preventDefault();
+      document.cookie = 'cookiesDeclined=true; path=/; max-age=31536000';
+      banner.classList.add('hidden');
+    });
 
-// Function to close the cookie banner (for the 'X' button)
-function closeCookieBanner() {
-document.getElementById('cookieConsentBanner').classList.add('hidden');
-}
-
-// Event listener for the 'X' button
-document.getElementById('close-cookie-banner').addEventListener('click', closeCookieBanner);
-
-// Function to check cookie consent
-function checkCookieConsent() {
-if (document.cookie.indexOf("cookiesAccepted=true") !== -1) {
-    // Cookies have been accepted, no need to show the banner
-    return;
-} else {
-    // Show the cookie banner if not yet accepted
-    document.getElementById('cookieConsentBanner').classList.remove('hidden');
-}
-}
-
-// Check the cookie consent on page load
-document.addEventListener('DOMContentLoaded', checkCookieConsent);
-
-
+    closeBtn.addEventListener('click', () => {
+      banner.classList.add('hidden');
+    });
+  });
 </script>

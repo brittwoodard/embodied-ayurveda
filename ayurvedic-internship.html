@@ -5,6 +5,17 @@ features:
  - Refine your clinical skills
  - Gain hands-on experience
  - Build confidence as a practitioner
+testimonials:
+ - testimonial_html: |
+     <p>Attending an in-person Ayurvedic training was a game changer for me. Being fully immersed in the experience allowed me to truly focus and dedicate myself to the learning process. Dr. Resmi is an incredible teacher—she explains concepts in a way that’s both practical and easy to grasp, always grounding them in real-life examples. The small cohort created a warm, engaging dynamic where it was easy to participate and I felt genuinely seen and supported.</p>
+   author: Morgan Davis
+ - testimonial_html: |
+     <p>Learning with DR. Resmi was a deeply grounding experience. Her presence feels truly authentic — nothing is forced, nothing performative. It’s rare to come across someone who lives the wisdom they share. The teachings followed a gurukula-like flow — less like a formal class, more like an unfolding through daily rhythm, observation, and honest conversation.</p>
+     <p>Being in Bali added a gentle layer of support — the quiet mornings, the scent of earth after rain, the way nature mirrors the teachings</p>
+   author: Melis Baltalı
+ - testimonial_html: |
+     <p>I now feel able to start an Ayurvedic business and start practicing.</p> 
+   author: Elena Getsios
 seo:
   title: Ayurvedic Internship in Bali
   description: Learn more about our 8-day (10-night) Ayurvedic training in beautiful Ubud, Bali
@@ -163,6 +174,21 @@ seo:
 
 </section>
 
+<!-- Testimonials -->
+<section class="py-24 px-8 lg:px-20 bg-lighter">
+  <div class="testimonial-container">
+
+    {% for item in page.testimonials %}
+    <div class="testimonial-item text-center text-dark">
+      <div class="lg:w-[70%] mx-auto text-center italic">
+        {{item.testimonial_html}}
+      </div>
+      <p class="text-right lg:w-[70%] mx-auto mt-4">&mdash; {{ item.author }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <!-- Dates & Details Section -->
 <section class="lg:grid lg:grid-cols-3 lg:gap-20 bg-dark py-24 px-8 lg:px-20 text-light">
 
@@ -194,3 +220,4 @@ seo:
   {% include form-op-popup.html %}
 
 </section>
+
