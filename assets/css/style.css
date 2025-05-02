@@ -799,6 +799,9 @@ input[type="radio"]:focus {
 .-top-\[0\.5\%\] {
   top: -0.5%;
 }
+.-top-\[0\.6\%\] {
+  top: -0.6%;
+}
 .z-10 {
   z-index: 10;
 }
