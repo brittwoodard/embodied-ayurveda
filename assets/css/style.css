@@ -963,6 +963,9 @@ input[type="radio"]:focus {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-full {
+  max-width: 100%;
+}
 .flex-grow {
   flex-grow: 1;
 }
