@@ -885,6 +885,12 @@ input[type="radio"]:focus {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-32 {
+  margin-bottom: 8rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .block {
   display: block;
 }
