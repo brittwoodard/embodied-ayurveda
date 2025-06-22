@@ -891,6 +891,9 @@ input[type="radio"]:focus {
 .mb-20 {
   margin-bottom: 5rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .block {
   display: block;
 }
@@ -989,6 +992,10 @@ input[type="radio"]:focus {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
 }
 .flex-col {
   flex-direction: column;
@@ -1475,6 +1482,10 @@ input[type="radio"]:focus {
   .md\:w-full {
     width: 100%;
   }
+  .md\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1581,6 +1592,13 @@ input[type="radio"]:focus {
   }
   .lg\:w-full {
     width: 100%;
+  }
+  .lg\:w-\[85\%\] {
+    width: 85%;
+  }
+  .lg\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
