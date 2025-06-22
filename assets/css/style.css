@@ -786,6 +786,9 @@ input[type="radio"]:focus {
 .order-last {
   order: 9999;
 }
+.order-first {
+  order: -9999;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -950,6 +953,15 @@ input[type="radio"]:focus {
 }
 .min-h-\[60vh\] {
   min-height: 60vh;
+}
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
+.min-h-\[45vh\] {
+  min-height: 45vh;
+}
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 .w-\[75vw\] {
   width: 75vw;
@@ -1396,6 +1408,9 @@ input[type="radio"]:focus {
   .md\:-top-\[9\.5\%\] {
     top: -9.5%;
   }
+  .md\:order-last {
+    order: 9999;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1532,6 +1547,9 @@ input[type="radio"]:focus {
   }
   .lg\:hidden {
     display: none;
+  }
+  .lg\:aspect-square {
+    aspect-ratio: 1 / 1;
   }
   .lg\:h-48 {
     height: 12rem;
