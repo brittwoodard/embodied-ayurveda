@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Embodied Ayurveda - Clinical Training Retreat
+title: Ayurveda in Practice - Clinical Training Retreat
 features: 
- - Refine your clinical skills
- - Gain hands-on experience
- - Build confidence as a practitioner
+ - feature: Refine your clinical skills
+   background_image: /images/illustrations/plants-6.png
+ - feature: Gain hands-on experience
+   background_image: /images/illustrations/inspiring-6.png
+ - feature: Build confidence as a practitioner
+   background_image: /images/illustrations/empowered-6.png
 testimonials:
  - testimonial_html: |
      <p>Attending an in-person Ayurvedic training was a game changer for me. Being fully immersed in the experience allowed me to truly focus and dedicate myself to the learning process. Dr. Resmi is an incredible teacher—she explains concepts in a way that’s both practical and easy to grasp, always grounding them in real-life examples. The small cohort created a warm, engaging dynamic where it was easy to participate and I felt genuinely seen and supported.</p>
@@ -17,7 +20,7 @@ testimonials:
      <p>I now feel able to start an Ayurvedic business and start practicing.</p> 
    author: Elena Getsios
 seo:
-  title: Embodied Ayurveda - Clinical Training Retreat
+  title: Ayurveda in Practice - Clinical Training Retreat
   description: Learn more about our 8-day (10-night) Ayurvedic training in beautiful Ubud, Bali
   keywords: ayurvedic internship, ayurveda bali, learn ayurveda, bali retreats
   social_image: /images/embodied-ayurveda.jpg
@@ -62,53 +65,18 @@ seo:
 </section>
 
 <!-- Description -->
-<section>
-  <div class="py-24 px-8 lg:px-20 border-t border-dark md:border-0 lg:w-[70%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-    <h2 class="text-[1.2rem] leading-7 mb-0">Our Ayurvedic Clinical Training Retreat is a <strong>8-day (10-night) immersion</strong> designed to take you <strong>beyond theory</strong> and into <strong>real-world Ayurvedic practice</strong>.</h2>
+<section class="px-8 lg:px-20">
+  <div class="py-24 border-y md:border-t-0 border-dark" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+    <h2 class="text-[1.2rem] leading-7 mb-0 lg:w-[70%]">Our Ayurvedic Clinical Training Retreat is a <strong>8-day (10-night) immersion</strong> designed to take you <strong>beyond theory</strong> and into <strong>real-world Ayurvedic practice</strong>.</h2>
   </div>
 
-  
-  <!-- Features -->
-
-  <div class="py-24 px-8 lg:px-20 bg-main uppercase text-center" data-aos="fade" data-aos-offset="0" data-aos-duration="1000">
-    
-    <div class="lg:h-48 lg:overflow-y-auto">
+  <div class="grid md:grid-cols-3 gap-y-24 md:gap-8 mt-24 pb-24">
     {% for item in page.features %}
-      <div class="grid grid-cols-2">
-        <div class="col-span-2">
-          <p class="py-4">{{ item }}</p>
-        </div>
-        <div class="col-span-2 grid grid-cols-2">
-          <div class="border-r-2 border-dark h-36"></div>
-          <div></div>
-        </div>
-      </div>
-      {% endfor %}
+    <div class="bg-contain bg-no-repeat bg-center flex items-center justify-center min-h-[20vh]" style="background-image: url('{{ item.background_image }}');">
+      <p class="uppercase text-center">{{ item.feature }}</p>
     </div>
-
-    <div class="flex justify-center -m-1">
-      <img class="h-32" src="/images/illustrations/Logomark.svg">
-    </div>
+    {% endfor %}
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const scrollContainer = document.querySelector(".feature-scroll-container");
-  
-      scrollContainer.addEventListener("wheel", function (e) {
-        const isScrollingDown = e.deltaY > 0;
-        const isAtTop = scrollContainer.scrollTop === 0;
-        const isAtBottom = scrollContainer.scrollHeight - scrollContainer.scrollTop === scrollContainer.clientHeight;
-  
-        if ((isScrollingDown && !isAtBottom) || (!isScrollingDown && !isAtTop)) {
-          // Prevent page scroll
-          e.stopPropagation();
-          e.preventDefault();
-        }
-      }, { passive: false });
-    });
-  </script>
-  
 </section>
 
 
