@@ -951,6 +951,15 @@ input[type="radio"]:focus {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
+.min-h-\[45h\] {
+  min-height: 45h;
+}
+.min-h-\[40h\] {
+  min-height: 40h;
+}
+.min-h-\[40vh\] {
+  min-height: 40vh;
+}
 .w-\[75vw\] {
   width: 75vw;
 }
@@ -1141,6 +1150,21 @@ input[type="radio"]:focus {
 }
 .pt-24 {
   padding-top: 6rem;
+}
+.pb-32 {
+  padding-bottom: 8rem;
+}
+.pt-32 {
+  padding-top: 8rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pt-\[1rem\] {
+  padding-top: 1rem;
+}
+.pt-\[\] {
+  padding-top: ;
 }
 .text-center {
   text-align: center;
@@ -1409,6 +1433,9 @@ input[type="radio"]:focus {
   .md\:mt-40 {
     margin-top: 10rem;
   }
+  .md\:mb-32 {
+    margin-bottom: 8rem;
+  }
   .md\:block {
     display: block;
   }
@@ -1475,6 +1502,18 @@ input[type="radio"]:focus {
   }
   .md\:pt-5p {
     padding-top: 5%;
+  }
+  .md\:pt-36 {
+    padding-top: 9rem;
+  }
+  .md\:pt-28 {
+    padding-top: 7rem;
+  }
+  .md\:pt-\[3rem\] {
+    padding-top: 3rem;
+  }
+  .md\:pt-\[7rem\] {
+    padding-top: 7rem;
   }
   .md\:text-\[22\.6vw\] {
     font-size: 22.6vw;
@@ -1552,6 +1591,18 @@ input[type="radio"]:focus {
   }
   .lg\:pt-24 {
     padding-top: 6rem;
+  }
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+  .lg\:pt-28 {
+    padding-top: 7rem;
+  }
+  .lg\:pt-\[6rem\] {
+    padding-top: 6rem;
+  }
+  .lg\:pt-\[7rem\] {
+    padding-top: 7rem;
   }
   .lg\:text-3xl {
     font-size: 1.875rem;

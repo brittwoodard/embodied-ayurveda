@@ -8,16 +8,16 @@
         Upcoming Trainings</h2>
     </div>
 
-    <div class="grid md:grid-cols-2 md:pt-12 lg:pt-24">
+    <div class="grid md:grid-cols-2 pt-[{{ page.upcoming-events.padding-top.mobile }}] md:pt-[{{ page.upcoming-events.padding-top.tablet }}] lg:pt-[{{ page.upcoming-events.padding-top.desktop }}]">
 
         <!-- Left Column -->
-        <div class="relative bg-image-style min-h-[60vh] md:min-h-0 md:aspect-square mt-28 md:mt-40 md:mb-24 mx-8 lg:mx-20"
+        <div class="relative bg-image-style min-h-[60vh] md:min-h-0 md:aspect-square mt-28 md:mt-40 md:mb-32 mx-8 lg:mx-20"
             data-aos="fade" data-aos-offset="0" data-aos-duration="3000"
             style="background-image: url('/images/embodied-ayurveda-4.jpeg');">
         </div>
 
         <!-- Right Column -->
-        <div class="my-16 md:mt-40 md:mb-24 px-8 md:px-0 lg:pr:20 lg:w-[60%]" data-aos="fade" data-aos-offset="0"
+        <div class="my-16 md:mt-40 md:mb-32 px-8 md:px-0 lg:pr:20 lg:w-[60%]" data-aos="fade" data-aos-offset="0"
             data-aos-duration="3000">
             <h3 class="font-serif uppercase text-2xl mb-2">{{
                 site.data.site-settings.retreats.ayurvedic-internship.title }}</h3>
