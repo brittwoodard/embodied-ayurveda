@@ -3,22 +3,22 @@ layout: blank
 title: Page Not Found
 permalink: /404.html
 heading: Page Not Found
-description_html: Oops! You’ve wandered off the beaten path...</p><p>It seems the link you followed is broken or the page has been moved. Here are a few options
+description_html: Oops! You’ve wandered off the beaten path...</p><p>It seems the link you followed is broken or the page has been moved. Here are a couple options.
 links: 
   link_1: 
     title: Home
     url: /index.html
   link_2: 
-    title: Contact
+    title: Get in touch
     url: /contact.html
 ---
 
 <section class="flex justify-center justify-items-center text-center items-center h-screen">
 
     <div>
-        <h1 class="text-2xl mb-8">{{page.heading}}</h1>
-        <p>{{page.description_html}}</p>
-        <a href="{{page.links.link_1.url}}" class="button mr-2">{{page.links.link_1.title}}</a>
-        <a href="mailto:connect@embodiedayurvedaretreats.com?subject=Let's%20Connect" class="button ml-2">Contact</a>
+        <h1 class="font-serif text-2xl mb-4 uppercase">{{ page.heading }}</h1>
+        <p>{{ page.description_html }}</p>
+        <a href="{{page.links.link_1.url}}" class="button mr-2">{{ page.links.link_1.title }}</a>
+        <a href="mailto:connect@embodiedayurvedaretreats.com?subject=Let's%20Connect" class="button ml-2">{{ page.links.link_2.title }}</a>
     </div>
 </section>
