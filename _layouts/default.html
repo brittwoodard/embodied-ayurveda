@@ -36,6 +36,59 @@
     <!-- Javascript  -->
     <script src="/main.js"></script>
 
+    <!-- iFrame -->
+    <div
+        id="leadModal"
+        class="fixed inset-0 bg-black bg-opacity-60 hidden z-50"
+        >
+        <div
+            class="modal-content relative w-full max-w-[660px] bg-lighter shadow-lg mx-4"
+        >
+            <button
+            class="close absolute top-3 right-5 text-3xl text-dark hover:text-main transition duration-500 focus:outline-none"
+            aria-label="Close"
+            >&times;</button>
+            <iframe
+            id="leadIframe"
+            src=""
+            allowfullscreen
+            class="w-full h-[80vh] border-none"
+            ></iframe>
+        </div>
+        </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal    = document.getElementById('leadModal');
+            const iframe   = document.getElementById('leadIframe');
+            const closeBtn = modal.querySelector('.close');
+
+            // Open modal when any trigger clicked
+            document.querySelectorAll('.modal-trigger').forEach(btn => {
+            btn.addEventListener('click', () => {
+                iframe.src = btn.dataset.src;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex', 'items-center', 'justify-center');
+            });
+            });
+
+            // Close modal helper
+            function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex', 'items-center', 'justify-center');
+            iframe.src = '';
+            }
+
+            // Close on × click
+            closeBtn.addEventListener('click', closeModal);
+
+            // Close on backdrop click
+            modal.addEventListener('click', e => {
+            if (e.target === modal) closeModal();
+            });
+        });
+        </script>
+
 </body>
 
 </html>

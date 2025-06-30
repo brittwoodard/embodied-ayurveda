@@ -44,6 +44,15 @@
 <!------------ CloudCannon Editor Stylesheet   ------------>
 <link rel="stylesheet" type="text/css" href="/editor.css" />
 
+<!-- Prefetch -->
+{% if page.cta.url %}
+    <link
+      rel="prefetch"
+      href="{{ page.cta.url }}"
+      as="document"
+    >
+{% endif %}
+
 <!-- Recaptcha -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
