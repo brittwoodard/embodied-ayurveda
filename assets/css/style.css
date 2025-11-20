@@ -859,6 +859,10 @@ input[type="radio"]:focus {
   margin-top: auto;
   margin-bottom: auto;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .-ml-\[0\.5\%\] {
   margin-left: -0.5%;
 }
@@ -1365,6 +1369,10 @@ input[type="radio"]:focus {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
