@@ -1,0 +1,46 @@
+---
+layout: default
+seo:
+  hide-from-google: true
+---
+
+<section class="min-h-[100vh] flex justify-center py-32 px-8 lg:px-20">
+    <div class="text-center">
+        <h1 class="serif-lg uppercase mb-4">Generate QR Code</h1>
+
+        <label>
+            URL:<br>
+            <input id="urlInput" type="text" size="60" class="bg-transparent text-center mt-2 focus:outline-none border-b border-dark"
+                value="https://embodiedayurveda.co/">
+        </label>
+        <p class="mt-4">Type the url above and press the button below to generate your QR image</p>
+        <br><br>
+        <button id="make" class="button mb-8">Generate QR</button>
+
+        <div id="qrcode" class="flex justify-center"></div>
+
+        <script>
+            const input = document.getElementById("urlInput");
+            const btn = document.getElementById("make");
+            const container = document.getElementById("qrcode");
+
+            btn.addEventListener("click", () => {
+                container.innerHTML = "";
+
+                // Pull your CSS variables
+                const styles = getComputedStyle(document.documentElement);
+                const mainColor = styles.getPropertyValue("--main").trim();
+                const lighterColor = styles.getPropertyValue("--lighter").trim();
+
+                new QRCode(container, {
+                    text: input.value.trim(),
+                    width: 300,
+                    height: 300,
+                    colorDark: mainColor,
+                    colorLight: lighterColor
+                });
+            });
+        </script>
+
+    </div>
+</section>
