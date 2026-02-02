@@ -855,13 +855,13 @@ input[type="radio"]:focus {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .-ml-\[0\.5\%\] {
   margin-left: -0.5%;
@@ -938,14 +938,8 @@ input[type="radio"]:focus {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-64 {
-  margin-top: 16rem;
-}
 .block {
   display: block;
-}
-.inline-block {
-  display: inline-block;
 }
 .flex {
   display: flex;
@@ -1001,6 +995,9 @@ input[type="radio"]:focus {
 .h-screen {
   height: 100vh;
 }
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
 .min-h-\[20vh\] {
   min-height: 20vh;
 }
@@ -1015,15 +1012,6 @@ input[type="radio"]:focus {
 }
 .min-h-\[60vh\] {
   min-height: 60vh;
-}
-.min-h-\[80vh\] {
-  min-height: 80vh;
-}
-.min-h-\[90vh\] {
-  min-height: 90vh;
-}
-.min-h-\[100vh\] {
-  min-height: 100vh;
 }
 .w-\[75vw\] {
   width: 75vw;
@@ -1111,12 +1099,6 @@ input[type="radio"]:focus {
 .border-r-2 {
   border-right-width: 2px;
 }
-.border-b-\[0\.5px\] {
-  border-bottom-width: 0.5px;
-}
-.border-b-2 {
-  border-bottom-width: 2px;
-}
 .border-none {
   border-style: none;
 }
@@ -1131,9 +1113,6 @@ input[type="radio"]:focus {
 .border-lighter {
   --tw-border-opacity: 1;
   border-color: rgb(246 241 227 / var(--tw-border-opacity));
-}
-.border-transparent {
-  border-color: transparent;
 }
 .bg-accent {
   --tw-bg-opacity: 1;
@@ -1366,14 +1345,6 @@ input[type="radio"]:focus {
   --tw-text-opacity: 1;
   color: rgb(246 241 227 / var(--tw-text-opacity));
 }
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .underline {
   text-decoration-line: underline;
 }
@@ -1450,11 +1421,6 @@ input[type="radio"]:focus {
   margin-bottom: 0px;
 }
 
-.hover\:border-feature:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(173 132 73 / var(--tw-border-opacity));
-}
-
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
   color: rgb(96 57 33 / var(--tw-text-opacity));
@@ -1463,11 +1429,6 @@ input[type="radio"]:focus {
 .hover\:text-main:hover {
   --tw-text-opacity: 1;
   color: rgb(127 117 78 / var(--tw-text-opacity));
-}
-
-.hover\:text-feature:hover {
-  --tw-text-opacity: 1;
-  color: rgb(173 132 73 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover {
