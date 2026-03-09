@@ -1,0 +1,25 @@
+---
+layout: blank
+title: You're All Set!
+links: 
+  link_1: 
+    title: Home
+    url: /index.html
+  link_2: 
+    title: Get in touch
+    url: /contact.html
+---
+
+<section class="flex justify-center justify-items-center text-center items-center h-screen">
+
+    <div>
+        <h1 class="font-serif text-2xl mb-4 uppercase">Your all set!</h1>
+        <p class="uppercase">Thanks for keeping your contact info up to date.</p>
+        <p>Your emergency details have been securely recorded.</p>
+
+        <div class="mt-4">
+          <a href="{{ page.links.link_1.url }}" class="button mr-2">{{ page.links.link_1.title }}</a>
+          <a href="mailto:{{site.data.site-settings.general.email}}?subject=Let's%20Connect" class="button ml-2">{{ page.links.link_2.title }}</a>
+        </div>
+    </div>
+</section>

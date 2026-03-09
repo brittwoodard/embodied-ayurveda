@@ -1356,10 +1356,10 @@ input[type="radio"]:focus {
 :root {
     --feature: #AD8449;
     --dark: #3B3C2E;
-    --main: #686049;
+    --main: #7F754E;
     --accent: #603921;
     --light: #E1D8C3;
-    --lighter: #F0EEE1;
+    --lighter: #F6F1E3;
 }
 
 
