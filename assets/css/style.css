@@ -805,6 +805,15 @@ input[type="radio"]:focus {
 .top-3 {
   top: 0.75rem;
 }
+.bottom-8 {
+  bottom: 2rem;
+}
+.right-8 {
+  right: 2rem;
+}
+.right-12 {
+  right: 3rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -816,6 +825,12 @@ input[type="radio"]:focus {
 }
 .z-50 {
   z-index: 50;
+}
+.z-0 {
+  z-index: 0;
+}
+.-z-10 {
+  z-index: -10;
 }
 .order-last {
   order: 9999;
@@ -986,6 +1001,15 @@ input[type="radio"]:focus {
 .h-screen {
   height: 100vh;
 }
+.h-auto {
+  height: auto;
+}
+.h-64 {
+  height: 16rem;
+}
+.h-\[60vh\] {
+  height: 60vh;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -1012,6 +1036,12 @@ input[type="radio"]:focus {
 }
 .w-full {
   width: 100%;
+}
+.w-16 {
+  width: 4rem;
+}
+.w-auto {
+  width: auto;
 }
 .max-w-\[660px\] {
   max-width: 660px;
@@ -1341,6 +1371,11 @@ input[type="radio"]:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -1410,6 +1445,10 @@ input[type="radio"]:focus {
 .hover\:text-main:hover {
   --tw-text-opacity: 1;
   color: rgb(127 117 78 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 .hover\:shadow-lg:hover {
@@ -1522,6 +1561,9 @@ input[type="radio"]:focus {
   }
   .md\:w-full {
     width: 100%;
+  }
+  .md\:w-24 {
+    width: 6rem;
   }
   .md\:columns-2 {
     -moz-columns: 2;
