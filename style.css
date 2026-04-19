@@ -121,12 +121,12 @@
         appearance: none;
         background: transparent;
         margin: 0;
-        color: currentColor;
-        width: 0.75em;
+        color: var(--main);
+        width: 1em;
         /* Reduced size */
-        height: 0.75em;
+        height: 1em;
         /* Reduced size */
-        border: 1.5px solid var(--feature, currentColor);
+        border: 1.5px solid var(--main);
         border-radius: 50%;
         display: inline-flex;
         align-items: center;
@@ -138,9 +138,9 @@
     /* Inner dot when selected */
     input[type="radio"]::before {
         content: "";
-        width: 0.25em;
+        width: 0.5em;
         /* Smaller inner circle */
-        height: 0.25em;
+        height: 0.5em;
         /* Smaller inner circle */
         border-radius: 50%;
         background-color: transparent;
@@ -150,11 +150,11 @@
 
     /* When radio is selected */
     input[type="radio"]:checked {
-        border-color: var(--main, currentColor);
+        border-color: var(--main);
     }
 
     input[type="radio"]:checked::before {
-        background-color: var(--feature, currentColor);
+        background-color: var(--main);
         transform: scale(1);
     }
 
