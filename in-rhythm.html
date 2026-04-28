@@ -5,14 +5,11 @@ cta:
   text: Download the full itinerary
   url: #
 hero: 
-  heading_html: |
-    <h1>In Rhythm<br>A 3-night ayurveda retreat in Basque Country</h1>
-  subheading_html: |
-    <h2>Return to yourself & find someone brighter.</h2>
-  description_html: |
-    <p>You’ve been running on empty for so long, it’s started to feel normal.</p>
+  heading: In Rhythm<br>A 3-night ayurveda retreat in Basque Country
+  subheading: Return to yourself &<br>find someone brighter.
+  description: You’ve been running on empty for so long, it’s started to feel normal
   background_image:
-    image_path: 
+    image_path: /images/embodied-ayurveda-1.jpg
     image_focus: 
     overlay_style: 
 experience: 
@@ -97,3 +94,15 @@ close:
     <p>Your glow was never gone. It just needed somewhere to breathe.</p>
     <p>Are you ready to feel like yourself again?</p>    
 ---
+
+<!-- Hero Section -->
+<section class="bg-image-style h-[100vh] py-32 px-8 lg:px-20" style="background-image: url('{{ page.hero.background_image.image_path }}');">
+    <div class="h-full flex items-center justify-center text-center">
+        <div class="text-lighter">
+            <h1 class="uppercase text-[1.2rem] mb-4">{{ page.hero.heading }}</h1>
+            <h2 class="font-serif uppercase text-[3rem] leading-[1em]">{{ page.hero.subheading }}</h2>
+            <p class="italic font-normal text-[1.2rem]">{{ page.hero.description }}</p>
+            <a href="{{ page.cta.url }}" class="button_feature">{{ page.cta.text }}</a>
+        </div>
+    </div>
+</section>

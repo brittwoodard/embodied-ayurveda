@@ -81,6 +81,10 @@
         @apply border-b-[0.5px] border-dark inline-block hover:text-feature hover:border-feature hover:duration-500
     }
 
+    .button_feature {
+        @apply py-2 px-8 uppercase border bg-feature border-feature inline-block text-lighter hover:border-lighter hover:duration-500
+    }
+
     .link {
         @apply lowercase pb-2 border-b border-inherit
     }
