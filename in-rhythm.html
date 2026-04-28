@@ -26,21 +26,19 @@ about:
     image_path: /images/embodied-ayurveda-1.jpg
     image_focus: 
 benefits: 
-  heading_html: |
-    <h2>Weaved into the retreat are workshops on Ayurveda</h2>
-  subheading_html: |
-    <h3>Here’s what you’ll learn</h3>
+  heading: Weaved into the retreat are workshops on Ayurveda
+  subheading: Here’s what you’ll learn
   benefits_list:
     - title_html: Why you’re exhausted
       description_html: And how to bring your energy back for good
-    - title_html: Why your digestion is struggling     
-      description_html: And exactly how to eat for <em>your</em> unique body so that bloating, sluggishness and discomfort become a thing of the past
-    - title_html: Why you are the way you are
-      description_html: And why it’s not a flaw, it’s your nature
     - title_html: What your tongue reveals about your health
       description_html: And how to read it every morning in under a minute
+    - title_html: Why your digestion is struggling     
+      description_html: And exactly how to eat for <em>your</em> unique body so that bloating, sluggishness and discomfort become a thing of the past
     - title_html: How to care for your skin naturally
       description_html: With ingredients already in your kitchen, chosen specifically for YOU
+    - title_html: Why you are the way you are
+      description_html: And why it’s not a flaw, it’s your nature
     - title_html: Where your glow is hiding
       description_html: Someone probably told you this is just what getting older feels like. It’s not. You just lost it somewhere along the way
 banner: 
@@ -102,7 +100,7 @@ close:
         <div class="text-lighter">
             <h1 class="uppercase text-[1.2rem] mb-4">{{ page.hero.heading }}</h1>
             <h2 class="font-serif uppercase text-[3rem] leading-[1em]">{{ page.hero.subheading }}</h2>
-            <p class="italic font-normal text-[1.2rem]">{{ page.hero.description }}</p>
+            <p class="italic font-medium text-[1.2rem]">{{ page.hero.description }}</p>
             <a href="{{ page.cta.url }}" class="button_feature">{{ page.cta.text }}</a>
         </div>
     </div>
@@ -113,7 +111,7 @@ close:
 <section class="bg-feature py-32 px-8 lg:px-20 flex items-center justify-center">
     <div class="text-lighter text-center lg:w-[60%]">
         <img src="/images/illustrations/Logomark kopie 5.svg" alt="Embodied Ayurveda" class="h-20 w-auto items-center mx-auto">
-        <h2 class="font-normal italic my-4"> {{ page.experience.heading }} </h2>
+        <h2 class="font-medium italic my-4"> {{ page.experience.heading }} </h2>
         <div> {{ page.experience.description_html }} </div>
     </div>
 </section>
@@ -123,10 +121,10 @@ close:
 <section class="bg-dark py-32 px-8 lg:px-20">
 
     <!-- Text -->
-    <div class="grid grid-cols-2">
+    <div class="grid lg:grid-cols-2">
         <div class="text-lighter flex items-center">
             <div>
-                <h2 class="font-normal italic mb-4"> {{ page.about.heading }} </h2>
+                <h2 class="font-medium italic mb-4"> {{ page.about.heading }} </h2>
                 <div> {{ page.about.description_html }} </div>
                 <a href="{{ page.cta.url }}" class="button_light mt-8"> {{ page.cta.text }} </a>
             </div>
@@ -135,4 +133,20 @@ close:
         <!-- Image -->
     <div class="bg-image-style h-[80vh] lg:ml-20" style="background-image: url(' {{ page.about.background_image.image_path }}'); background-position: {{ page.about.background_image.image_focus }};">
     </div>
+</section>
+
+
+<!-- Benefits -->
+<section class="py-32 px-8 lg:px-20">
+    <div class="text-dark text-center">
+        <h2 class="font-medium italic mb-4">{{ page.benefits.heading }}</h2>
+        <p class="font-serif text-[2rem] uppercase">{{ page.benefits.subheading }}</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 mt-12">
+        {% for benefit in page.benefits.benefits_list %}
+        <div class="">
+            <h3 class="uppercase">{{ benefit.title_html }}</h3>
+            <p>{{ benefit.description_html }}</p>
+        </div>
+        {% endfor %}
 </section>

@@ -1152,6 +1152,12 @@ input[type="radio"]:focus {
 .gap-4 {
   gap: 1rem;
 }
+.gap-12 {
+  gap: 3rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
 .gap-y-24 {
   row-gap: 6rem;
 }
@@ -1252,6 +1258,9 @@ input[type="radio"]:focus {
 }
 .p-5p {
   padding: 5%;
+}
+.p-6 {
+  padding: 1.5rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -1366,11 +1375,17 @@ input[type="radio"]:focus {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[2rem\] {
+  font-size: 2rem;
+}
 .font-\[300\] {
   font-weight: 300;
 }
 .font-normal {
   font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
 }
 .uppercase {
   text-transform: uppercase;
