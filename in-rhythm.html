@@ -58,32 +58,24 @@ food:
       image_path: /images/embodied-ayurveda-1.jpg
       image_focus:
 venue: 
-  heading_html: |
-    <h2>The Venue</h2>
+  heading: The Venue
   description_html: |
     <p>Far from the bustle of the coast, nestled between the river and the hills, this beautifully restored villa feels like a high-end family home. The surrounding landscapes are soft and green, and the air carries a stillness that invites you to slow down and simply breathe. Every detail of the interior has been thoughtfully curated, and it serves as the perfect backdrop for your  journey back to your radient self.</p>
   images:
-    image_1:
-      image_path: 
-      image_focus: 
-    image_2:
-      image_path: 
-      image_focus:
-    image_3:
-      image_path: 
-      image_focus:
-    image_4:
-      image_path: 
-      image_focus:
-    image_5:
-      image_path: 
-      image_focus:
-    image_6:
-      image_path: 
-      image_focus:
-    image_7:
-      image_path: 
-      image_focus:
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
+   - image_path: /images/embodied-ayurveda-1.jpg
+     image_focus: 
 close:
   heading_html: |
     <h2>You just forgot what it felt like to feel good.</h2>
@@ -164,5 +156,22 @@ close:
     <div class="grid grid-cols-2 gap-8 lg:w-[70%] mx-auto">
         <div class="bg-image-style min-h-[40vh]" style="background-image: url('{{ page.food.images.image_1.image_path }}'); background-position: {{ page.food.images.image_1.image_focus }};"></div>
         <div class="bg-image-style h-[40vh]" style="background-image: url('{{ page.food.images.image_2.image_path }}'); background-position: {{ page.food.images.image_2.image_focus }};"></div>
+    </div>
+</section>
+
+
+<!-- Banner -->
+<section class="p-8 bg-feature">
+    <img src="/images/illustrations/empowered-6.png" class="h-20 items-center mx-auto">
+</section>
+
+
+<!-- The Villa -->
+<section>
+    <div class="py-32 px-8 lg:px-20">
+        <h2 class="font-serif text-[2rem] uppercase text-dark">{{ page.venue.heading }}</h2>
+        <div class="lg:w-[80%]">
+            {{ page.venue.description_html }}
+        </div>
     </div>
 </section>
