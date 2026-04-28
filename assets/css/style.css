@@ -1070,6 +1070,9 @@ input[type="radio"]:focus {
 .h-\[60vh\] {
   height: 60vh;
 }
+.h-\[40vh\] {
+  height: 40vh;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
