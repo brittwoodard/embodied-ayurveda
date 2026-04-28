@@ -540,6 +540,48 @@ li {
   border-color: rgb(246 241 227 / var(--tw-border-opacity));
   transition-duration: 500ms;
 }
+.button_light {
+  display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(225 216 195 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 216 195 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(59 60 46 / var(--tw-text-opacity));
+}
+.button_light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 60 46 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(225 216 195 / var(--tw-text-opacity));
+  transition-duration: 500ms;
+}
+.button_dark {
+  display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(225 216 195 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 60 46 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(225 216 195 / var(--tw-text-opacity));
+}
+.button_dark:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 216 195 / var(--tw-border-opacity));
+  transition-duration: 500ms;
+}
 .link {
   border-bottom-width: 1px;
   border-color: inherit;
@@ -875,6 +917,10 @@ input[type="radio"]:focus {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -882,10 +928,6 @@ input[type="radio"]:focus {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 .-ml-\[0\.5\%\] {
   margin-left: -0.5%;
@@ -977,6 +1019,9 @@ input[type="radio"]:focus {
 .aspect-\[3\/4\] {
   aspect-ratio: 3/4;
 }
+.aspect-portrait {
+  aspect-ratio: 3 / 4;
+}
 .h-12 {
   height: 3rem;
 }
@@ -1021,6 +1066,9 @@ input[type="radio"]:focus {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[60vh\] {
+  height: 60vh;
 }
 .min-h-\[100vh\] {
   min-height: 100vh;
@@ -1644,6 +1692,9 @@ input[type="radio"]:focus {
   }
   .lg\:mt-28 {
     margin-top: 7rem;
+  }
+  .lg\:ml-20 {
+    margin-left: 5rem;
   }
   .lg\:block {
     display: block;

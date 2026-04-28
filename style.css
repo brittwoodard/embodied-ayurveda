@@ -85,6 +85,14 @@
         @apply py-2 px-8 uppercase border bg-feature border-feature inline-block text-lighter hover:border-lighter hover:duration-500
     }
 
+    .button_light {
+        @apply py-2 px-8 uppercase border bg-light border-light inline-block text-dark hover:bg-dark hover:text-light hover:duration-500
+    }
+
+    .button_dark {
+        @apply py-2 px-8 uppercase border bg-dark border-light inline-block text-light hover:border-light hover:duration-500
+    }
+
     .link {
         @apply lowercase pb-2 border-b border-inherit
     }

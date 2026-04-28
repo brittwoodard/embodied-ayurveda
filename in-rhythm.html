@@ -17,12 +17,14 @@ experience:
   description_html: |
     <p>Real rest. The kind of conversation that reminds you who you are. Ancient wisdom you’ll actually use when you get home.</p>
     <p>Three days, just for you.</p>
-description: 
-  heading_html: |
-    <h2>Three days that will change how you feel...for good.</h2>
+about: 
+  heading: Three days that will change how you feel...for good.
   description_html: |
     <p>In Rhythm is a 3-night retreat in a stunning family villa in French Basque Country. A small group of women. Ayurveda teachings, yoga, nourishing food and long afternoons in nature with nowhere to be.</p>
     <p>You’ll leave rested. You’ll leave connected. And you’ll leave with a simple, practical understanding of your body that most people spend years searching for.</p>
+  background_image:
+    image_path: /images/embodied-ayurveda-1.jpg
+    image_focus: 
 benefits: 
   heading_html: |
     <h2>Weaved into the retreat are workshops on Ayurveda</h2>
@@ -113,5 +115,24 @@ close:
         <img src="/images/illustrations/Logomark kopie 5.svg" alt="Embodied Ayurveda" class="h-20 w-auto items-center mx-auto">
         <h2 class="font-normal italic my-4"> {{ page.experience.heading }} </h2>
         <div> {{ page.experience.description_html }} </div>
+    </div>
+</section>
+
+
+<!-- About -->
+<section class="bg-dark py-32 px-8 lg:px-20">
+
+    <!-- Text -->
+    <div class="grid grid-cols-2">
+        <div class="text-lighter flex items-center">
+            <div>
+                <h2 class="font-normal italic mb-4"> {{ page.about.heading }} </h2>
+                <div> {{ page.about.description_html }} </div>
+                <a href="{{ page.cta.url }}" class="button_light mt-8"> {{ page.cta.text }} </a>
+            </div>
+        </div>
+
+        <!-- Image -->
+    <div class="bg-image-style h-[80vh] lg:ml-20" style="background-image: url(' {{ page.about.background_image.image_path }}'); background-position: {{ page.about.background_image.image_focus }};">
     </div>
 </section>
