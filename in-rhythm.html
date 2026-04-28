@@ -159,10 +159,10 @@ close:
 <section class="py-32 px-8 lg:px-20 bg-dark">
     <div class="text-center">
         <h2 class="font-serif text-[2rem] uppercase text-lighter">{{ page.food.heading }}</h2>
-        <div>{{ page.food.description_html }}</div>
+        <div class="text-lighter lg:w-[70%] mx-auto mb-8">{{ page.food.description_html }}</div>
     </div>
-    <div class="grid grid-cols-2 gap-8">
-        <div class="bg-image-style h-[40vh]" style="background-image: url('{{ page.food.images.image_1.image_path }}'); background-position: {{ page.food.images.image_1.image_focus }};"></div>
+    <div class="grid grid-cols-2 gap-8 lg:w-[70%] mx-auto">
+        <div class="bg-image-style min-h-[40vh]" style="background-image: url('{{ page.food.images.image_1.image_path }}'); background-position: {{ page.food.images.image_1.image_focus }};"></div>
         <div class="bg-image-style h-[40vh]" style="background-image: url('{{ page.food.images.image_2.image_path }}'); background-position: {{ page.food.images.image_2.image_focus }};"></div>
     </div>
 </section>
