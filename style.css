@@ -110,6 +110,38 @@
         @apply bg-cover bg-no-repeat bg-center
     }
 
+    .bg-overlay {
+        position: relative;
+    }
+
+    .bg-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .bg-overlay>* {
+        position: relative;
+    }
+
+    .bg-overlay.light::before {
+        background-color: rgba(59, 60, 46, 0.3);
+
+    }
+
+    .bg-overlay.medium::before {
+        background-color: rgba(59, 60, 46, 0.5);
+
+    }
+
+    .bg-overlay.dark::before {
+        background-color: rgba(59, 60, 46, 0.7);
+
+    }
+
     /* Video */
     .bg-video {
         width: 100%;
