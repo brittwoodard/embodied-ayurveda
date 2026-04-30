@@ -86,7 +86,7 @@
     }
 
     .button_light {
-        @apply py-2 px-8 uppercase border bg-light border-light inline-block text-dark hover:bg-dark hover:text-light hover:duration-500
+        @apply py-2 px-8 uppercase border bg-light border-light inline-block text-dark hover:bg-transparent hover:text-light hover:duration-500
     }
 
     .button_dark {
