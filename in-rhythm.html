@@ -167,11 +167,17 @@ close:
 
 
 <!-- The Villa -->
-<section>
-    <div class="py-32 px-8 lg:px-20">
+<section class="py-32">
+    <div class="px-8 lg:px-20">
         <h2 class="font-serif text-[2rem] uppercase text-dark">{{ page.venue.heading }}</h2>
         <div class="lg:w-[80%]">
             {{ page.venue.description_html }}
         </div>
     </div>
+    <div class="flex overflow-x-auto gap-4 mt-12 ml-8 lg:ml-20">
+    {% for image in page.venue.images %}
+        <div class="bg-image-style flex-none w-[25vw] h-[70vh]" style="background-image: url('{{ image.image_path }}'); background-position: {{ image.image_focus }};"></div>
+    {% endfor %}
+  </div>
+  <p class="italic font-normal mt-4 ml-8 lg:ml-20">Swipe left to view more images...</p>
 </section>
