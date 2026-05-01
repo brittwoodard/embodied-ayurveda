@@ -1822,6 +1822,9 @@ input[type="radio"]:focus {
   .lg\:w-\[40\%\] {
     width: 40%;
   }
+  .lg\:w-\[45\%\] {
+    width: 45%;
+  }
   .lg\:columns-3 {
     -moz-columns: 3;
          columns: 3;
