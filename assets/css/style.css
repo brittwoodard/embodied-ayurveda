@@ -950,14 +950,6 @@ input[type="radio"]:focus {
   margin-top: auto;
   margin-bottom: auto;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.my-\[1\.5rem\] {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 .-ml-\[0\.5\%\] {
   margin-left: -0.5%;
 }
@@ -1075,17 +1067,11 @@ input[type="radio"]:focus {
 .h-\[100vh\] {
   height: 100vh;
 }
-.h-\[40vh\] {
-  height: 40vh;
-}
 .h-\[45vh\] {
   height: 45vh;
 }
 .h-\[50vh\] {
   height: 50vh;
-}
-.h-\[60vh\] {
-  height: 60vh;
 }
 .h-\[70vh\] {
   height: 70vh;
@@ -1123,8 +1109,8 @@ input[type="radio"]:focus {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
-.w-\[25vw\] {
-  width: 25vw;
+.w-\[60vw\] {
+  width: 60vw;
 }
 .w-\[75vw\] {
   width: 75vw;
@@ -1137,15 +1123,6 @@ input[type="radio"]:focus {
 }
 .w-full {
   width: 100%;
-}
-.w-\[35vw\] {
-  width: 35vw;
-}
-.w-\[50vw\] {
-  width: 50vw;
-}
-.w-\[60vw\] {
-  width: 60vw;
 }
 .max-w-\[660px\] {
   max-width: 660px;
@@ -1351,10 +1328,6 @@ input[type="radio"]:focus {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.py-\[1\.5rem\] {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
@@ -1678,6 +1651,9 @@ input[type="radio"]:focus {
   .md\:min-h-\[40vh\] {
     min-height: 40vh;
   }
+  .md\:w-\[35vw\] {
+    width: 35vw;
+  }
   .md\:w-\[60\%\] {
     width: 60%;
   }
@@ -1686,9 +1662,6 @@ input[type="radio"]:focus {
   }
   .md\:w-full {
     width: 100%;
-  }
-  .md\:w-\[35vw\] {
-    width: 35vw;
   }
   .md\:columns-2 {
     -moz-columns: 2;
@@ -1756,6 +1729,9 @@ input[type="radio"]:focus {
     margin-left: 5rem;
     margin-right: 5rem;
   }
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
   .lg\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1770,9 +1746,6 @@ input[type="radio"]:focus {
   }
   .lg\:mt-28 {
     margin-top: 7rem;
-  }
-  .lg\:mb-0 {
-    margin-bottom: 0px;
   }
   .lg\:block {
     display: block;
@@ -1798,6 +1771,12 @@ input[type="radio"]:focus {
   .lg\:min-h-\[60vh\] {
     min-height: 60vh;
   }
+  .lg\:w-\[25vw\] {
+    width: 25vw;
+  }
+  .lg\:w-\[45\%\] {
+    width: 45%;
+  }
   .lg\:w-\[60\%\] {
     width: 60%;
   }
@@ -1812,18 +1791,6 @@ input[type="radio"]:focus {
   }
   .lg\:w-full {
     width: 100%;
-  }
-  .lg\:w-\[25vw\] {
-    width: 25vw;
-  }
-  .lg\:w-\[50\%\] {
-    width: 50%;
-  }
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-  .lg\:w-\[45\%\] {
-    width: 45%;
   }
   .lg\:columns-3 {
     -moz-columns: 3;
